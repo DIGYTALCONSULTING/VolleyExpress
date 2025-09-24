@@ -1,0 +1,38 @@
+[
+  {
+    "nombre": "Collares",
+    "descripcion": "Balón de entrenamiento exigente, 18 paneles de material sintético. Tamaño 65–67 cm (T.5), peso 260–280 g.",
+    "precio": "$200.000",
+    "imagen": "/src/assets/balon_mikasa_v330w.png"
+  },
+  {
+    "nombre": "manilllas",
+    "descripcion": "Balón oficial FIVB de competición, 18 paneles en microfibra sintética. Tamaño oficial T.5, máxima durabilidad.",
+    "precio": "$450.000",
+    "imagen": "/src/assets/balon_mikasa_v200w.png"
+  },
+  {
+    "nombre": "Otras Maricaditas",
+    "descripcion": "Protección de alto impacto con espuma EVA. Diseño transpirable y ergonómico para mayor comodidad en el juego.",
+    "precio": "$90.000",
+    "imagen": "/src/assets/rodilleras_voley.png"
+  },
+  {
+    "nombre": "Muñequeras Elásticas",
+    "descripcion": "Soporte firme para la muñeca. Material transpirable y elástico que brinda comodidad y seguridad.",
+    "precio": "$40.000",
+    "imagen": "/src/assets/munequeras_voley.png"
+  },
+  {
+    "nombre": "Red Profesional",
+    "descripcion": "Red oficial de voleibol fabricada en nylon reforzado. Medidas reglamentarias y resistencia al uso en exteriores.",
+    "precio": "$300.000",
+    "imagen": "/src/assets/red_voley.png"
+  },
+  {
+    "nombre": "Conos de Entrenamiento",
+    "descripcion": "Set de 10 conos para entrenamientos de agilidad y velocidad. Material plástico flexible, alta durabilidad.",
+    "precio": "$70.000",
+    "imagen": "/src/assets/conos_entrenamiento.png"
+  }
+]

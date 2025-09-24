@@ -1,0 +1,38 @@
+[
+{
+  "title": "Política de Tratamiento de Datos Personales",
+  "version": "1.0",
+  "updated_at": "2025-01-15",
+  "consent_text": "Autorizo el tratamiento de mis datos personales para fines de contacto, atención comercial y envío de información relacionada con productos y servicios.",
+  "full_text": [
+    "Esta Política de Tratamiento de Datos Personales describe las finalidades, derechos y canales disponibles para el ejercicio de los mismos, de conformidad con la Ley 1581 de 2012 y sus decretos reglamentarios.",
+    "La recolección y tratamiento de datos se realizará bajo principios de legalidad, finalidad, libertad, veracidad, transparencia, acceso y circulación restringida, seguridad y confidencialidad.",
+    "El titular podrá ejercer los derechos de conocer, actualizar, rectificar y suprimir información personal, así como revocar la autorización, mediante los canales descritos en esta política.",
+    "Conservaremos la información únicamente por el tiempo necesario para cumplir las finalidades del tratamiento y las obligaciones legales aplicables.",
+    "Implementamos medidas técnicas, administrativas y organizacionales razonables para proteger la información contra accesos no autorizados, pérdida, alteración o divulgación."
+  ],
+  "sections": [
+    {
+      "heading": "1. Finalidades",
+      "text": "Gestionar solicitudes, consultas y quejas; contactar por canales autorizados; enviar comunicaciones sobre productos, servicios y eventos; realizar análisis internos y mejorar la experiencia de los usuarios."
+    },
+    {
+      "heading": "2. Derechos del Titular",
+      "text": "Conocer, actualizar, rectificar, suprimir información y revocar la autorización cuando sea procedente. Estos derechos podrán ejercerse por el titular o su representante."
+    },
+    {
+      "heading": "3. Medidas de Seguridad",
+      "text": "Adoptamos controles administrativos, técnicos y físicos para proteger la confidencialidad, integridad y disponibilidad de los datos personales."
+    },
+    {
+      "heading": "4. Transferencias y Transmisiones",
+      "text": "Podremos transmitir o transferir datos a terceros encargados o aliados, nacionales o extranjeros, cuando sea necesario para las finalidades informadas y cumpliendo la normativa aplicable."
+    },
+    {
+      "heading": "5. Canales de Atención",
+      "text": "Para ejercer tus derechos, escribe a 'datos@tu-dominio.com' con el asunto 'Datos Personales' o comunícate a la línea 300 000 0000 en horario hábil."
+    }
+  ]
+}
+
+]

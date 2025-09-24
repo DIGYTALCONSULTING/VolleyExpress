@@ -1,0 +1,33 @@
+[
+  {
+    "nombre": "Mikasa V330W",
+    "descripcion": "Entrenamiento exigente, 18 paneles, sintético, Tamaño 65–67 cm (T.5), peso 260–280 g",
+    "precio": "$200.000",
+    "imagen": "/src/assets/balon_mikasa_v330w.png"
+  },
+  {
+    "nombre": "Mikasa V200W",
+    "descripcion": "Balón oficial FIVB, 18 paneles, microfibra sintética, tamaño oficial T.5",
+    "precio": "$450.000",
+    "imagen": "/src/assets/balon_mikasa_v200w.png"
+  },
+  {
+    "nombre": "Rodilleras Pro",
+    "descripcion": "Protección de alto impacto, espuma EVA, transpirables y ergonómicas",
+    "precio": "$90.000",
+    "imagen": "/src/assets/rodilleras_voley.png"
+  },
+  {
+    "nombre": "Red Profesional",
+    "descripcion": "Red oficial de voleibol, nylon reforzado, medidas reglamentarias, resistente al exterior",
+    "precio": "$300.000",
+    "imagen": "/src/assets/red_voley.png"
+  },
+{
+    "nombre": "Red Profesional",
+    "descripcion": "Red oficial de voleibol, nylon reforzado, medidas reglamentarias, resistente al exterior",
+    "precio": "$300.000",
+    "imagen": "/src/assets/red_voley.png"
+  }
+
+]

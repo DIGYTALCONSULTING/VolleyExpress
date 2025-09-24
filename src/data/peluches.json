@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Peluche Mikasa Mini",
+    "descripcion": "Mini balón de voleibol en peluche, ideal para fans y decoración.",
+    "precio": "$65.000",
+    "imagen": "/src/assets/peluche_mikasa_mini.png"
+  },
+  {
+    "nombre": "Peluche Jugador Voley",
+    "descripcion": "Muñeco temático de voleibol, suave y coleccionable.",
+    "precio": "$79.000",
+    "imagen": "/src/assets/peluche_jugador_voley.png"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "hero-molten-v5m4500",
+    "nombre": "Molten V5M4500",
+    "descripcion": "Balón de entrenamiento con gran durabilidad y agarre.",
+    "precio": "$220.000",
+    "imagen": "/src/assets/balon_molten_4500.png",
+    "cta": {
+      "label": "Comprar por WhatsApp",
+      "url": "https://wa.me/3183902084"
+    },
+    "categoria": "balones"
+  },
+  {
+    "id": "hero-rodilleras-mizuno",
+    "nombre": "Rodilleras Mizuno",
+    "descripcion": "Protección EVA, ventilación y ajuste ergonómico.",
+    "precio": "$90.000",
+    "imagen": "/src/assets/rodilleras.png",
+    "cta": {
+      "label": "Quiero este producto",
+      "url": "https://wa.me/3183902084"
+    },
+    "categoria": "protecciones"
+  },
+  {
+    "id": "hero-balon-peluche",
+    "nombre": "Balón Peluche",
+    "descripcion": "Suave y decorativo, ideal para fans del voleibol.",
+    "precio": "$120.000",
+    "imagen": "/src/assets/balon_peluche.png",
+    "cta": {
+      "label": "Pedir ahora",
+      "url": "https://wa.me/3183902084"
+    },
+    "categoria": "peluches"
+  }
+]
