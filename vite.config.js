@@ -4,12 +4,7 @@ import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  // 👇 nombre EXACTO del repo (respeta mayúsculas)
-  base: '/VolleyExpress/',
-  // 👇 GitHub Pages leerá /docs
+  base: process.env.NODE_ENV === 'production' ? '/VolleyExpress/' : '/',
   build: { outDir: 'docs' },
-  plugins: [
-    vue(),
-    tailwindcss(),
-  ],
+  plugins: [vue(), tailwindcss()],
 })
