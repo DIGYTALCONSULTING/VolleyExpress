@@ -8,7 +8,7 @@
       "url": "https://wa.me/3004311280"
     },
     "categoria": "balones"
-  },
+  },  
   {
     "id": "hero-rodilleras-mizuno",
     "nombre": "Rodilleras Mizuno",    
@@ -20,6 +20,26 @@
     "categoria": "protecciones"
   },
   {
+    "id": "hero-balon-peluche",
+    "nombre": "Balón Peluche",
+    "imagen": "/src/assets/balon_peluche.png",
+    "cta": {
+      "label": "Pedir ahora",
+      "url": "https://wa.me/3004311280"
+    },
+    "categoria": "peluches"
+  },
+    {
+    "id": "hero-balon-peluche",
+    "nombre": "Balón Peluche",
+    "imagen": "/src/assets/balon_peluche.png",
+    "cta": {
+      "label": "Pedir ahora",
+      "url": "https://wa.me/3004311280"
+    },
+    "categoria": "peluches"
+  },
+    {
     "id": "hero-balon-peluche",
     "nombre": "Balón Peluche",
     "imagen": "/src/assets/balon_peluche.png",
