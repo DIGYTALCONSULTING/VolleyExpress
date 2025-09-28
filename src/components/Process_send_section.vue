@@ -2,8 +2,8 @@
 <template>
   <section id="Proceso_pedido" class="w-full">
     <!-- Título -->
-    <div class="w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-8 pt-12">
-      <h2 class="text-center text-2xl font-bold">PROCESO DE PEDIDO</h2>
+    <div class="w-full max-w-6xl mx-auto px-6 md:px-6 lg:px-8 pt-10">
+      <h2 class="text-center text-2xl font-bold mt-10">PROCESO DE PEDIDO</h2>
     </div>
 
     <!-- ====== DESKTOP / TABLET (md+) ====== -->

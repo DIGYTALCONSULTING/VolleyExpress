@@ -8,9 +8,7 @@ import Conocenos_section from './components/Conocenos_section.vue';
 import Process_send_section from './components/process_send_section.vue';
 import Footer_section from './components/Footer_section.vue';
 import Firma_DG from './components/Firma_DG.vue';
-
-
-
+import PichuChatbot from './components/PichuChatbot.vue';
 
 
 </script>
@@ -25,7 +23,9 @@ import Firma_DG from './components/Firma_DG.vue';
     <Process_send_section msg="" />   
     <Conocenos_section msg="" />
     <Footer_section msg="" />
-    <Firma_DG msg="" />
+    <Firma_DG msg="" />    
+    <PichuChatbot msg="" />
+    
   </div>
 </template>
 
