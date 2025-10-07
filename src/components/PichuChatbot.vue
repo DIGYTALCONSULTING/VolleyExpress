@@ -2,12 +2,13 @@
   <!-- Botón flotante con la imagen de Pichu + texto circular -->
   <button
     @click="isOpen = !isOpen"
-    class="fixed bottom-4 right-4 z-40 rounded-full shadow-xl p-0.5 focus:outline-none"
+    class="fixed right-4 z-[9999] rounded-full shadow-xl p-0.5 focus:outline-none"
+    style="bottom: calc(env(safe-area-inset-bottom, 0px) + 1rem);"
     aria-label="Abrir chat Pichu"
   >
     <div class="relative bg-white rounded-full p-2 ring-2 ring-lime-400/70">
-      <!-- Imagen -->
-      <img :src="pichuImg" alt="Pichu" class="w-20 h-20 object-contain relative z-10" />
+      <!-- Imagen (más pequeña en móviles) -->
+      <img :src="pichuImg" alt="Pichu" class="w-16 h-16 sm:w-20 sm:h-20 object-contain relative z-10" />
 
       <!-- Texto circular (no bloquea clics) -->
       <svg viewBox="0 0 100 100" class="absolute inset-0 w-full h-full pointer-events-none">
@@ -17,8 +18,8 @@
                 d="M50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
         </defs>
         <text font-size="9" font-weight="700" class="fill-lime-600">
-          <textPath xlink:href="#pichu-circle" startOffset="-5" textLength="150" letter-spacing="30">
-            PREGÚNTALE A PICHU  
+          <textPath xlink:href="#pichu-circle" startOffset="-5" textLength="150">
+            PREGÚNTALE A PICHU
           </textPath>
         </text>
       </svg>
@@ -28,7 +29,7 @@
   <!-- Ventana del chat -->
   <div
     v-show="isOpen"
-    class="fixed bottom-20 right-4 z-40 w-[92vw] max-w-sm sm:max-w-md rounded-2xl overflow-hidden bg-white shadow-2xl ring-1 ring-black/5"
+    class="fixed bottom-20 z-40 left-4 right-4 sm:left-auto sm:right-4 w-auto sm:w-[92vw] sm:max-w-md rounded-2xl overflow-hidden bg-white shadow-2xl ring-1 ring-black/5"
   >
     <!-- Header -->
     <div class="flex items-center gap-3 bg-gradient-to-r from-lime-400 to-emerald-500 text-white p-4">

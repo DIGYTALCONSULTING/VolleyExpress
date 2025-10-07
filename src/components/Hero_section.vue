@@ -3,7 +3,7 @@
     <!-- Contenedor principal -->
     <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <!-- Columna izquierda: Video + CTA -->
-     <div class="flex flex-col items-center md:items-start gap-6 md:ml-32 max-w-lg">
+     <div class="flex flex-col items-center md:items-start gap-24 md:ml-32 max-w-lg">
   <!-- Video redondo -->
         <div class="w-56 h-56 md:w-72 md:h-72 max-w-md rounded-full overflow-hidden shadow-xl">
           <video
@@ -17,17 +17,12 @@
           />
         </div>
 
-        <!-- Título -->
-        <h1 class="text-2xl md:text-3xl font-extrabold text-gray-900 text-center md:text-left">
-          Implementos y accesorios de Voleibol con envío a toda Colombia
-        </h1>
-
         <!-- Botón WhatsApp -->
         <a
           href="https://wa.me/573004311280"
           target="_blank"
           rel="noopener"
-          class="inline-flex items-center justify-center rounded-full px-6 py-3 text-white text-sm font-semibold
+          class="inline-flex items-center justify-center rounded-full px-18 py-3 text-white text-sm font-semibold
                 bg-gradient-to-b from-[#509637] to-[#1A3012] hover:opacity-90 transition text-center md:text-left"
         >
           Chatear por WhatsApp

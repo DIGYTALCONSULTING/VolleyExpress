@@ -1,24 +1,16 @@
 <template>
   <nav class="w-full bg-white shadow-md">
-    <div class="px-4 py-0 md:px-4">
-      <!-- Fila: Logo + Palabras (izquierda) | Hamburguesa / Links (derecha) -->
+    <div class="px-4 py-4 md:px-4">
+      <!-- Fila: Logo + Links / Hamburguesa -->
       <div class="flex items-center justify-between gap-3">
-        <!-- Izquierda: Logo + Palabras -->
-        <div class="flex items-center gap-10 min-w-0">
-          <!-- Logo -->
-          <img src="/src/assets/logo_ves.png" alt="Logo" class="w-20 h-20 object-contain flex-shrink-0" />
-
-          <!-- Palabras -->
-          <div class="flex flex-row">
-            <img src="/src/assets/palabra_volley.png" alt="volley" class="w-30 h-20 flex-shrink-0" />
-            <img src="/src/assets/palabra_express.png" alt="express" class="w-30 h-20 flex-shrink-0" />
-            <img src="/src/assets/palabra_shop.png" alt="shop" class="hidden md:inline-block w-30 h-20 flex-shrink-0" />
-          </div>
+        <!-- Logo (derecha en móvil, izquierda en grande) -->
+        <div class="flex items-center justify-end lg:justify-start gap-26 md:gap-8 min-w-0 flex-1 pr-2 md:pr-0 order-2 lg:order-1">
+          <img src="/src/assets/Nvar_logo.png" alt="Logo" class="w-20 h-20 object-contain flex-shrink-0" />
         </div>
 
-        <!-- Desktop: links; Móvil/MD: botón hamburguesa -->
-        <div class="flex items-center">
-          <!-- Links SOLO desde lg en adelante -->
+        <!-- Links o menú hamburguesa -->
+        <div class="flex items-center order-1 lg:order-2">
+          <!-- Links (solo en pantallas grandes) -->
           <div class="hidden lg:flex lg:items-center lg:gap-x-4 lg:gap-y-2">
             <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Implementos_Deportivos">Implementos</a>
             <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Accesorios">Accesorios</a>
@@ -28,11 +20,12 @@
             <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Conocenos">Conócenos</a>
           </div>
 
-          <!-- Botón hamburguesa visible en sm y md (y también hasta <lg) -->
+          <!-- Botón hamburguesa visible en móvil -->
           <button
+            type="button"
             class="block lg:hidden p-2 rounded focus:outline-none focus:ring focus:ring-gray-200 ml-2"
             aria-label="Abrir menú"
-            :aria-expanded="mobileOpen"
+            :aria-expanded="mobileOpen ? 'true' : 'false'"
             @click="mobileOpen = !mobileOpen"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,7 +38,7 @@
         </div>
       </div>
 
-      <!-- Menú móvil (visible hasta <lg) -->
+      <!-- Menú móvil -->
       <transition
         enter-active-class="transition-opacity duration-150 ease-linear"
         enter-from-class="opacity-0"
@@ -69,12 +62,22 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
 const mobileOpen = ref(false)
 const closeMobile = () => { mobileOpen.value = false }
-</script>
 
-<style>
-.scrollbar-none::-webkit-scrollbar { display: none; }
-.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
-</style>
+const onResize = () => {
+  if (window.innerWidth >= 1024 && mobileOpen.value) {
+    mobileOpen.value = false
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('resize', onResize)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', onResize)
+})
+</script>
