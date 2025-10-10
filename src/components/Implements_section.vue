@@ -60,12 +60,39 @@
 
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
-import productos from '../data/productos.json'
+import productosData from '../data/productos.json'
 
-/**
- * Duplicamos los items para loop infinito sin “salto”.
- */
-const productosDuplicados = computed(() => [...productos, ...productos])
+/** Resuelve assets del JSON para que funcionen en build (Vite/GitHub Pages) */
+function resolveImg(path) {
+  if (!path) return ''
+  if (/^https?:\/\//i.test(path)) return path
+  // Limpia prefijos comunes
+  const cleaned = path
+    .replace(/^\/?src\//, '')        // /src/... -> ...
+    .replace(/^assets\//, '')        // assets/... -> ...
+    .replace(/^\/?assets\//, '')     // /assets/... -> ...
+  try {
+    // Busca en /src/assets
+    return new URL(`../assets/${cleaned}`, import.meta.url).href
+  } catch {
+    // Último recurso: deja el path tal cual
+    return path
+  }
+}
+
+/** ✅ Productos con imagen resuelta y defaults seguros */
+const items = computed(() =>
+  (productosData ?? []).map(p => ({
+    ...p,
+    imagen: resolveImg(p.imagen || p.img),
+    descripcion: p.descripcion ?? '',
+    precio: p.precio ?? '',
+    nombre: p.nombre ?? '',
+  }))
+)
+
+/** Duplicamos para loop infinito */
+const productosDuplicados = computed(() => [...items.value, ...items.value])
 
 const wrapRef = ref(null)
 const trackRef = ref(null)
@@ -74,15 +101,10 @@ let timer = null
 let animRaf = null
 let running = true
 
-// Config
-const STEP_INTERVAL_MS = 2500  // cada cuánto avanzamos
-const ANIM_DURATION_MS = 600   // duración de la animación del “salto”
-const GAP_PX = 24              // gap-6 = 1.5rem ≈ 24px en Tailwind por defecto
+const STEP_INTERVAL_MS = 2500
+const ANIM_DURATION_MS = 600
+const GAP_PX = 24
 
-/**
- * Calcula el ancho de una tarjeta (incluyendo el gap) y cuántas caben por vista.
- * Máximo 4 por requerimiento.
- */
 const getMetrics = () => {
   const wrap = wrapRef.value
   const track = trackRef.value
@@ -92,18 +114,13 @@ const getMetrics = () => {
   if (!firstCard) return { cardStep: 0, perView: 1, half: 0 }
 
   const cardWidth = firstCard.offsetWidth
-  // El “paso” mínimo por tarjeta incluye el gap horizontal
   const cardStep = cardWidth + GAP_PX
-
   const perView = Math.max(1, Math.min(4, Math.floor((wrap.clientWidth + GAP_PX) / cardStep)))
   const half = track.scrollWidth / 2
 
   return { cardStep, perView, half }
 }
 
-/**
- * Animación suave con requestAnimationFrame
- */
 const animateTo = (targetLeft) => {
   const wrap = wrapRef.value
   if (!wrap) return
@@ -114,7 +131,6 @@ const animateTo = (targetLeft) => {
 
   const tick = (now) => {
     const t = Math.min(1, (now - startTime) / ANIM_DURATION_MS)
-    // easeInOutCubic
     const ease = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
     wrap.scrollLeft = startLeft + delta * ease
     if (t < 1 && running) {
@@ -127,74 +143,37 @@ const animateTo = (targetLeft) => {
   animRaf = requestAnimationFrame(tick)
 }
 
-/**
- * Avanza de a “grupos” de tarjetas (hasta 4 según ancho).
- */
 const stepNext = () => {
   const wrap = wrapRef.value
   const track = trackRef.value
   if (!wrap || !track) return
-
   const { cardStep, perView, half } = getMetrics()
   if (!cardStep || !half) return
 
-  // Próximo objetivo
   let target = wrap.scrollLeft + cardStep * perView
-
-  // Si nos pasamos de la primera mitad (porque está duplicado), reubicamos
   if (target >= half) {
-    // Mantener la posición relativa:
     target = target - half
     wrap.scrollLeft = wrap.scrollLeft - half
   }
-
   animateTo(target)
 }
 
-/**
- * Control del autoplay
- */
 const startAuto = () => {
   if (timer) return
-  timer = setInterval(() => {
-    if (!running) return
-    stepNext()
-  }, STEP_INTERVAL_MS)
+  timer = setInterval(() => { if (running) stepNext() }, STEP_INTERVAL_MS)
 }
+const stopAuto = () => { if (timer) { clearInterval(timer); timer = null } }
 
-const stopAuto = () => {
-  if (timer) {
-    clearInterval(timer)
-    timer = null
-  }
-}
-
-/**
- * Expuestos a los eventos del template
- */
-const play = () => {
-  if (running) return
-  running = true
-  startAuto()
-}
-
+const play = () => { if (running) return; running = true; startAuto() }
 const pause = () => {
   running = false
   stopAuto()
-  if (animRaf) {
-    cancelAnimationFrame(animRaf)
-    animRaf = null
-  }
+  if (animRaf) { cancelAnimationFrame(animRaf); animRaf = null }
 }
 
-/**
- * Recalcular al montar y al redimensionar para que el “grupo” coincida visualmente.
- */
 const handleResize = () => {
-  // Ajuste fino para que el snap no quede “a medias” al cambiar el viewport:
   const wrap = wrapRef.value
   if (!wrap) return
-  // Realineamos al múltiplo más cercano del paso*perView
   const { cardStep, perView, half } = getMetrics()
   if (!cardStep || !half) return
   const group = cardStep * perView
@@ -204,15 +183,11 @@ const handleResize = () => {
 }
 
 onMounted(() => {
-  // Inicia autoplay
   running = true
   startAuto()
-  // Ajustes responsivos
   window.addEventListener('resize', handleResize, { passive: true })
-  // Primer alineado
   handleResize()
 })
-
 onBeforeUnmount(() => {
   pause()
   window.removeEventListener('resize', handleResize)

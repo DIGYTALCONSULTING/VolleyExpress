@@ -58,10 +58,38 @@
 
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
-import peluches from '../data/peluches.json'
+import peluchesData from '../data/peluches.json'
 
-// Duplicamos para loop infinito sin salto visible
-const peluchesDuplicados = computed(() => [...peluches, ...peluches])
+// ---------- Resolver robusto de imágenes ----------
+function resolveImg(path) {
+  if (!path) return ''
+  if (/^https?:\/\//i.test(path)) return path
+  // /public: si viene como /assets/... se sirve directo
+  if (/^\/assets\//i.test(path)) return path
+  // src/assets: normaliza y resuelve con Vite
+  const cleaned = path
+    .replace(/^\/?src\//, '')
+    .replace(/^\/?assets\//, '')
+  try {
+    return new URL(`../assets/${cleaned}`, import.meta.url).href
+  } catch {
+    return path
+  }
+}
+
+// Items con imagen resuelta + defaults seguros
+const items = computed(() =>
+  (peluchesData ?? []).map(p => ({
+    ...p,
+    imagen: resolveImg(p.imagen || p.img),
+    nombre: p.nombre ?? '',
+    descripcion: p.descripcion ?? '',
+    precio: p.precio ?? '',
+  }))
+)
+
+// Duplicamos para loop infinito sin “salto”
+const peluchesDuplicados = computed(() => [...items.value, ...items.value])
 
 const wrapRef = ref(null)
 const trackRef = ref(null)
@@ -70,104 +98,68 @@ let timer = null
 let animRaf = null
 let running = true
 
-// Configuración
-const STEP_INTERVAL_MS = 2500  // frecuencia del avance
-const ANIM_DURATION_MS = 600   // duración de la animación del salto
-const GAP_PX = 24              // gap-6 ≈ 24px
+// Autoplay
+const STEP_INTERVAL_MS = 2500
+const ANIM_DURATION_MS = 600
+const GAP_PX = 24
 
-// Cálculo de métricas (ancho de tarjeta y cuántas caben por vista: máx. 4)
 const getMetrics = () => {
   const wrap = wrapRef.value
   const track = trackRef.value
   if (!wrap || !track) return { cardStep: 0, perView: 1, half: 0 }
-
   const firstCard = track.children?.[0]
   if (!firstCard) return { cardStep: 0, perView: 1, half: 0 }
-
   const cardWidth = firstCard.offsetWidth
   const cardStep = cardWidth + GAP_PX
   const perView = Math.max(1, Math.min(4, Math.floor((wrap.clientWidth + GAP_PX) / cardStep)))
   const half = track.scrollWidth / 2
-
   return { cardStep, perView, half }
 }
 
-// Animación suave (easeInOutCubic)
 const animateTo = (targetLeft) => {
   const wrap = wrapRef.value
   if (!wrap) return
-
   const startLeft = wrap.scrollLeft
   const delta = targetLeft - startLeft
   const startTime = performance.now()
-
   const tick = (now) => {
     const t = Math.min(1, (now - startTime) / ANIM_DURATION_MS)
     const ease = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
     wrap.scrollLeft = startLeft + delta * ease
-    if (t < 1 && running) {
-      animRaf = requestAnimationFrame(tick)
-    } else {
-      animRaf = null
-    }
+    if (t < 1 && running) animRaf = requestAnimationFrame(tick)
+    else animRaf = null
   }
   if (animRaf) cancelAnimationFrame(animRaf)
   animRaf = requestAnimationFrame(tick)
 }
 
-// Avanza en grupos de tarjetas (según ancho visible, máx. 4)
 const stepNext = () => {
   const wrap = wrapRef.value
   const track = trackRef.value
   if (!wrap || !track) return
-
   const { cardStep, perView, half } = getMetrics()
   if (!cardStep || !half) return
-
   let target = wrap.scrollLeft + cardStep * perView
-
-  // Reacomodo para el loop (lista duplicada)
   if (target >= half) {
     target = target - half
     wrap.scrollLeft = wrap.scrollLeft - half
   }
-
   animateTo(target)
 }
 
-// Autoplay
 const startAuto = () => {
   if (timer) return
-  timer = setInterval(() => {
-    if (!running) return
-    stepNext()
-  }, STEP_INTERVAL_MS)
+  timer = setInterval(() => { if (running) stepNext() }, STEP_INTERVAL_MS)
 }
+const stopAuto = () => { if (timer) { clearInterval(timer); timer = null } }
 
-const stopAuto = () => {
-  if (timer) {
-    clearInterval(timer)
-    timer = null
-  }
-}
-
-// Handlers expuestos
-const play = () => {
-  if (running) return
-  running = true
-  startAuto()
-}
-
+const play = () => { if (running) return; running = true; startAuto() }
 const pause = () => {
   running = false
   stopAuto()
-  if (animRaf) {
-    cancelAnimationFrame(animRaf)
-    animRaf = null
-  }
+  if (animRaf) { cancelAnimationFrame(animRaf); animRaf = null }
 }
 
-// Re-alineo en resize para que el snap quede perfecto
 const handleResize = () => {
   const wrap = wrapRef.value
   if (!wrap) return

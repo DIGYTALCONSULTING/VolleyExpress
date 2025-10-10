@@ -1,26 +1,26 @@
 [
   {
-    "nombre": "Peluche Mikasa Mini",
+    "nombre": "Peluche Molten",
     "descripcion": "Mini balón de voleibol en peluche, ideal para fans y decoración.",
+    "precio": "$60.000",
+    "imagen": "/src/assets/b_molten_peluche.png"
+  },
+  {
+    "nombre": "Peluche Multicolor Voley",
+    "descripcion": "Replica de balon multicolor de voley",
+    "precio": "$60.000",
+    "imagen": "/src/assets/b_multicolor_peluche.png"
+  },
+  {
+    "nombre": "Peluche Wilson Basket",
+    "descripcion": "Mini balón de Basket en peluche, ideal para fans y decoración.",
     "precio": "$65.000",
-    "imagen": "/src/assets/peluche_mikasa_mini.png"
+    "imagen": "/src/assets/b_wilson_peluche.png"
   },
   {
     "nombre": "Peluche Jugador Voley",
     "descripcion": "Muñeco temático de voleibol, suave y coleccionable.",
     "precio": "$79.000",
-    "imagen": "/src/assets/peluche_jugador_voley.png"
-  },
-  {
-    "nombre": "Peluche Mikasa Mini",
-    "descripcion": "Mini balón de voleibol en peluche, ideal para fans y decoración.",
-    "precio": "$65.000",
-    "imagen": "/src/assets/peluche_mikasa_mini.png"
-  },
-  {
-    "nombre": "Peluche Jugador Voley",
-    "descripcion": "Muñeco temático de voleibol, suave y coleccionable.",
-    "precio": "$79.000",
-    "imagen": "/src/assets/peluche_jugador_voley.png"
+    "imagen": "/src/assets/balon_peluche_grande.png"
   }
 ]

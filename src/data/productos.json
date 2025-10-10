@@ -6,16 +6,16 @@
     "imagen": "/src/assets/balon_mikasa_v330w.png"
   },
   {
-    "nombre": "Mikasa V200W",
-    "descripcion": "Balón oficial FIVB, 18 paneles, microfibra sintética, tamaño oficial T.5",
-    "precio": "$450.000",
-    "imagen": "/src/assets/balon_mikasa_v200w.png"
+    "nombre": "Mangas",
+    "descripcion": "Mangas que amortiguan impactos, transpirables y ergonómicas",
+    "precio": "$50.000",
+    "imagen": "/src/assets/mangas.png"
   },
   {
     "nombre": "Rodilleras Pro",
     "descripcion": "Protección de alto impacto, espuma EVA, transpirables y ergonómicas",
     "precio": "$90.000",
-    "imagen": "/src/assets/rodilleras_voley.png"
+    "imagen": "/src/assets/rodilleras.png"
   },
   {
     "nombre": "Red Profesional",
