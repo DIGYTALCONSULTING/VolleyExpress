@@ -96,35 +96,40 @@
 <script setup>
 import { onMounted, onBeforeUnmount, ref, computed } from 'vue'
 
-// Carga robusta de assets para GitHub Pages (evita rutas rotas)
+// Video
 const heroVideo = new URL('../assets/Hero_video_16_9.mp4', import.meta.url).href
 
-// ⬇️ NUEVO: Importa productos desde JSON
-// Estructura recomendada del JSON al final.
+// Productos desde JSON
 import productosData from '../data/productos_hero.json'
 
-// Resolver ruta de imagen:
-// - Si es URL absoluta (http/https) la deja tal cual.
-// - Si es un nombre/relativo, lo busca en /src/assets usando new URL(..., import.meta.url)
+// Resolvedor robusto de imágenes
 function resolveImg(path) {
   if (!path) return ''
   if (/^https?:\/\//i.test(path)) return path
-  // Limpia posibles prefijos tipo /src/assets/ o src/assets/
-  const cleaned = path.replace(/^\/?src\//, '').replace(/^assets\//, '')
+  // Limpia prefijos comunes ("/src/assets" o "src/assets" o "assets")
+  const cleaned = path
+    .replace(/^\/?src\//, '')
+    .replace(/^assets\//, '')
+    .replace(/^\/?assets\//, '')
   try {
     return new URL(`../assets/${cleaned}`, import.meta.url).href
   } catch {
+    // Último recurso: deja el path tal cual
     return path
   }
 }
 
-// Productos provenientes del JSON
-const productos = productosData.map(p => ({
+// 🔧 FIX: map con fallbacks y defaults
+const productos = (productosData ?? []).map(p => ({
   ...p,
-  img: resolveImg(p.img),
+  // usa p.img si existe; si no, usa p.imagen (como en tu JSON)
+  img: resolveImg(p.img || p.imagen),
+  // evita undefined en el template
+  descripcion: p.descripcion ?? '',
+  precio: p.precio ?? '',
 }))
 
-// Duplicamos el arreglo para simular carrusel infinito
+// Duplicado para carrusel infinito
 const duplicated = computed(() => [...productos, ...productos])
 
 const wrapRef = ref(null)
@@ -134,7 +139,6 @@ let timer = null
 const CARD_GAP = 24 // gap-6
 const STEP_MS = 2800
 
-// Avance por “card” completa
 function next () {
   const wrap = wrapRef.value
   if (!wrap) return
@@ -156,23 +160,16 @@ function prev () {
 }
 
 function fixLoop (isPrev = false) {
-  // Si llegamos muy al final o al principio, reposicionamos sin “salto” visual
   const wrap = wrapRef.value
   const track = trackRef.value
   if (!wrap || !track) return
   const maxScroll = track.scrollWidth - wrap.clientWidth
-
-  // margen de tolerancia
   const pad = 8
-
-  // Al final: volvemos al inicio equivalente
   if (wrap.scrollLeft + pad >= maxScroll) {
     wrap.scrollLeft = 0
   }
-
-  // Al principio (si usamos prev): saltamos al espejo del final
   if (isPrev && wrap.scrollLeft <= 0) {
-    wrap.scrollLeft = maxScroll - 1
+    wrap.scrollLeft = Math.max(maxScroll - 1, 0)
   }
 }
 
@@ -180,7 +177,6 @@ function play () {
   if (timer) return
   timer = setInterval(next, STEP_MS)
 }
-
 function pause () {
   if (timer) {
     clearInterval(timer)
@@ -188,7 +184,6 @@ function pause () {
   }
 }
 
-// Dots “aproximados”: 3 grupos
 const activeDot = ref(1)
 function updateDot () {
   const wrap = wrapRef.value
