@@ -22,6 +22,11 @@
     "descripcion": "Red oficial de voleibol, nylon reforzado, medidas reglamentarias, resistente al exterior",
     "precio": "$300.000",
     "imagen": "/src/assets/red_voley.png"
+  },
+  {
+    "nombre": "Red Profesional",
+    "descripcion": "Red oficial de voleibol, nylon reforzado, medidas reglamentarias, resistente al exterior",
+    "precio": "$300.000",
+    "imagen": "/src/assets/red_voley.png"
   }
-
 ]
