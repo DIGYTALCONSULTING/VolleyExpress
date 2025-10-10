@@ -52,8 +52,9 @@
             <a class="cursor-pointer text-base font-sans" href="#Peluches" @click="closeMobile">Peluches</a>
             <a class="cursor-pointer text-base font-sans" href="#Servicios" @click="closeMobile">Servicios</a>
             <a class="cursor-pointer text-base font-sans" href="#Proceso_pedido" @click="closeMobile">Proceso de Pedido</a>
-            <a class="cursor-pointer text-base font-sans" href="#Catalogo_completo" @click="closeMobile">Catálogo completo</a>
-            <a class="cursor-pointer text-base font-sans" href="#Contactanos" @click="closeMobile">Contáctanos</a>
+            <a class="cursor-pointer text-base font-sans" href="/public/catalogo_voleyexpress.pdf"  download="VoleyExpressShop-Catalogo.pdf" @click="closeMobile">Catálogo completo</a>            
+            <a class="cursor-pointer text-base font-sans" href="#Conocenos" @click="closeMobile">Contáctanos</a>
+            
           </div>
         </div>
       </transition>
