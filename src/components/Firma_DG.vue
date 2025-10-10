@@ -9,10 +9,10 @@
           rel="noopener"
           class="ml-1 font-semibold text-[#00A884] hover:text-[#00C46E] transition-colors duration-300"
         >
-          Digytal Consulting
+          Digytal Consulting Celular 3144706996
         </a>
       </p>
-
+      
       <a
         href="https://wa.me/573144706996"
         target="_blank"
@@ -24,6 +24,7 @@
         </svg>
         Contactar por WhatsApp
       </a>
+
     </div>
   </footer>
 </template>
