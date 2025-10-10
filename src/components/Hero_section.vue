@@ -52,7 +52,7 @@
               class="snap-start shrink-0 w-[85%] sm:w-[48%] md:w-[46%] lg:w-[31%] xl:w-[30%]"
             >
               <div class="h-full rounded-2xl border border-gray-200 bg-white shadow-xl shadow-green-800/100 p-4 flex flex-col">
-
+                <h1 class="font-bold">Favorito</h1>
                 <div class="aspect-square w-full rounded-xl overflow-hidden bg-gray-50">
                   <img
                     :src="p.img"
