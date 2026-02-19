@@ -40,7 +40,7 @@ import PichuChatbot from './components/PichuChatbot.vue'
 
     <!-- Proceso de envío -->
     <section>
-      <Process_send_section msg="" />
+      <process_send_section msg="" />
     </section>
 
     <!-- Conócenos / confianza -->

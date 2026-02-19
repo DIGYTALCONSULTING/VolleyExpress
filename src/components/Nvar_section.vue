@@ -16,7 +16,7 @@
             <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Accesorios">Accesorios</a>
             <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Peluches">Peluches</a>
             <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="/public/catalogo_voleyexpress.pdf" download="VoleyExpressShop-Catalogo.pdf" rel="noopener">Catálogo</a>
-            <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Proceso_pedido">Proceso de Pedido</a>
+            <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#proceso_pedido">Proceso de Pedido</a>
             <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Conocenos">Conócenos</a>
           </div>
 
