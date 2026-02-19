@@ -1,11 +1,11 @@
 [
   {
-    "title": "Política de Tratamiento de Datos Personales",
-    "version": "2.0",
-    "updated_at": "2025-09-27",
+    "title": "POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES – VOLLEY EXPRESS",
+    "version": "4.0",
+    "updated_at": "2026-02-10",
     "consent_text": "Autorizo de manera previa, expresa e informada a Volley Express para el tratamiento de mis datos personales, incluyendo mi número celular, con la finalidad de contacto, atención comercial, envío de información, ofertas y promociones a través de WhatsApp y otros canales autorizados.",
     "full_text": [
-      "Esta Política de Tratamiento de Datos Personales describe las finalidades, derechos y canales disponibles para su ejercicio, de conformidad con la Ley 1581 de 2012, el Decreto 1377 de 2013, la Ley 1266 de 2008 y demás normas complementarias en Colombia.",
+      "En cumplimiento de la Ley 1581 de 2012, el Decreto 1377 de 2013, la Ley 1266 de 2008 y demás normas aplicables en Colombia, Volley Express establece la siguiente política de tratamiento de datos personales.",
       "Volley Express recolecta y trata datos personales bajo los principios de legalidad, finalidad, libertad, veracidad, transparencia, acceso y circulación restringida, seguridad y confidencialidad.",
       "El titular de los datos podrá ejercer sus derechos de conocer, actualizar, rectificar y suprimir información personal, así como revocar la autorización otorgada, en cualquier momento, mediante los canales indicados en esta política.",
       "La información será conservada únicamente por el tiempo necesario para cumplir las finalidades aquí descritas y en cumplimiento de las obligaciones legales aplicables.",
@@ -15,26 +15,30 @@
     "sections": [
       {
         "heading": "1. Finalidades",
-        "text": "Gestionar solicitudes, consultas y quejas; contactar por los canales autorizados incluyendo WhatsApp; enviar comunicaciones comerciales, promocionales o publicitarias sobre productos, servicios y eventos; realizar análisis internos de mercado y mejorar la experiencia de los usuarios."
+        "text": "Gestionar solicitudes, consultas y quejas; contactar al titular por los canales autorizados incluyendo WhatsApp; enviar comunicaciones comerciales, promocionales o publicitarias sobre productos, servicios y eventos; realizar análisis internos de mercado y mejorar la experiencia de los usuarios."
       },
       {
         "heading": "2. Derechos del Titular",
         "text": "Conocer, actualizar, rectificar, suprimir información personal y revocar la autorización en cualquier momento, salvo que exista un deber legal o contractual de mantener los datos. Estos derechos podrán ser ejercidos por el titular o su representante debidamente acreditado."
       },
       {
-        "heading": "3. Medidas de Seguridad",
+        "heading": "3. Principios de Tratamiento",
+        "text": "Los datos personales se tratan bajo los principios de legalidad, finalidad, libertad, veracidad, transparencia, acceso y circulación restringida, seguridad y confidencialidad."
+      },
+      {
+        "heading": "4. Medidas de Seguridad",
         "text": "Se adoptan controles administrativos, técnicos y físicos que buscan garantizar la confidencialidad, integridad y disponibilidad de los datos personales, reduciendo el riesgo de accesos no autorizados o tratamientos indebidos."
       },
       {
-        "heading": "4. Transferencias y Transmisiones",
-        "text": "Podremos transmitir o transferir datos a terceros encargados o aliados estratégicos, nacionales o extranjeros, únicamente para el cumplimiento de las finalidades aquí informadas y bajo estándares de seguridad y confidencialidad."
+        "heading": "5. Transferencias y Transmisiones",
+        "text": "Los datos podrán ser transmitidos o transferidos a terceros encargados o aliados estratégicos, nacionales o extranjeros, únicamente para el cumplimiento de las finalidades aquí informadas y bajo estándares de seguridad y confidencialidad."
       },
       {
-        "heading": "5. Canales de Atención",
-        "text": "Para ejercer tus derechos sobre el tratamiento de datos, puedes escribirnos al correo 'volleyexpres@gmail.com' con el asunto 'Datos Personales' o comunicarte al teléfono 3004311280 en horario hábil."
+        "heading": "6. Canales de Atención",
+        "text": "Para ejercer tus derechos sobre el tratamiento de datos, puedes escribirnos al correo 'volleyexpress@gmail.com' con el asunto 'Datos Personales' o comunicarte al teléfono +57 3004311280 en horario hábil."
       },
       {
-        "heading": "6. Vigencia de la Autorización",
+        "heading": "7. Vigencia de la Autorización",
         "text": "La autorización otorgada por el titular permanecerá vigente mientras sea necesario para las finalidades descritas en esta política, y hasta tanto el titular no solicite la supresión de sus datos o la revocatoria de la autorización."
       }
     ]

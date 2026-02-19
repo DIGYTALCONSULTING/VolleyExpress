@@ -1,32 +1,502 @@
 [
   {
-    "nombre": "Mikasa V330W",
-    "descripcion": "Entrenamiento exigente, 18 paneles, sintético, Tamaño 65–67 cm (T.5), peso 260–280 g",
+    "referencia": "Rodilleras ASIC LOW PROFILE",
+    "descripcion": "Las rodilleras ASICS Gel Low Profile eliminan el volumen excesivo sin comprometer la amortiguación. Su diseño de perfil bajo es perfecto para jugadoras que buscan una estética limpia y una movilidad total. Diseño Low Profile: Altura reducida para evitar restricciones. Corte Ergonómico y contorneado al frente de la rodilla. Gestión de Humedad: Tejido transpirable de secado rápido.",
+    "precio": "$170.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_asic_low_profile_negra.webp",
+    "color": "NEGRO",
+    "size": "JR / ADULTO",
+    "material": "Mezcla de Nylon, Goma y Spandex de alta durabilidad.",
+    "uso": "Competencia / Entrenamießnto"
+  },
+  {
+    "referencia": "Rodilleras ASIC LOW PROFILE",
+    "descripcion": "Las rodilleras ASICS Gel Low Profile eliminan el volumen excesivo sin comprometer la amortiguación. Su diseño de perfil bajo es perfecto para jugadoras que buscan una estética limpia y una movilidad total. Diseño Low Profile: Altura reducida para evitar restricciones. Corte Ergonómico y contorneado al frente de la rodilla. Gestión de Humedad: Tejido transpirable de secado rápido.",
+    "precio": "$170.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_asic_low_profile.webp",
+    "color": "BLANCO",
+    "size": "JR / ADULTO",
+    "material": "Mezcla de Nylon, Goma y Spandex de alta durabilidad.",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras ERREA TOKYO",
+    "descripcion": "Con un diseño ligeramente más compacto que la versión Evolution, la Tokyo clásica ofrece una movilidad superior manteniendo un grosor de acolchado profesional. Su tejido elástico transpirable garantiza confort térmico incluso en los momentos más intensos del set. Calidad italiana para jugadoras exigentes. Tipo de Acolchado: Espuma de Poliuretano Expandido de alta densidad. Construcción Anatómica: Moldeada para seguir la curvatura natural de la rótula.",
+    "precio": "$210.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_errea_tokyo_negras.webp",
+    "color": "NEGRO",
+    "size": "S/M",
+    "material": "Tejido técnico de alta resistencia (mezcla de poliéster y algodón).",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras ERREA TOKYO",
+    "descripcion": "Con un diseño ligeramente más compacto que la versión Evolution, la Tokyo clásica ofrece una movilidad superior manteniendo un grosor de acolchado profesional. Calidad italiana para jugadoras exigentes. Protección Lateral: Cobertura frontal completa con refuerzo en los bordes. Tecnología de Tejido: Circular sin costuras para evitar rozaduras.",
+    "precio": "$210.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_errea_tokyo.webp",
+    "color": "BLANCO",
+    "size": "S/M, M/L",
+    "material": "Tejido técnico de alta resistencia (mezcla de poliéster y algodón).",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras ERREA TOKYO EVOLUTION",
+    "descripcion": "Destacadas por su acolchado anatómico de gran grosor, estas rodilleras son ideales para jugadoras que sufren impactos constantes o buscan una protección extra. Su ajuste elástico asegura que la rodillera permanezca en su sitio sin apretar en exceso. Ergonomía: Corte envolvente. Ventilación: Tejido microperforado.",
+    "precio": "$220.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_errea_tokyo_evolution_negras.webp",
+    "color": "NEGRO",
+    "size": "S/M, M/L",
+    "material": "Composición de Poliéster, Algodón y Elástico de alta densidad",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras ERREA TOKYO EVOLUTION",
+    "descripcion": "Destacadas por su acolchado anatómico de gran grosor, estas rodilleras son ideales para jugadoras que sufren impactos constantes o buscan una protección extra. Su ajuste elástico asegura que la rodillera permanezca en su sitio sin apretar en exceso. Ergonomía: Corte envolvente.",
+    "precio": "$220.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_errea_tokyo_evolution.webp",
+    "color": "AZUL MARINO",
+    "size": "S/M",
+    "material": "Composición de Poliéster, Algodón y Elástico de alta densidad",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras Mizuno SL2 Elite",
+    "descripcion": "Diseñadas específicamente para atletas que buscan la mezcla perfecta entre protección de alto impacto y movilidad sin restricciones. Gracias a su diseño de perfil bajo, ofrecen seguridad sin volumen excesivo. Construidas con espuma de EVA de alta densidad.",
+    "precio": "$180.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_sl2_elite_negras.webp",
+    "color": "NEGRO",
+    "size": "S/M, M/L",
+    "material": "92% Poliéster, 13% Rayón, 7% Elástico",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras Mizuno SL2 Elite",
+    "descripcion": "Diseñadas específicamente para atletas que buscan la mezcla perfecta entre protección de alto impacto y movilidad sin restricciones. Diseño anatómico que se ajusta a tus movimientos. Espuma de EVA de alta densidad.",
+    "precio": "$180.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_sl2_elite.Webp",
+    "color": "BLANCO",
+    "size": "S/M, M/L",
+    "material": "92% Poliéster, 13% Rayón, 7% Elástico",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras Mizuno T10 Plus",
+    "descripcion": "Diseñadas para ofrecer una cobertura total y una absorción de impactos superior sin sacrificar la movilidad. Diseño articulado y tejido transpirable con tecnología de gestión de humedad.",
+    "precio": "$150.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_t10_plus.webp",
+    "color": "NEGRO",
+    "size": "JR / ADULTO",
+    "material": "68% Poliéster, 20% Rayón, 12% Elástico",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras Mizuno T10 Plus",
+    "descripcion": "Diseñadas para ofrecer una cobertura total y una absorción de impactos superior sin sacrificar la movilidad. Resistencia, confort y estilo en una sola pieza.",
+    "precio": "$150.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_t10_plus_b.webp",
+    "color": "BLANCO",
+    "size": "JR / ADULTO",
+    "material": "68% Poliéster, 20% Rayón, 12% Elástico",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras Mizuno LR6",
+    "descripcion": "Rodillera de perfil bajo para el juego moderno. Ajuste aerodinámico de 6 pulgadas, ofrece protección precisa en los puntos de contacto clave. Ligereza extrema, rendimiento profesional.",
+    "precio": "$210.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_lr6.webp",
+    "color": "NEGRO",
+    "size": "S/M, M/L",
+    "material": "50% Poliéster, 22% Rayón, 28% Elástico",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras Mizuno LR6",
+    "descripcion": "Rodillera de perfil bajo para el juego moderno. Con un ajuste aerodinámico de 6 pulgadas. Ideal para jugadoras que priorizan la velocidad y una estética limpia.",
+    "precio": "$210.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_lr6_blancas.webp",
+    "color": "BLANCO",
+    "size": "S/M, M/L",
+    "material": "50% Poliéster, 22% Rayón, 28% Elástico",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras Nike Streak",
+    "descripcion": "Diseñadas con espuma de alta densidad que amortigua cada caída. Su tejido con tecnología Dri-FIT capilariza el sudor. Diseño ergonómico para minimizar el roce.",
+    "precio": "$210.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_nike_ streak_negras.webp",
+    "color": "NEGRO",
+    "size": "S/M, M/L",
+    "material": "46% Poliéster, 25% Nylon, 17% EVA, 12% Elastico",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras Nike Streak",
+    "descripcion": "Diseñadas con espuma de alta densidad que amortigua cada caída. Tejido Dri-FIT para mantenerte seca y ligera. Protección suave, rendimiento duro.",
+    "precio": "$210.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_nike_streak_blancas.webp",
+    "color": "BLANCO",
+    "size": "S/M, M/L",
+    "material": "46% Poliéster, 25% Nylon, 17% EVA, 12% Elastico",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras Wonder Tipo Slider",
+    "descripcion": "Seguridad y resistencia para el día a día. Una rodillera robusta con un diseño clásico de cobertura total. Acolchado de Espuma de EVA de alta densidad.",
+    "precio": "$75.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_wonder_tipo_slider.webp",
+    "color": "NEGRO",
+    "size": "XS/S, S/M, M/L",
+    "material": "Mezcla de Algodón, Poliéster y Elástico de alta tensión.",
+    "uso": "Entrenamientos intensivos y jugadoras en etapa de formación."
+  },
+  {
+    "referencia": "Balón Mikasa BV354TV Good Vibes",
+    "descripcion": "Diseñado pensando en la comodidad del jugador. Ofrece una suavidad excepcional. Tamaño N° 5 (Medida Oficial). Peso 260 - 280 g.",
+    "precio": "$150.000",
+    "imagen": "/img/implementos//balones/balon_mikasa_bv354tv_'good_vibes'.webp",
+    "color": "AZUL / FUCSIA",
+    "size": "4",
+    "material": "Construcción cosido a máquina de alta precisión",
+    "uso": "Entrenamiento, Iniciación y Recreación / Indoor - Outdoor"
+  },
+  {
+    "referencia": "Balon Mikasa Beach Pro BV550C",
+    "descripcion": "Calidad premium, tecnología japonesa y el sello de aprobación de la élite mundial. Más agarre, menos absorción de agua. Certificación FIVB.",
+    "precio": "$420.000",
+    "imagen": "/img/implementos//balones/balon_mikasa_beach_pro_bv550c.webp",
+    "color": "AZUL / NARANJA / BLANCO",
+    "size": "5",
+    "material": "Cuero sintético de alta gama con tecnología Dimple",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Balon Molten V58SLC RETRO",
+    "descripcion": "Súper suave al contacto. Ideal para perfeccionar tu técnica. Cosido a máquina de alta precisión. Tamaño N° 5 (Medida Oficial).",
+    "precio": "$155.000",
+    "imagen": "/img/implementos/balones/balon_molten_v58slc_retro.webp",
+    "color": "VERDE / ROJO / BLANCO",
+    "size": "5",
+    "material": "Cuero Sintético Soft Touch",
+    "uso": "Entrenamiento y Recreación Indoor (Sala)"
+  },
+  {
+    "referencia": "Balon Molten V4M4000",
+    "descripcion": "Ideal para equipos que buscan un balón de larga vida útil sin sacrificar la sensación profesional. Construcción laminada (18 paneles). Tamaño N° 4.",
+    "precio": "$210.000",
+    "imagen": "/img/implementos/balones/balon_molten_v4m4000.webp",
+    "color": "VERDE / ROJO / BLANCO",
+    "size": "4",
+    "material": "Cuero Sintético (PU) de alta calidad",
+    "uso": "Entrenamiento y Competición Indoor (Sala)"
+  },
+  {
+    "referencia": "Balon Molten V5M4000",
+    "descripcion": "El balón equilibrado por excelencia: tacto suave de cuero sintético y durabilidad para entrenamientos intensos. Tamaño N° 5. Laminado de alta precisión.",
+    "precio": "$220.000",
+    "imagen": "/img/implementos/balones/balon_molten_v5m4000.webp",
+    "color": "VERDE / ROJO / BLANCO",
+    "size": "5",
+    "material": "Cuero Sintético (PU) Soft Touch",
+    "uso": "Competición Indoor / Entrenamiento de Club"
+  },
+  {
+    "referencia": "Balon Molten V5M5000",
+    "descripcion": "Pieza de ingeniería deportiva aprobada por la FIVB. Tecnología FLISTATEC para trayectoria de vuelo predecible y control sin igual. Tamaño N° 5.",
+    "precio": "$360.000",
+    "imagen": "/img/implementos/balones/balon_molten_v5m5000.webp",
+    "color": "VERDE / ROJO / BLANCO",
+    "size": "5",
+    "material": "Cuero Sintético Premium de Microfibra",
+    "uso": "Competición Profesional y Élite Indoor"
+  },
+  {
+    "referencia": "Balon Mikasa V430W",
+    "descripcion": "Diseñado para clubes y escuelas. Estética de alta competición y durabilidad superior. Diseño de 18 paneles. Tamaño N° 4.",
+    "precio": "$190.000",
+    "imagen": "/img/implementos/balones/balon_mikasa_v430w.webp",
+    "color": "AZUL / AMARILLO",
+    "size": "4",
+    "material": "Cuero Sintético Premium",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Balon Mikasa V330W-L",
+    "descripcion": "Elección predilecta para categorías juveniles y escolares que prefieren un tacto más suave. Edición ligera perfecta para desarrollo inicial.",
     "precio": "$200.000",
-    "imagen": "/src/assets/balon_mikasa_v330w.png"
+    "imagen": "/img/implementos/balones/balon_mikasa_v330w-l.webp",
+    "color": "AZUL / AMARILLO",
+    "size": "5",
+    "material": "Cuero sintético muy suave al tacto.",
+    "uso": "Competencia / Entrenamiento"
   },
   {
-    "nombre": "Mangas",
-    "descripcion": "Mangas que amortiguan impactos, transpirables y ergonómicas",
+    "referencia": "Balon Mikasa V330W",
+    "descripcion": "Perfecto para clubes y academias. Cuero sintético de alto grado (PU liso). Talla N°5, circunferencia 65-67 cm, peso 260-280 gramos.",
+    "precio": "$200.000",
+    "imagen": "/img/implementos/balones/balon_mikasa_v330w.webp",
+    "color": "AZUL / AMARILLO",
+    "size": "5",
+    "material": "Cuero Sintético Premium",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Balon Mikasa V200W",
+    "descripcion": "Balón Oficial FIVB exclusivo de juego. Función Anti-Sudor Nano Balloon Silica. Visibilidad Maximizada.",
+    "precio": "$430.000",
+    "imagen": "/img/implementos/balones/balon_mikasa_v200w.webp",
+    "color": "AZUL / AMARILLO",
+    "size": "5",
+    "material": "Cuero Sintético Premium",
+    "uso": "Competencia"
+  },
+  {
+    "referencia": "Aguja",
+    "descripcion": "Fabricadas en metal ultra resistente con entrada universal de rosca. Punta redondeada para proteger la válvula. Perfecta para fútbol, básquet y voleibol.",
+    "precio": "$1.000",
+    "imagen": "/img/implementos/otros/aguja.webp",
+    "color": "Metalico",
+    "size": "5 CM",
+    "material": "Acero inoxidable",
+    "uso": "Estandar"
+  },
+  {
+    "referencia": "Cinta Kinesiologica",
+    "descripcion": "Diseñada para imitar la elasticidad de la piel. Proporciona soporte muscular sin restringir movimiento. Adhesivo hipoalergénico. Resistente al agua.",
+    "precio": "$35.000",
+    "imagen": "/img/implementos/otros/cinta_kinesiologica.webp",
+    "color": "Consultar Disponibilidad",
+    "size": "5 CM x 5 M",
+    "material": "95% Algodón, 5% Spandex (Libre de látex).",
+    "uso": "Soporte muscular y articular (3 a 5 días de uso)."
+  },
+  {
+    "referencia": "Esparadrapo Cinta Deportiva",
+    "descripcion": "Cinta de algodón no elástico con adhesivo de Óxido de Zinc. Proporciona soporte rígido e inmovilización máxima.",
+    "precio": "$15.000",
+    "imagen": "/img/implementos/otros/espaladrapo_cinta_deportiva_1pulgada.webp",
+    "color": "Blanco",
+    "size": "1 pulgada",
+    "material": "100% Algodón (no elástico).",
+    "uso": "Inmovilización, prevención de esguinces, protección de ampollas."
+  },
+  {
+    "referencia": "Esparadrapo Cinta Deportiva",
+    "descripcion": "Cinta de algodón no elástico con potente adhesivo para una inmovilización y protección máximas. Ideal para articulaciones y dedos.",
+    "precio": "$25.000",
+    "imagen": "/img/implementos/otros/espaladrapo_cinta_deportiva_2pulgadas.webp",
+    "color": "Blanco",
+    "size": "2 pulgadas",
+    "material": "100% Algodón (no elástico).",
+    "uso": "Inmovilización, prevención de esguinces, protección de ampollas."
+  },
+  {
+    "referencia": "Estabilizador Mueller",
+    "descripcion": "Control y soporte anti-torceduras. Estructura reforzada con correas cruzadas. Placas laterales de polímero y velcros de alta adherencia.",
+    "precio": "$160.000",
+    "imagen": "/img/implementos/otros/estabilizador_mueller.webp",
+    "color": "NEGRO",
+    "size": "16 cm Altura",
+    "material": "Neopreno transpirable y correas de nylon reforzado.",
+    "uso": "Prevención de esguinces, post-operatorio o debilidad ligamentosa."
+  },
+  {
+    "referencia": "Headband",
+    "descripcion": "Absorbe y evapora el sudor rápidamente. Tejido de rizo elástico que se mantiene en su sitio durante saltos y movimientos bruscos.",
+    "precio": "$25.000",
+    "imagen": "/img/implementos/otros/headband.webp",
+    "color": "Consultar Disponibilidad",
+    "size": "Ajustable / Universal",
+    "material": "Mezcla de Algodón, Nylon y Elastano de alta absorción.",
+    "uso": "Tenis, Voleibol, Crossfit, Running y Básquet."
+  },
+  {
+    "referencia": "Pantaloneta",
+    "descripcion": "Tejido ultra ligero con tecnología de secado rápido. Corte ergonómico que permite apertura de pierna completa para saltos y sprints.",
+    "precio": "$35.000",
+    "imagen": "/img/implementos/otros/pantaloneta.webp",
+    "color": "NEGRO",
+    "size": "M / L",
+    "material": "Algodón",
+    "uso": "Estandar / Gimnasio"
+  },
+  {
+    "referencia": "Aerosol Nabico",
+    "descripcion": "Fórmula mentolada con aceites naturales. Rápida absorción, no mancha la ropa. Proporciona sensación de frescura intensa.",
     "precio": "$50.000",
-    "imagen": "/src/assets/mangas.png"
+    "imagen": "/img/implementos/otros/aerosolnavico.webp",
+    "color": "NARANJA",
+    "size": "250 mL",
+    "material": "Metal o plástico",
+    "uso": "Sensación fría al contacto con la piel."
   },
   {
-    "nombre": "Rodilleras Pro",
-    "descripcion": "Protección de alto impacto, espuma EVA, transpirables y ergonómicas",
-    "precio": "$90.000",
-    "imagen": "/src/assets/rodilleras.png"
+    "referencia": "Aerosol Nabico Herbal",
+    "descripcion": "Fórmula delicada con menos mentol y aroma herbal. Sensación fría de rápida absorción que perdura.",
+    "precio": "$55.000",
+    "imagen": "/img/implementos/otros/aerosol_navico_herbal.webp",
+    "color": "VERDE",
+    "size": "250 mL",
+    "material": "Metal o plástico",
+    "uso": "Sensación fría al contacto con la piel."
   },
   {
-    "nombre": "Red Profesional",
-    "descripcion": "Red oficial de voleibol, nylon reforzado, medidas reglamentarias, resistente al exterior",
-    "precio": "$300.000",
-    "imagen": "/src/assets/red_voley.png"
+    "referencia": "Mangas Cortas",
+    "descripcion": "Largo de 20 cm, cubren el antebrazo sin restringir movimiento. Mezcla premium suave al tacto y transpirable. Ajuste de segunda piel.",
+    "precio": "$30.000",
+    "imagen": "/img/implementos/otros/mangas_cortas.webp",
+    "color": "NEGRO",
+    "size": "20 cm",
+    "material": "Mezcla premium de Nylon y Algodón",
+    "uso": "Competencia / Entrenamiento"
   },
   {
-    "nombre": "Red Profesional",
-    "descripcion": "Red oficial de voleibol, nylon reforzado, medidas reglamentarias, resistente al exterior",
-    "precio": "$300.000",
-    "imagen": "/src/assets/red_voley.png"
+    "referencia": "Mangas Cortas",
+    "descripcion": "Largo de 20 cm. Fabricadas con mezcla premium de Nylon y Algodón. Durabilidad extrema para partidos intensos.",
+    "precio": "$30.000",
+    "imagen": "/img/implementos/otros/mangas_cortas_blancas.webp",
+    "color": "BLANCO",
+    "size": "20 cm",
+    "material": "Mezcla premium de Nylon y Algodón",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Mangas Medium",
+    "descripcion": "Cobertura de 27 cm que protege desde el antebrazo hasta el codo. Soporte muscular que mejora la circulación y mantiene la temperatura.",
+    "precio": "$35.000",
+    "imagen": "/img/implementos/otros/mangas_medium.webp",
+    "color": "NEGRO",
+    "size": "27 cm",
+    "material": "Mezcla premium de Nylon y Algodón",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Mangas Medium",
+    "descripcion": "Cobertura extendida de 27 cm. Material ultra suave que absorbe el sudor y evita irritaciones. Elasticidad duradera.",
+    "precio": "$35.000",
+    "imagen": "/img/implementos/otros/mangas_medium_blancas.webp",
+    "color": "BLANCO",
+    "size": "27 cm",
+    "material": "Mezcla premium de Nylon y Algodón",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Mangas Medium",
+    "descripcion": "Protección frontal y lateral para el codo en caídas y recepciones. Mezcla técnica de Nylon y Algodón.",
+    "precio": "$35.000",
+    "imagen": "/img/implementos/otros/mangas_medium_estilo_negras.webp",
+    "color": "BLANCO/NEGRO",
+    "size": "27 cm",
+    "material": "Mezcla premium de Nylon y Algodón",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Mangas Medium",
+    "descripcion": "Equilibrio perfecto entre compresión y confort. Ayuda a mantener la temperatura muscular.",
+    "precio": "$35.000",
+    "imagen": "/img/implementos/otros/mangas_medium_rosadas.webp",
+    "color": "BLANCO/FUCSIA",
+    "size": "27 cm",
+    "material": "Mezcla premium de Nylon y Algodón",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Medias Cortas",
+    "descripcion": "Suavidad y frescura con mezcla de Nylon y Algodón. Ajuste ergonómico que evita ampollas. Largo de 20 cm sobre el tobillo.",
+    "precio": "$15.000",
+    "imagen": "/img/implementos/otros/medias_cortas.webp",
+    "color": "BLANCO",
+    "size": "20 cm",
+    "material": "Mezcla de Nylon y Algodón",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Medias Semi Profesionales",
+    "descripcion": "Protección total con refuerzo en talón y Aquiles. Compresión inteligente y suela acolchada para aterrizajes intensos. Diseño anatómico pie derecho/izquierdo.",
+    "precio": "$25.000",
+    "imagen": "/img/implementos/otros/medias_semiprofesionales.webp",
+    "color": "BLANCO",
+    "size": "9-11 / 10-12",
+    "material": "95% Poliéster, 4% Goma, Elastano y Nailon",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Medias Taloneras Mizuno",
+    "descripcion": "Tecnología DryLite que expulsa la humedad. Ajuste de segunda piel con mezcla de Poliéster y Elastano. Ligereza extrema sin bultos.",
+    "precio": "$50.000",
+    "imagen": "/img/implementos/otros/medias_taloneras_mizuno.webp",
+    "color": "BLANCO / NEGRO",
+    "size": "10-12",
+    "material": "Mezcla de Poliéster (97%) y Elastano (3%)",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Tobillera Elástica Miyagi M6908",
+    "descripcion": "Soporte dinámico con compresión firme para estabilizar la articulación. Diseño ultra-delgado para usar con calzado deportivo. Confort transpirable.",
+    "precio": "$35.000",
+    "imagen": "/img/implementos/otros/tobillera_elastica_miyagi_m6908.webp",
+    "color": "NEGRO",
+    "size": "S, M, L",
+    "material": "Material elástico de alta calidad transpirable",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodillera Tipo Strap Miyagi M6744",
+    "descripcion": "Soporte focalizado para el tendón rotuliano. Sistema de velcro de alta resistencia para ajuste milimétrico. Máxima movilidad para desplazamientos explosivos.",
+    "precio": "$25.000",
+    "imagen": "/img/implementos/otros/rodillera_tipo_strap_miyagi_m6744.webp",
+    "color": "NEGRO",
+    "size": "U (Universal)",
+    "material": "Neopreno suave y duradero",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Banda Elástica Wonder",
+    "descripcion": "28 LBS de tensión para fortalecer y mejorar potencia de salto. Fabricada con látex de alta calidad. Medida de 25 cm para rango controlado.",
+    "precio": "$17.000",
+    "imagen": "/img/implementos/otros/banda_elastica_wonder.webp",
+    "color": "AMARILLO",
+    "size": "25 CM / 28 LBS",
+    "material": "Látex de alta calidad",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Banda Elástica Wonder",
+    "descripcion": "22 LBS de resistencia, nivel intermedio-avanzado. Ideal para ganar explosividad y estabilidad defensiva. No se enrolla ni se desliza.",
+    "precio": "$14.000",
+    "imagen": "/img/implementos/otros/banda_elastica_wonder_negra.webp",
+    "color": "NEGRO",
+    "size": "25 CM / 22 LBS",
+    "material": "Látex altamente resistente",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Theraband",
+    "descripcion": "Resistencia Máxima (Dorado). Ideal para deportistas que buscan potencia explosiva. 1.5 metros de longitud para variedad de ejercicios.",
+    "precio": "$27.000",
+    "imagen": "/img/implementos/otros/theraband.webp",
+    "color": "DORADO",
+    "size": "1.5 M",
+    "material": "Látex de alta densidad",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Theraband",
+    "descripcion": "Resistencia Intensa (Gris). Perfecta para ganar potencia en hombros, brazos y piernas. Ligera y ultra resistente.",
+    "precio": "$23.000",
+    "imagen": "/img/implementos/otros/theraband_.webp",
+    "color": "GRIS",
+    "size": "1.5 M",
+    "material": "Látex de alta densidad",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Inflador Manual",
+    "descripcion": "Diseño ultra-ligero y compacto. Mecanismo suave para inflado eficiente. Incluye aguja estándar. Construcción resistente para uso diario.",
+    "precio": "$25.000",
+    "imagen": "/img/implementos/otros/inflador_manual.webp",
+    "color": "AZUL MARINO",
+    "size": "20 CM",
+    "material": "Plástico/Metal reforzado",
+    "uso": "Competencia / Entrenamiento"
   }
 ]

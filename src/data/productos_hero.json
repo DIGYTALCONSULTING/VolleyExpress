@@ -2,7 +2,7 @@
   {
     "id": "hero-molten-v5m4500",
     "nombre": "Molten V5M4500",    
-    "imagen": "/src/assets/balon_molten_4500.png",
+    "imagen": "/src/assets/balon_molten_4500.webp",
     "cta": {
       "label": "Comprar por WhatsApp",
       "url": "https://wa.me/3004311280"
@@ -12,7 +12,7 @@
   {
     "id": "hero-rodilleras-mizuno",
     "nombre": "Rodilleras Mizuno",    
-    "imagen": "/src/assets/rodilleras.png",
+    "imagen": "/src/assets/rodilleras.webp",
     "cta": {
       "label": "Quiero este producto",
       "url": "https://wa.me/3004311280"
@@ -22,27 +22,7 @@
   {
     "id": "hero-balon-peluche",
     "nombre": "Balón Peluche",
-    "imagen": "/src/assets/balon_peluche.png",
-    "cta": {
-      "label": "Pedir ahora",
-      "url": "https://wa.me/3004311280"
-    },
-    "categoria": "peluches"
-  },
-    {
-    "id": "hero-balon-peluche",
-    "nombre": "Balón Peluche",
-    "imagen": "/src/assets/balon_peluche.png",
-    "cta": {
-      "label": "Pedir ahora",
-      "url": "https://wa.me/3004311280"
-    },
-    "categoria": "peluches"
-  },
-    {
-    "id": "hero-balon-peluche",
-    "nombre": "Balón Peluche",
-    "imagen": "/src/assets/balon_peluche.png",
+    "imagen": "/src/assets/balon_peluche.webp",
     "cta": {
       "label": "Pedir ahora",
       "url": "https://wa.me/3004311280"

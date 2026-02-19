@@ -1,12 +1,25 @@
 <template>
-  <!-- Sección general -->
-  <section id="Accesorios" class="w-full">
-    <!-- Título -->
-    <div class="w-full text-left py-2 px-2">
-      <h1 class="text-2xl font-bold">ACCESORIOS</h1>
-    </div>
+  <section
+    id="Accesorios"
+    class="w-full"
+    aria-labelledby="accesorios-title"
+  >
+    <header class="w-full text-left py-2 px-2">
+      <!-- H2 SEO correcto (NO h1) -->
+      <h2
+        id="accesorios-title"
+        class="text-2xl font-bold"
+      >
+        Accesorios de Voleibol Esenciales
+      </h2>
 
-    <!-- Carrusel de accesorios -->
+      <!-- Copy SEO invisible -->
+      <p class="sr-only">
+        Accesorios de voleibol diseñados para complementar el entrenamiento y la competencia.
+        Productos deportivos funcionales con envío en Colombia.
+      </p>
+    </header>
+
     <div
       ref="wrapRef"
       class="w-full p-6 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-none"
@@ -14,48 +27,64 @@
       @mouseleave="play"
       @touchstart.passive="pause"
       @touchend.passive="play"
+      role="region"
+      aria-label="Carrusel de accesorios de voleibol"
     >
-      <!-- Pista -->
       <div ref="trackRef" class="flex gap-6 items-stretch">
-        <div
+        <article
           v-for="(accesorio, index) in accesoriosDuplicados"
           :key="index"
           class="snap-start shrink-0 w-[85%] sm:w-[48%] md:w-[31%] lg:w-1/4"
         >
-          <div class="rounded-4xl shadow-2xl overflow-hidden p-2 h-full drop-shadow-[10px_10px_25px_rgba(80,150,55,0.6)] flex flex-col">
-            <!-- Imagen (altura uniforme y centrada) -->
-            <div class="w-full h-48 flex items-center justify-center">
+          <div
+            class="bg-white rounded-4xl shadow-2xl overflow-hidden p-2 h-full drop-shadow-[10px_10px_25px_rgba(80,150,55,0.6)] flex flex-col"
+          >
+            <figure class="w-full h-48 flex items-center justify-center">
               <img
                 :src="accesorio.imagen"
-                :alt="accesorio.nombre"
-                class="w-full h-full object-contain"
+                :alt="`Accesorio de voleibol ${accesorio.referencia} para entrenamiento y uso deportivo`"
+                class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
                 loading="lazy"
               />
-            </div>
+              <figcaption class="sr-only">
+                {{ accesorio.referencia }}
+              </figcaption>
+            </figure>
 
-            <!-- Contenido -->
-            <div class="p-4 flex flex-col h-full">
-              <!-- Título con alto mínimo -->
-              <h3 class="text-2xl text-center font-bold mb-2 min-h-[56px] flex items-center justify-center text-balance">
-                {{ accesorio.nombre }}
+            <div class="p-4 flex flex-col flex-1">
+              <h3
+                class="text-xl sm:text-2xl text-center font-bold mb-2 min-h-[56px] flex items-center justify-center text-balance"
+              >
+                {{ accesorio.referencia }}
               </h3>
 
-              <!-- Descripción con alto mínimo -->
-              <p class="text-gray-900 mb-4 min-h-[64px]">
+              <p class="text-gray-900 mb-4 text-sm sm:text-base text-justify line-clamp-3">
                 {{ accesorio.descripcion }}
               </p>
 
-              <!-- Precio con alto mínimo -->
-              <p class="text-gray-900 font-bold text-center text-2xl mb-6 min-h-[40px] flex items-center justify-center">
+              <p class="text-gray-900 font-bold text-center text-2xl mb-4 min-h-[40px] flex items-center justify-center">
                 {{ accesorio.precio }}
               </p>
 
-              <!-- CTA anclado al fondo -->
+              <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+                <div class="bg-gray-100 rounded-lg p-2 text-center">
+                  <span class="block font-bold">Talla</span>
+                  <span>{{ accesorio.size || 'N/A' }}</span>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-2 text-center">
+                  <span class="block font-bold">Material</span>
+                  <span>{{ accesorio.material || 'N/A' }}</span>
+                </div>
+              </div>
+
               <a
-                :href="`https://api.whatsapp.com/send?phone=573004311280&text=${encodeURIComponent('Hola, estoy interesado en el producto ' + accesorio.nombre)}`"
+                :href="`https://api.whatsapp.com/send?phone=573004311280&text=${encodeURIComponent(
+                  'Hola, estoy interesado en el accesorio de voleibol: ' + accesorio.referencia
+                )}`"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 class="block w-full text-center mt-auto"
+                aria-label="Comprar accesorio de voleibol por WhatsApp"
               >
                 <button
                   class="bg-gradient-to-b from-[#509637] to-[#1A3012] text-white cursor-pointer rounded-full px-4 py-2 inline-flex flex-col items-center gap-0.5 w-full"
@@ -66,8 +95,7 @@
               </a>
             </div>
           </div>
-        </div>
-        <!-- Duplicamos la lista para loop infinito -->
+        </article>
       </div>
     </div>
   </section>
@@ -77,45 +105,25 @@
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import accesoriosData from '../data/accesorios.json'
 
-// ---------- Resolver robusto de imágenes ----------
-function resolveImg(path) {
-  if (!path) return ''
-  if (/^https?:\/\//i.test(path)) return path
-  // /public: si viene como /assets/... se sirve directo
-  if (/^\/assets\//i.test(path)) return path
-  // src/assets: normaliza y resuelve con Vite
-  const cleaned = path
-    .replace(/^\/?src\//, '')
-    .replace(/^\/?assets\//, '')
-  try {
-    return new URL(`../assets/${cleaned}`, import.meta.url).href
-  } catch {
-    return path
-  }
-}
-
-// Items con imagen resuelta + defaults seguros
 const items = computed(() =>
   (accesoriosData ?? []).map(a => ({
-    ...a,
-    imagen: resolveImg(a.imagen || a.img),
-    nombre: a.nombre ?? '',
+    referencia: a.referencia ?? 'Accesorio',
     descripcion: a.descripcion ?? '',
     precio: a.precio ?? '',
+    imagen: a.imagen || '',
+    size: a.size ?? '',
+    material: a.material ?? ''
   }))
 )
 
-// Duplicamos para loop infinito sin “salto”
 const accesoriosDuplicados = computed(() => [...items.value, ...items.value])
 
 const wrapRef = ref(null)
 const trackRef = ref(null)
-
 let timer = null
 let animRaf = null
 let running = true
 
-// Autoplay
 const STEP_INTERVAL_MS = 2500
 const ANIM_DURATION_MS = 600
 const GAP_PX = 24

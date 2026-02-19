@@ -1,26 +1,72 @@
 [
+{
+    "referencia": "PELUCHE VOLEY AZUL, AMARILLO",
+    "descripcion": "Peluche voley",
+    "precio": "$50.000",
+    "imagen": "/img/variedades/peluches/peluche_voley_1.webp",
+    "material": "TELA DE FELPA"
+  },
   {
-    "nombre": "Peluche Molten",
-    "descripcion": "Mini balón de voleibol en peluche, ideal para fans y decoración.",
+    "referencia": "PELUCHE VOLEY VERDE, BLACO, ROJO ",
+    "descripcion": "Peluche voley",
+    "precio": "$50.000",
+    "imagen": "/img/variedades/peluches/peluche_voley_2.webp",
+    "material": "TELA DE FELPA"
+  },
+  {
+    "referencia": "PELUCHE VOLEY TIPO LLAVERO ROJO, AZUL, BLANCO",
+    "descripcion": "Peluche voley",
+    "precio": "$30.000",
+    "imagen": "/img/variedades/peluches/peluche_voley_3.webp",
+    "material": "TELA DE FELPA"
+  },
+  {
+    "referencia": "PELUCHE VOLEY TIPO LLAVERO AZUL CLARO, BLANCO",
+    "descripcion": "Peluche voley",
+    "precio": "$30.000",
+    "imagen": "/img/variedades/peluches/peluche_voley_4.webp",
+    "material": "TELA DE FELPA"
+  },
+  {
+    "referencia": "PELUCHE VOLEY TIPO LLAVERO MULTICOLOR",
+    "descripcion": "Peluche voley",
+    "precio": "$30.000",
+    "imagen": "/img/variedades/peluches/peluche_voley_5.webp",
+    "material": "TELA DE FELPA"
+  },
+  {
+    "referencia": "PELUCHE VOLEY TIPO LLAVERO VERDE, ROJO, BLANCO",
+    "descripcion": "Peluche voley",
+    "precio": "$30.000",
+    "imagen": "/img/variedades/peluches/peluche_voley_6.webp",
+    "material": "TELA DE FELPA"
+  },
+  {
+    "referencia": "PELUCHE VOLEY TIPO BALÓN AMARILLO Y AZUL",
+    "descripcion": "Peluche voley",
     "precio": "$60.000",
-    "imagen": "/src/assets/b_molten_peluche.png"
+    "imagen": "/img/variedades/peluches/peluche_voley_7.webp",
+    "material": "TELA DE FELPA"
   },
   {
-    "nombre": "Peluche Multicolor Voley",
-    "descripcion": "Replica de balon multicolor de voley",
+    "referencia": "PELUCHE VOLEY TIPO BALÓN AZUL Y AMARILLO",
+    "descripcion": "Peluche voley",
     "precio": "$60.000",
-    "imagen": "/src/assets/b_multicolor_peluche.png"
+    "imagen": "/img/variedades/peluches/peluche_voley_8.webp",
+    "material": "TELA DE FELPA"
   },
   {
-    "nombre": "Peluche Wilson Basket",
-    "descripcion": "Mini balón de Basket en peluche, ideal para fans y decoración.",
-    "precio": "$65.000",
-    "imagen": "/src/assets/b_wilson_peluche.png"
+    "referencia": "PELUCHE VOLEY TIPO BALÓN NEGRO, BLANCO Y GRIS",
+    "descripcion": "Peluche voley",
+    "precio": "$60.000",
+    "imagen": "/img/variedades/peluches/peluche_voley_9.webp",
+    "material": "TELA DE FELPA"
   },
   {
-    "nombre": "Peluche Jugador Voley",
-    "descripcion": "Muñeco temático de voleibol, suave y coleccionable.",
-    "precio": "$79.000",
-    "imagen": "/src/assets/balon_peluche_grande.png"
+    "referencia": "PELUCHE BASKET",
+    "descripcion": "Peluche Basket",
+    "precio": "$60.000",
+    "imagen": "/img/variedades/peluches/peluche_basket.webp",
+    "material": "TELA DE FELPA"
   }
-]
+  ]

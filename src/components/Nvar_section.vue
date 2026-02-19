@@ -5,7 +5,7 @@
       <div class="flex items-center justify-between gap-3">
         <!-- Logo (derecha en móvil, izquierda en grande) -->
         <div class="flex items-center justify-end lg:justify-start gap-26 md:gap-8 min-w-0 flex-1 pr-2 md:pr-0 order-2 lg:order-1">
-          <img src="/src/assets/Nvar_logo.png" alt="Logo" class="w-20 h-20 object-contain flex-shrink-0" />
+          <img src="/src/assets/Nvar_logo.webp" alt="Logo" class="w-20 h-20 object-contain flex-shrink-0" />
         </div>
 
         <!-- Links o menú hamburguesa -->
