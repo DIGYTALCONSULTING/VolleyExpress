@@ -1,16 +1,24 @@
 <template>
-  <section class="w-full">
-    <!-- Contenedor principal -->
+  <section class="w-full" id="top" aria-labelledby="hero-title">
     <div
       class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
     >
-      <!-- Columna izquierda: Video + CTA -->
-      <div class="flex flex-col items-center md:items-start gap-24 md:ml-32 max-w-lg">
-
-        <!-- ✅ H1 REAL SEO (invisible, no rompe diseño) -->
-        <h1 class="sr-only">
-          Implementos de voleibol profesionales en Colombia | Volley Express Shop
+      <!-- Columna izquierda: Video + Copy + CTA -->
+      <div class="flex flex-col items-center md:items-start gap-8 md:ml-32 max-w-lg">
+        <!-- H1 SEO (local Medellín) -->
+        <h1 id="hero-title" class="sr-only">
+          Implementos de voleibol en Medellín: balones, accesorios y equipamiento profesional | Volley Express Shop
         </h1>
+
+        <!-- Copy visible -->
+        <div class="text-center md:text-left">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900">
+            Implementos de voleibol en Medellín
+          </h2>
+          <p class="mt-2 text-gray-700">
+            Balones, accesorios y equipamiento para entrenamiento y competencia. Atención rápida por WhatsApp y envío en Medellín y Área Metropolitana.
+          </p>
+        </div>
 
         <!-- Video redondo -->
         <div class="w-56 h-56 md:w-72 md:h-72 max-w-md rounded-full overflow-hidden shadow-xl">
@@ -21,25 +29,25 @@
             muted
             loop
             playsinline
-            preload="auto"
+            preload="metadata"
           />
         </div>
 
         <!-- Botón WhatsApp -->
         <a
-          href="https://wa.me/573004311280"
+          :href="waGeneral"
           target="_blank"
-          rel="noopener"
-          class="inline-flex items-center justify-center rounded-full px-18 py-3 text-white text-sm font-semibold
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center rounded-full px-10 py-3 text-white text-sm font-semibold
                 bg-gradient-to-b from-[#509637] to-[#1A3012] hover:opacity-90 transition text-center md:text-left"
+          aria-label="Comprar implementos de voleibol en Medellín por WhatsApp"
         >
-          Chatear por WhatsApp
+          Comprar por WhatsApp (Medellín)
         </a>
       </div>
 
       <!-- Columna derecha: Carrusel productos -->
-      <div class="relative">
-        <!-- Wrapper scroll -->
+      <div class="relative" aria-label="Productos destacados">
         <div
           ref="wrapRef"
           class="w-full overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none"
@@ -48,9 +56,7 @@
           @touchstart.passive="pause"
           @touchend.passive="play"
         >
-          <!-- Track -->
           <div ref="trackRef" class="flex gap-6 items-stretch px-1 py-2">
-            <!-- Duplicamos para efecto infinito -->
             <article
               v-for="(p, idx) in duplicated"
               :key="`card-${idx}`"
@@ -59,20 +65,26 @@
               <div
                 class="h-full rounded-2xl border border-gray-200 bg-white shadow-xl shadow-green-800/100 p-4 flex flex-col"
               >
-                <!-- 🔧 CORRECCIÓN SEO: ya NO es H1 -->
-                <h3 class="font-bold">Favorito</h3>
+                <span class="inline-flex w-fit rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-800">
+                  Destacado
+                </span>
 
-                <div class="aspect-square w-full rounded-xl overflow-hidden bg-gray-50">
+                <div class="mt-3 aspect-square w-full rounded-xl overflow-hidden bg-gray-50">
                   <img
-                    :src="p.img"
-                    :alt="p.nombre"
+                    :src="p.imgFinal"
+                    :alt="`${p.nombre} - implementos de voleibol en Medellín`"
                     class="w-full h-full object-cover"
                     loading="lazy"
+                    decoding="async"
+                    @error="onImgError(p)"
                   />
                 </div>
 
                 <div class="mt-4 flex-1 flex flex-col">
-                  <h3 class="font-bold text-gray-900">{{ p.nombre }}</h3>
+                  <h3 class="font-bold text-gray-900">
+                    {{ p.nombre }}
+                  </h3>
+
                   <p class="text-sm text-gray-600 mt-1">
                     {{ p.descripcion }}
                   </p>
@@ -83,12 +95,11 @@
                     </span>
 
                     <a
-                      :href="`https://wa.me/573004311280?text=${encodeURIComponent(
-                        `Hola, me interesa ${p.nombre}`
-                      )}`"
+                      :href="waProducto(p.nombre)"
                       target="_blank"
-                      rel="noopener"
+                      rel="noopener noreferrer"
                       class="text-[#2BB741] hover:underline text-sm font-semibold"
+                      :aria-label="`Comprar ${p.nombre} por WhatsApp en Medellín`"
                     >
                       Comprar
                     </a>
@@ -100,7 +111,7 @@
         </div>
 
         <!-- Indicadores -->
-        <div class="mt-4 flex gap-2 justify-center">
+        <div class="mt-4 flex gap-2 justify-center" aria-label="Indicadores del carrusel">
           <span
             v-for="i in 3"
             :key="`dot-${i}`"
@@ -115,40 +126,59 @@
 
 <script setup>
 import { onMounted, onBeforeUnmount, ref, computed } from 'vue'
+import productosData from '../data/productos_hero.json'
 
 // Video
 const heroVideo = new URL('../assets/Hero_video_16_9.mp4', import.meta.url).href
 
-// Productos desde JSON
-import productosData from '../data/productos_hero.json'
+// WhatsApp
+const WA_NUMBER = '573004311280'
+const waGeneral = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
+  'Hola, estoy en Medellín. Quiero cotizar implementos de voleibol (balones, accesorios y equipamiento).'
+)}`
+const waProducto = (nombre) =>
+  `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
+    `Hola, estoy en Medellín. Me interesa ${nombre}. ¿Disponibilidad y precio, por favor?`
+  )}`
 
-// Resolvedor robusto de imágenes
-function resolveImg(path) {
-  if (!path) return ''
-  if (/^https?:\/\//i.test(path)) return path
+// ✅ Resolvedor: soporta /img/... (public) y también src/assets si algún día lo usas
+function resolveImgSmart(p) {
+  const candidate = (p.imagen || p.img || '').trim()
+  if (!candidate) return ''
 
-  const cleaned = path
+  // 1) Public (Vite): /img/...  -> se sirve tal cual
+  if (candidate.startsWith('/')) return candidate
+
+  // 2) URL absoluta
+  if (/^https?:\/\//i.test(candidate)) return candidate
+
+  // 3) Fallback: tratar como asset relativo (por si vuelves a usar /src/assets/...)
+  const cleaned = candidate
     .replace(/^\/?src\//, '')
-    .replace(/^assets\//, '')
     .replace(/^\/?assets\//, '')
 
   try {
     return new URL(`../assets/${cleaned}`, import.meta.url).href
   } catch {
-    return path
+    return candidate
   }
 }
 
-// Normalización
+// Normalización final
 const productos = (productosData ?? []).map(p => ({
   ...p,
-  img: resolveImg(p.img || p.imagen),
+  nombre: p.nombre ?? 'Producto destacado',
   descripcion: p.descripcion ?? '',
   precio: p.precio ?? '',
+  imgFinal: resolveImgSmart(p),
 }))
 
-// Duplicado para carrusel infinito
 const duplicated = computed(() => [...productos, ...productos])
+
+// Debug de error de imagen (solo consola)
+function onImgError(p) {
+  console.log('❌ IMG ERROR:', { nombre: p.nombre, imagen: p.imagen, img: p.img, imgFinal: p.imgFinal })
+}
 
 const wrapRef = ref(null)
 const trackRef = ref(null)
@@ -173,13 +203,8 @@ function fixLoop(isPrev = false) {
   if (!wrap || !track) return
   const maxScroll = track.scrollWidth - wrap.clientWidth
   const pad = 8
-
-  if (wrap.scrollLeft + pad >= maxScroll) {
-    wrap.scrollLeft = 0
-  }
-  if (isPrev && wrap.scrollLeft <= 0) {
-    wrap.scrollLeft = Math.max(maxScroll - 1, 0)
-  }
+  if (wrap.scrollLeft + pad >= maxScroll) wrap.scrollLeft = 0
+  if (isPrev && wrap.scrollLeft <= 0) wrap.scrollLeft = Math.max(maxScroll - 1, 0)
 }
 
 function play() {
@@ -200,14 +225,9 @@ function updateDot() {
   const track = trackRef.value
   if (!wrap || !track) return
   const max = track.scrollWidth - wrap.clientWidth
-  if (max <= 0) {
-    activeDot.value = 1
-    return
-  }
+  if (max <= 0) return (activeDot.value = 1)
   const ratio = wrap.scrollLeft / max
-  if (ratio < 0.34) activeDot.value = 1
-  else if (ratio < 0.67) activeDot.value = 2
-  else activeDot.value = 3
+  activeDot.value = ratio < 0.34 ? 1 : ratio < 0.67 ? 2 : 3
 }
 
 onMounted(() => {

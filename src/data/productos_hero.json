@@ -1,32 +1,43 @@
 [
   {
-    "id": "hero-molten-v5m4500",
-    "nombre": "Molten V5M4500",    
-    "imagen": "/src/assets/balon_molten_4500.webp",
+    "id": "hero-molten-v5m5000",
+    "nombre": "Molten balon v5m5000",
+    "imagen": "/img/implementos/balones/balon_molten_v5m5000.webp",
     "cta": {
       "label": "Comprar por WhatsApp",
-      "url": "https://wa.me/3004311280"
+      "url": "https://wa.me/573004311280"
     },
     "categoria": "balones"
-  },  
-  {
-    "id": "hero-rodilleras-mizuno",
-    "nombre": "Rodilleras Mizuno",    
-    "imagen": "/src/assets/rodilleras.webp",
-    "cta": {
-      "label": "Quiero este producto",
-      "url": "https://wa.me/3004311280"
-    },
-    "categoria": "protecciones"
   },
   {
-    "id": "hero-balon-peluche",
-    "nombre": "Balón Peluche",
-    "imagen": "/src/assets/balon_peluche.webp",
+    "id": "hero-mizuno-sl2-elite",
+    "nombre": "Rodilleras Mizuno SL2 Elite negras",
+    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_sl2_elite_negras.webp",
     "cta": {
-      "label": "Pedir ahora",
-      "url": "https://wa.me/3004311280"
+      "label": "Comprar por WhatsApp",
+      "url": "https://wa.me/573004311280"
     },
-    "categoria": "peluches"
+    "categoria": "rodilleras"
+  },
+  {
+    "id": "mangas-mizuno-sl2-elite",
+    "nombre": "Mangas Mizuno SL2 Elite negras",
+    "imagen": "/img/implementos/otros/mangas_cortas.webp",
+    "cta": {
+      "label": "Comprar por WhatsApp",
+      "url": "https://wa.me/573004311280"
+    },
+    "categoria": "mangas"
+  },
+  {
+    "id": "peluche-voleibol",
+    "nombre": "Peluche voleibol",
+    "imagen": "/img/variedades/peluches/peluche_voley_8.webp",
+    "cta": {
+      "label": "Comprar por WhatsApp",
+      "url": "https://wa.me/573004311280"
+    },
+    "categoria": "peluche"
   }
+  
 ]

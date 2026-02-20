@@ -1,22 +1,26 @@
 <template>
   <section
     id="Accesorios"
-    class="w-full"
+    class="w-full scroll-mt-24"
     aria-labelledby="accesorios-title"
   >
     <header class="w-full text-left py-2 px-2">
-      <!-- H2 SEO correcto (NO h1) -->
+      <!-- H2 SEO: intención real (variedades/regalos) -->
       <h2
         id="accesorios-title"
         class="text-2xl font-bold"
       >
-        Accesorios de Voleibol Esenciales
+        Variedades y regalos de voleibol en Medellín
       </h2>
 
-      <!-- Copy SEO invisible -->
+      <!-- Copy visible corto (mejora SEO + conversión sin cambiar UI) -->
+      <p class="mt-2 text-gray-700 max-w-3xl">
+        Llaveros, collares, aretes, pines, stickers y detalles temáticos de voleibol. Ideal para regalar a jugadoras, entrenadores y fans. Entrega en Medellín y Área Metropolitana.
+      </p>
+
+      <!-- Copy SEO adicional -->
       <p class="sr-only">
-        Accesorios de voleibol diseñados para complementar el entrenamiento y la competencia.
-        Productos deportivos funcionales con envío en Colombia.
+        Compra variedades y regalos de voleibol en Medellín: llaveros, collares, aretes, pines, curitas, stickers, tatuajes temporales y manillas temáticas. Atención por WhatsApp.
       </p>
     </header>
 
@@ -28,69 +32,90 @@
       @touchstart.passive="pause"
       @touchend.passive="play"
       role="region"
-      aria-label="Carrusel de accesorios de voleibol"
+      aria-label="Carrusel de variedades y regalos de voleibol en Medellín"
     >
       <div ref="trackRef" class="flex gap-6 items-stretch">
         <article
-          v-for="(accesorio, index) in accesoriosDuplicados"
-          :key="index"
+          v-for="(item, index) in duplicados"
+          :key="`${item.referencia}-${item.imagen}-${index}`"
           class="snap-start shrink-0 w-[85%] sm:w-[48%] md:w-[31%] lg:w-1/4"
+          itemscope
+          itemtype="https://schema.org/Product"
         >
+          <!-- URL del producto (SPA) -->
+          <meta itemprop="url" :content="pageUrlWithAnchor" />
+
           <div
             class="bg-white rounded-4xl shadow-2xl overflow-hidden p-2 h-full drop-shadow-[10px_10px_25px_rgba(80,150,55,0.6)] flex flex-col"
           >
             <figure class="w-full h-48 flex items-center justify-center">
               <img
-                :src="accesorio.imagen"
-                :alt="`Accesorio de voleibol ${accesorio.referencia} para entrenamiento y uso deportivo`"
+                :src="item.imagen"
+                :alt="altText(item)"
                 class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
                 loading="lazy"
+                decoding="async"
+                itemprop="image"
               />
               <figcaption class="sr-only">
-                {{ accesorio.referencia }}
+                {{ item.referencia }}
               </figcaption>
             </figure>
 
             <div class="p-4 flex flex-col flex-1">
               <h3
                 class="text-xl sm:text-2xl text-center font-bold mb-2 min-h-[56px] flex items-center justify-center text-balance"
+                itemprop="name"
               >
-                {{ accesorio.referencia }}
+                {{ item.referencia }}
               </h3>
 
-              <p class="text-gray-900 mb-4 text-sm sm:text-base text-justify line-clamp-3">
-                {{ accesorio.descripcion }}
+              <p
+                class="text-gray-900 mb-4 text-sm sm:text-base text-justify line-clamp-3"
+                itemprop="description"
+              >
+                {{ item.descripcion }}
               </p>
 
-              <p class="text-gray-900 font-bold text-center text-2xl mb-4 min-h-[40px] flex items-center justify-center">
-                {{ accesorio.precio }}
+              <!-- Offer schema: price numérico (Google lo entiende) -->
+              <p
+                class="text-gray-900 font-bold text-center text-2xl mb-4 min-h-[40px] flex items-center justify-center"
+                itemprop="offers"
+                itemscope
+                itemtype="https://schema.org/Offer"
+                aria-label="Precio"
+              >
+                <meta itemprop="priceCurrency" content="COP" />
+                <meta itemprop="price" :content="item.precioNumero" />
+                <!-- Si NO tienes stock garantizado, no afirmes InStock. Comentado a propósito. -->
+                <!-- <link itemprop="availability" href="https://schema.org/InStock" /> -->
+                <span>{{ item.precioLabel }}</span>
               </p>
 
               <div class="grid grid-cols-2 gap-2 text-xs mb-4">
                 <div class="bg-gray-100 rounded-lg p-2 text-center">
                   <span class="block font-bold">Talla</span>
-                  <span>{{ accesorio.size || 'N/A' }}</span>
+                  <span>{{ item.size || 'N/A' }}</span>
                 </div>
                 <div class="bg-gray-100 rounded-lg p-2 text-center">
                   <span class="block font-bold">Material</span>
-                  <span>{{ accesorio.material || 'N/A' }}</span>
+                  <span>{{ item.material || 'N/A' }}</span>
                 </div>
               </div>
 
               <a
-                :href="`https://api.whatsapp.com/send?phone=573004311280&text=${encodeURIComponent(
-                  'Hola, estoy interesado en el accesorio de voleibol: ' + accesorio.referencia
-                )}`"
+                :href="waLink(item.referencia)"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="block w-full text-center mt-auto"
-                aria-label="Comprar accesorio de voleibol por WhatsApp"
+                :aria-label="`Comprar ${item.referencia} por WhatsApp en Medellín`"
               >
                 <button
+                  type="button"
                   class="bg-gradient-to-b from-[#509637] to-[#1A3012] text-white cursor-pointer rounded-full px-4 py-2 inline-flex flex-col items-center gap-0.5 w-full"
                 >
-                  <span class="font-bold">Contáctanos</span>
-                  <span class="font-bold">WhatsApp</span>
+                  <span class="font-bold">Comprar por WhatsApp</span>
+                  <span class="font-bold">Medellín</span>
                 </button>
               </a>
             </div>
@@ -105,18 +130,135 @@
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import accesoriosData from '../data/accesorios.json'
 
-const items = computed(() =>
-  (accesoriosData ?? []).map(a => ({
-    referencia: a.referencia ?? 'Accesorio',
-    descripcion: a.descripcion ?? '',
-    precio: a.precio ?? '',
-    imagen: a.imagen || '',
-    size: a.size ?? '',
-    material: a.material ?? ''
-  }))
-)
+const WA_NUMBER = '573004311280'
 
-const accesoriosDuplicados = computed(() => [...items.value, ...items.value])
+/** Normaliza rutas de /public (evita 404 por //, /public/, .Webp, espacios) */
+function normalizePublicPath(path) {
+  if (!path) return ''
+  let s = String(path).trim()
+
+  if (/^(https?:)?\/\//i.test(s) || /^data:/i.test(s) || /^blob:/i.test(s)) return s
+
+  s = s.replace(/^\/?public\//, '/')
+  if (!s.startsWith('/')) s = `/${s}`
+  s = s.replace(/\/{2,}/g, '/')
+  s = s.replace(/\.webp$/i, '.webp')
+  return encodeURI(s)
+}
+
+/** price numérico para schema Offer */
+function toPriceNumber(value) {
+  if (value == null) return ''
+  const digits = String(value).replace(/[^\d]/g, '')
+  return digits ? String(Number(digits)) : ''
+}
+function toPriceLabel(value) {
+  if (value == null || value === '') return 'Precio a consultar'
+  const n = toPriceNumber(value)
+  if (!n) return String(value)
+  return `COP ${Number(n).toLocaleString('es-CO')}`
+}
+
+/** Limpieza suave (solo display) */
+function fixText(s) {
+  if (!s) return ''
+  return String(s)
+    .replace(/MUŃECA/g, 'MUÑECA')
+    .replace(/MOŃO/g, 'MOÑO')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+/** Detecta el tipo (para enriquecer descripciones cortas) */
+function detectTipo(ref) {
+  const r = (ref || '').toLowerCase()
+  if (r.includes('llavero')) return 'Llavero'
+  if (r.includes('collar')) return 'Collar'
+  if (r.includes('aretes') || r.includes('topos')) return 'Aretes'
+  if (r.includes('anillo')) return 'Anillo'
+  if (r.includes('pin')) return 'Pin'
+  if (r.includes('stickers')) return 'Stickers'
+  if (r.includes('tatuaje')) return 'Tatuaje temporal'
+  if (r.includes('curitas')) return 'Curitas temáticas'
+  if (r.includes('humectante')) return 'Humectante labial'
+  if (r.includes('manilla')) return 'Manilla'
+  if (r.includes('moño') || r.includes('mono')) return 'Moño'
+  return 'Variedad'
+}
+
+/** Enriquecimiento SEO si la descripción es demasiado corta/repetida */
+function enrichDescripcion({ referencia, descripcion, material }) {
+  const d = (descripcion || '').trim()
+  if (d.length >= 25) return d
+
+  const tipo = detectTipo(referencia)
+  const mat = (material || '').trim()
+  const extraMat = mat ? ` en ${mat.toLowerCase()}` : ''
+  return `${tipo} temático de voleibol${extraMat}. Ideal para regalo o detalle para fans del voleibol. Disponible en Medellín.`
+}
+
+/** Alt orientado a intención regalos */
+function altText({ referencia, material }) {
+  const ref = fixText(referencia || 'Regalo de voleibol')
+  const mat = (material || '').trim()
+  const m = mat ? ` (${mat})` : ''
+  return `${ref}${m} - regalo de voleibol en Medellín`
+}
+
+/** WhatsApp con intención local + regalo */
+function waLink(nombre) {
+  const msg = `Hola, estoy en Medellín. Quiero este regalo/variedad de voleibol: ${nombre}. ¿Precio y disponibilidad, por favor?`
+  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`
+}
+
+/** Deduplicación para evitar items repetidos exactos */
+function dedupe(list) {
+  const seen = new Set()
+  const out = []
+  for (const a of list) {
+    const key = `${(a.referencia || '').trim().toLowerCase()}|${(a.imagen || '').trim().toLowerCase()}|${(a.precio || '').trim()}`
+    if (seen.has(key)) continue
+    seen.add(key)
+    out.push(a)
+  }
+  return out
+}
+
+/** URL para itemprop=url en SPA */
+const pageUrlWithAnchor = computed(() => {
+  if (typeof window === 'undefined') return ''
+  const u = new URL(window.location.href)
+  u.hash = '#Accesorios'
+  return u.toString()
+})
+
+const items = computed(() => {
+  const raw = Array.isArray(accesoriosData) ? accesoriosData : []
+  const cleaned = raw.map(a => {
+    const referencia = fixText(a.referencia ?? 'Variedad')
+    const material = fixText(a.material ?? '')
+    const descripcion = enrichDescripcion({
+      referencia,
+      descripcion: fixText(a.descripcion ?? ''),
+      material
+    })
+
+    return {
+      referencia,
+      descripcion,
+      precio: a.precio ?? '',
+      precioNumero: toPriceNumber(a.precio),
+      precioLabel: toPriceLabel(a.precio),
+      imagen: normalizePublicPath(a.imagen || a.img || ''),
+      size: fixText(a.size ?? ''),
+      material
+    }
+  })
+
+  return dedupe(cleaned)
+})
+
+const duplicados = computed(() => [...items.value, ...items.value])
 
 const wrapRef = ref(null)
 const trackRef = ref(null)

@@ -38,7 +38,7 @@
     >
       <!-- Header -->
       <div class="flex items-center gap-3 bg-gradient-to-r from-lime-400 to-emerald-500 text-white p-3">
-        <img :src="pichuImg" class="w-9 h-9 rounded-full bg-white/90 p-1" />
+        <img :src="pichuImg" class="w-9 h-9 rounded-full bg-white/90 p-1" alt="Pichu avatar" />
         <div>
           <p class="font-semibold">Pichu</p>
           <p class="text-[11px]">Asesor de ventas · VolleyExpress</p>
@@ -47,6 +47,7 @@
         <button
           @click="resetChat"
           class="ml-auto text-xs bg-white/20 px-2 py-1 rounded-lg"
+          type="button"
         >
           Reiniciar
         </button>
@@ -54,6 +55,8 @@
         <button
           @click="isOpen = false"
           class="ml-2 text-sm bg-white/20 w-7 h-7 rounded-full flex items-center justify-center"
+          type="button"
+          aria-label="Cerrar chat"
         >
           ✕
         </button>
@@ -73,30 +76,30 @@
               : 'bg-white text-zinc-800 ring-1 ring-zinc-200'"
             class="max-w-[85%] rounded-2xl px-4 py-3 text-[13px]"
           >
-
-              
-
-
             <div v-html="m.text"></div>
 
-            <div v-if="m.actions?.length" class="mt-3">
+            <!-- Acciones (WhatsApp) -->
+            <div v-if="m.actions?.length" class="mt-3 space-y-2">
               <a
                 v-for="(a,idx) in m.actions"
                 :key="idx"
                 :href="a.href"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="block text-center bg-[#25D366] text-white text-[12px] py-1.5 rounded-full"
               >
                 {{ a.label }}
               </a>
             </div>
 
+            <!-- Sugerencias rápidas -->
             <div v-if="m.suggest?.length" class="mt-3 flex flex-wrap gap-2">
               <button
                 v-for="(s,idx) in m.suggest"
                 :key="idx"
                 @click="quickAsk(s)"
                 class="text-[11px] bg-zinc-100 px-3 py-1 rounded-full"
+                type="button"
               >
                 {{ s }}
               </button>
@@ -113,10 +116,11 @@
       <form @submit.prevent="handleSend" class="p-2 border-t flex gap-2">
         <input
           v-model.trim="input"
-          placeholder="¿Qué estás buscando?"
+          placeholder="Ej: rodilleras negras talla s/m"
           class="flex-1 px-3 py-2 rounded-xl ring-1 ring-zinc-200 text-[13px]"
+          aria-label="Escribe tu mensaje"
         />
-        <button class="bg-emerald-600 text-white px-4 rounded-xl text-[13px]">
+        <button class="bg-emerald-600 text-white px-4 rounded-xl text-[13px]" type="submit">
           Enviar
         </button>
       </form>
@@ -128,9 +132,8 @@
 import { ref, onMounted, nextTick } from 'vue'
 import pichuImg from '../assets/pichu.webp'
 
-import productos from '../data/productos.json'
-import accesorios from '../data/accesorios.json'
-import peluches from '../data/peluches.json'
+// ✅ Índice generado por tu script
+import catalogIndex from '../data/catalog.index.json'
 
 const isOpen = ref(false)
 const input = ref('')
@@ -140,14 +143,17 @@ const scrollRef = ref(null)
 
 const waBase = 'https://wa.me/573004311280?text='
 
-const catalogo = {
-  balones: productos,
-  accesorios,
-  peluches
-}
+// ---------- Memoria conversacional ----------
+const lastIntent = ref(null)     // { categoria, subcategoria, color, talla, material, query }
+const lastResults = ref([])      // array items
+const lastPos = ref(0)           // índice actual en lastResults
 
-function normalize(t) {
-  return t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+// ---------- Utils ----------
+function stripAccents(s = '') {
+  return String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+}
+function normalizeText(s = '') {
+  return stripAccents(String(s)).toLowerCase().replace(/\s+/g, ' ').trim()
 }
 
 function scrollBottom() {
@@ -158,61 +164,404 @@ function scrollBottom() {
   })
 }
 
-function waMessage(p) {
-  return waBase + encodeURIComponent(`Hola, quiero comprar el ${p.referencia} (${p.precio})`)
+function waMessage(it) {
+  const name = it.referencia || it.nombre || 'producto'
+  const price = it.precioTexto || ''
+  return waBase + encodeURIComponent(`Hola, quiero comprar ${name}. Precio: ${price}`)
 }
 
-/* 👉 MENSAJE INICIAL (RESTAURADO VISUALMENTE) */
+function isAnotherCmd(t) {
+  const x = normalizeText(t)
+  return (
+    x === 'otro' ||
+    x === 'otra' ||
+    x.includes('muestrame otro') ||
+    x.includes('muéstrame otro') ||
+    x.includes('muestrame otra') ||
+    x.includes('más') ||
+    x.includes('mas') ||
+    x.includes('siguiente')
+  )
+}
+
+// ---------- Intención (parse) ----------
+const COLOR_ALIASES = [
+  { key: 'negro', words: ['negro', 'negra', 'black'] },
+  { key: 'blanco', words: ['blanco', 'blanca', 'white'] },
+  { key: 'azul', words: ['azul', 'navy', 'marino'] },
+  { key: 'rojo', words: ['rojo', 'roja', 'red'] },
+  { key: 'verde', words: ['verde', 'green'] },
+  { key: 'amarillo', words: ['amarillo', 'amarilla', 'yellow'] },
+  { key: 'rosado', words: ['rosado', 'rosada', 'pink'] },
+  { key: 'morado', words: ['morado', 'morada', 'purple'] },
+  { key: 'gris', words: ['gris', 'gray'] },
+  { key: 'multicolor', words: ['multicolor', 'multi color'] }
+]
+
+const MATERIAL_ALIASES = [
+  { key: 'acero', words: ['acero', 'inoxidable'] },
+  { key: 'pvc', words: ['pvc'] },
+  { key: 'cuero', words: ['cuero'] },
+  { key: 'goma', words: ['goma', 'caucho'] },
+  { key: 'vinil', words: ['vinil', 'vinilo'] },
+  { key: 'tela', words: ['tela', 'felpa', 'algodon', 'algodón', 'poliester', 'poliéster'] },
+  { key: 'nylon', words: ['nylon'] },
+  { key: 'neopreno', words: ['neopreno'] },
+]
+
+const SUBCAT_RULES = [
+  { sub: 'rodilleras', words: ['rodillera', 'rodilleras', 'knee pad', 'kneepad', 'asics', 'asic', 'mizuno', 'errea', 'nike'] },
+  { sub: 'balones', words: ['balon', 'balón', 'mikasa', 'molten', 'bv', 'v5m', 'v4m', 'v200', 'v330'] },
+  { sub: 'infladores', words: ['inflador', 'bomba'] },
+  { sub: 'agujas', words: ['aguja'] },
+  { sub: 'cintas', words: ['kinesiologica', 'kinesiológica', 'cinta', 'esparadrapo'] },
+  { sub: 'peluches', words: ['peluche', 'peluches'] },
+  { sub: 'llaveros', words: ['llavero', 'llaveros'] },
+  { sub: 'aretes', words: ['aretes', 'topos'] },
+  { sub: 'collares', words: ['collar', 'collares'] },
+  { sub: 'manillas', words: ['manilla', 'pulsera'] },
+  { sub: 'stickers', words: ['sticker', 'stickers', 'calcomania', 'calcomanía'] },
+  { sub: 'pines', words: ['pin', 'pines'] },
+]
+
+function pickAlias(list, textNorm) {
+  for (const a of list) {
+    for (const w of a.words) {
+      const wn = normalizeText(w)
+      if (textNorm.includes(wn)) return a.key
+    }
+  }
+  return null
+}
+
+function parseTalla(textNorm) {
+  // Detecta cosas como: "s/m", "m/l", "xs/s", "jr", "adulto", "universal", "u"
+  const t = textNorm
+
+  const compact = t.replace(/\s/g, '')
+  const sizePairs = ['xs/s', 's/m', 'm/l', 'jr/adulto', 'jr', 'adulto', 'universal', 'u']
+  for (const sp of sizePairs) {
+    if (compact.includes(sp)) return sp
+  }
+
+  // También aceptar "talla s/m" o "talla m/l"
+  const m = t.match(/\btalla\s*([a-z0-9\/\-]+)\b/i)
+  if (m?.[1]) return normalizeText(m[1]).replace(/\s/g, '')
+  return null
+}
+
+function detectSubcategoria(textNorm) {
+  for (const r of SUBCAT_RULES) {
+    for (const w of r.words) {
+      if (textNorm.includes(normalizeText(w))) return r.sub
+    }
+  }
+  return null
+}
+
+function detectCategoria(textNorm, sub) {
+  // Si el usuario pide peluches -> peluches
+  if (sub === 'peluches') return 'peluches'
+  // Si es accesorios/variedades típicos
+  if (['llaveros','aretes','collares','manillas','stickers','pines'].includes(sub)) return 'accesorios'
+  // Implementos típicos
+  if (['rodilleras','balones','infladores','agujas','cintas'].includes(sub)) return 'productos'
+
+  // fallback por keywords generales
+  if (textNorm.includes('accesor')) return 'accesorios'
+  if (textNorm.includes('peluche')) return 'peluches'
+  if (textNorm.includes('implement') || textNorm.includes('balon') || textNorm.includes('balón')) return 'productos'
+  return null
+}
+
+function buildIntent(query) {
+  const q = normalizeText(query)
+  const sub = detectSubcategoria(q)
+  const cat = detectCategoria(q, sub)
+  const color = pickAlias(COLOR_ALIASES, q)
+  const material = pickAlias(MATERIAL_ALIASES, q)
+  const talla = parseTalla(q)
+
+  return { query, qNorm: q, categoria: cat, subcategoria: sub, color, material, talla }
+}
+
+// ---------- Búsqueda ----------
+function includesNorm(field, valNorm) {
+  if (!field || !valNorm) return false
+  const f = normalizeText(field)
+  return f.includes(valNorm)
+}
+
+function sizeMatch(itemSize, tallaNorm) {
+  if (!tallaNorm) return true
+  if (!itemSize) return false
+  const s = normalizeText(itemSize).replace(/\s/g, '')
+  // Ej: item "s/m, m/l" y query "s/m"
+  return s.includes(tallaNorm)
+}
+
+function filterCatalog(intent) {
+  const q = intent.qNorm
+  const candidates = catalogIndex.filter(it => {
+    // 1) categoria
+    if (intent.categoria && it.categoria !== intent.categoria) return false
+
+    // 2) subcategoria: si tu normalizador no crea subcategoria, igual funciona por searchText
+    if (intent.subcategoria) {
+      // si viene campo it.subcategoria úsalo; si no, usa searchText
+      if (it.subcategoria) {
+        if (normalizeText(it.subcategoria) !== normalizeText(intent.subcategoria)) return false
+      } else {
+        if (!includesNorm(it.searchText, normalizeText(intent.subcategoria))) return false
+      }
+    }
+
+    // 3) filtros
+    if (intent.color) {
+      if (it.color) {
+        if (!includesNorm(it.color, intent.color)) return false
+      } else {
+        if (!includesNorm(it.searchText, intent.color)) return false
+      }
+    }
+
+    if (intent.material) {
+      if (it.material) {
+        if (!includesNorm(it.material, intent.material)) return false
+      } else {
+        if (!includesNorm(it.searchText, intent.material)) return false
+      }
+    }
+
+    if (intent.talla) {
+      // Normal: size en tu data trae "S/M, M/L"
+      if (!sizeMatch(it.size, intent.talla)) return false
+    }
+
+    // 4) query textual (si el usuario escribió algo específico)
+    // Si solo escribió "rodilleras negras talla s/m", ya filtra por sub+color+talla.
+    // Pero si escribió "asics low profile", esto ayuda.
+    const tokens = q.split(' ').filter(w => w.length >= 3)
+    // exigir que al menos 1 token relevante aparezca (cuando hay tokens)
+    if (tokens.length) {
+      const hit = tokens.some(tok => includesNorm(it.searchText, tok))
+      if (!hit) return false
+    }
+
+    return true
+  })
+
+  // Orden simple: primero los que más tokens matchean
+  const tokens = q.split(' ').filter(w => w.length >= 3)
+  const scored = candidates.map(it => {
+    const st = normalizeText(it.searchText || '')
+    let score = 0
+    for (const tok of tokens) if (st.includes(tok)) score += 1
+    // boost: si match exacto en referencia
+    const ref = normalizeText(it.referencia || '')
+    if (ref && tokens.some(tok => ref.includes(tok))) score += 2
+    return { it, score }
+  })
+
+  scored.sort((a,b) => b.score - a.score)
+  return scored.map(x => x.it)
+}
+
+// ---------- Render producto + upsell ----------
+function renderItemCard(it) {
+  const name = it.referencia || it.nombre || 'Producto'
+  const price = it.precioTexto || ''
+  const desc = it.descripcion ? `<div class="mt-1">${it.descripcion}</div>` : ''
+  const attrs = []
+
+  if (it.color) attrs.push(`<span><strong>Color:</strong> ${it.color}</span>`)
+  if (it.size) attrs.push(`<span><strong>Talla:</strong> ${it.size}</span>`)
+  if (it.material) attrs.push(`<span><strong>Material:</strong> ${it.material}</span>`)
+
+  const attrHtml = attrs.length
+    ? `<div class="mt-2 text-[12px] space-y-1">${attrs.map(a => `<div>${a}</div>`).join('')}</div>`
+    : ''
+
+  const imgHtml = it.imagen
+    ? `<img src="${it.imagen}" alt="${name}" class="mt-3 w-full rounded-xl ring-1 ring-zinc-200 bg-white object-contain max-h-44" loading="lazy" />`
+    : ''
+
+  return `
+    <div>
+      <div><strong>${name}</strong></div>
+      ${price ? `<div class="mt-1"><strong>${price}</strong></div>` : ''}
+      ${desc}
+      ${attrHtml}
+      ${imgHtml}
+    </div>
+  `
+}
+
+function findCrossSell(queryWords) {
+  const wants = queryWords.map(w => normalizeText(w))
+  // Busca por tokens en searchText
+  const found = []
+  for (const it of catalogIndex) {
+    const st = normalizeText(it.searchText || '')
+    if (wants.some(w => st.includes(w))) found.push(it)
+  }
+  // Prioriza categoría productos y precio bajo (si hay)
+  found.sort((a,b) => (a.precioCOP ?? 999999999) - (b.precioCOP ?? 999999999))
+  return found
+}
+
+function pushItemMessage(it, extraActions = []) {
+  messages.value.push({
+    from: 'bot',
+    text: renderItemCard(it),
+    actions: [
+      { label: 'Comprar por WhatsApp', href: waMessage(it) },
+      ...extraActions
+    ]
+  })
+}
+
+function pushUpsellIfNeeded(mainItem) {
+  // Heurística: si parece balón, sugiere aguja + inflador
+  const st = normalizeText(mainItem.searchText || '')
+  const isBall = st.includes('balon') || st.includes('balón') || st.includes('mikasa') || st.includes('molten')
+
+  if (!isBall) return
+
+  const needles = findCrossSell(['aguja']).slice(0, 1)
+  const pumps = findCrossSell(['inflador', 'bomba']).slice(0, 1)
+
+  if (!needles.length && !pumps.length) return
+
+  let html = `<div><strong>Recomendados para tu balón (cross-sell):</strong></div>`
+  const items = [...needles, ...pumps]
+
+  for (const it of items) {
+    const name = it.referencia || it.nombre || 'Producto'
+    const price = it.precioTexto || ''
+    html += `<div class="mt-2">• <strong>${name}</strong> ${price ? `— ${price}` : ''}</div>`
+  }
+
+  messages.value.push({
+    from: 'bot',
+    text: html,
+    actions: items.map(it => ({ label: `Comprar: ${it.referencia}`, href: waMessage(it) }))
+  })
+}
+
+// ---------- Mensajes bot ----------
 function saludo() {
   messages.value.push({
     from: 'bot',
     text: `
-      <p><strong>¡Hola! 👋 Soy Pichu.</strong></p>
-      <p class="mt-2">Te puedo ayudar con:</p>
+      <p><strong>Hola 👋 Soy Pichu.</strong></p>
+      <p class="mt-2">Dime qué estás buscando (con detalles si puedes):</p>
       <ul class="mt-2 space-y-1">
-        <li>🏐 <strong>IMPLEMENTOS DEPORTIVOS</strong></li>
-        <li>🎒 <strong>ACCESORIOS</strong></li>
-        <li>🧸 <strong>PELUCHES</strong></li>
+        <li>🏐 Rodilleras (color / talla)</li>
+        <li>🏐 Balones (Mikasa / Molten)</li>
+        <li>🎒 Accesorios (llaveros, collares, aretes, manillas)</li>
+        <li>🧸 Peluches</li>
       </ul>
-      <p class="mt-3">¿Qué estás buscando hoy?</p>
+      <p class="mt-3 text-[12px] text-zinc-600">
+        Ejemplo: <em>“rodilleras negras talla s/m”</em>
+      </p>
     `,
-    suggest: ['Implementos deportivos', 'Accesorios', 'Peluches']
+    suggest: ['Rodilleras negras talla s/m', 'Balón Mikasa', 'Accesorios', 'Peluches', 'Muéstrame otro']
   })
 }
 
-function mostrarCategoria(cat) {
-  catalogo[cat].forEach(p => {
+function noResults(intent) {
+  const parts = []
+  if (intent.subcategoria) parts.push(intent.subcategoria)
+  if (intent.color) parts.push(intent.color)
+  if (intent.talla) parts.push(`talla ${intent.talla}`)
+  if (intent.material) parts.push(intent.material)
+
+  messages.value.push({
+    from: 'bot',
+    text: `
+      <div>
+        <strong>No encontré coincidencias exactas</strong> para: <em>${parts.join(' · ') || intent.query}</em>.
+        <div class="mt-2 text-[12px] text-zinc-600">
+          Prueba con menos filtros (por ejemplo solo “rodilleras negras”) o escribe marca/modelo.
+        </div>
+      </div>
+    `,
+    suggest: ['Rodilleras negras', 'Rodilleras talla s/m', 'Balón Molten', 'Accesorios', 'Peluches']
+  })
+}
+
+function showNextFromMemory() {
+  if (!lastResults.value.length) {
+    saludo()
+    return
+  }
+  const pos = lastPos.value + 1
+  if (pos >= lastResults.value.length) {
     messages.value.push({
       from: 'bot',
-      image: p.imagen,
-      text: `<strong>${p.referencia}</strong><br>${p.descripcion ?? ''}<br><strong>${p.precio}</strong>`,
-      actions: [{ label: 'Comprar por WhatsApp', href: waMessage(p) }]
+      text: `<strong>Ya te mostré todos los resultados de esa búsqueda.</strong> Si quieres, cambia color/talla o dime otra categoría.`,
+      suggest: ['Rodilleras blancas talla s/m', 'Balón Mikasa', 'Accesorios', 'Peluches']
     })
-  })
+    return
+  }
+  lastPos.value = pos
+  const it = lastResults.value[pos]
+  pushItemMessage(it)
+  pushUpsellIfNeeded(it)
 }
 
+// ---------- Handler principal ----------
 async function handleSend() {
   if (!input.value) return
 
   const text = input.value
-  const t = normalize(text)
+  input.value = ''
 
   messages.value.push({ from: 'user', text })
-  input.value = ''
   isTyping.value = true
   scrollBottom()
 
-  await new Promise(r => setTimeout(r, 400))
+  await new Promise(r => setTimeout(r, 250))
 
-  if (t.includes('accesor')) {
-    mostrarCategoria('accesorios')
-  } else if (t.includes('peluche')) {
-    mostrarCategoria('peluches')
-  } else if (t.includes('implemento') || t.includes('balon')) {
-    mostrarCategoria('balones')
-  } else {
-    saludo()
+  // “muéstrame otro”
+  if (isAnotherCmd(text)) {
+    showNextFromMemory()
+    isTyping.value = false
+    scrollBottom()
+    return
   }
+
+  // búsqueda por intención
+  const intent = buildIntent(text)
+  const results = filterCatalog(intent)
+
+  if (!results.length) {
+    lastIntent.value = intent
+    lastResults.value = []
+    lastPos.value = 0
+    noResults(intent)
+    isTyping.value = false
+    scrollBottom()
+    return
+  }
+
+  // Guarda memoria
+  lastIntent.value = intent
+  lastResults.value = results
+  lastPos.value = 0
+
+  // Muestra SOLO el primero (lo que pediste)
+  const first = results[0]
+  pushItemMessage(first)
+  pushUpsellIfNeeded(first)
+
+  // Sugiere “otro” + 2 variaciones rápidas
+  messages.value.push({
+    from: 'bot',
+    text: `<div class="text-[12px] text-zinc-600">Si quieres, escribe <strong>“otro”</strong> para ver otra opción.</div>`,
+    suggest: ['Otro', 'Rodilleras blancas talla s/m', 'Balón Molten']
+  })
 
   isTyping.value = false
   scrollBottom()
@@ -229,6 +578,9 @@ function toggle() {
 
 function resetChat() {
   messages.value = []
+  lastIntent.value = null
+  lastResults.value = []
+  lastPos.value = 0
   saludo()
 }
 
@@ -239,16 +591,13 @@ onMounted(saludo)
 :root {
   --digytal-footer-height: 96px;
 }
-
 .chat-safe-bottom {
   bottom: calc(env(safe-area-inset-bottom, 0px) + var(--digytal-footer-height) + 1rem);
 }
-
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
 .animate-spin-slow {
   animation: spin 18s linear infinite;
 }
