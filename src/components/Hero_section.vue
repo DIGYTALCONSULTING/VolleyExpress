@@ -15,7 +15,7 @@
           <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900">
             Implementos de voleibol en Medellín
           </h2>
-          <p class="mt-2 text-gray-700">
+          <p class="mt-2 text-gray-700 text-justify">
             Balones, accesorios y equipamiento para entrenamiento y competencia. Atención rápida por WhatsApp y envío en Medellín y Área Metropolitana.
           </p>
         </div>

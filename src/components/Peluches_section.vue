@@ -14,7 +14,7 @@
       </h2>
 
       <!-- Copy visible corto (SEO + conversión sin romper UI) -->
-      <p class="mt-2 text-gray-700 max-w-3xl">
+      <p class="mt-2 text-gray-700 max-w-3xl text-justify">
         Peluches temáticos y detalles deportivos para jugadoras, entrenadores y fans.
         Compra por WhatsApp y entrega en Medellín y Área Metropolitana.
       </p>

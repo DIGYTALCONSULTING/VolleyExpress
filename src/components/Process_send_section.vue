@@ -27,7 +27,7 @@
       </h2>
 
       <!-- Copy visible corto (SEO + conversión sin romper UI) -->
-      <p class="mt-2 text-center text-gray-700">
+      <p class="mt-2 text-gray-700 text-center">
         Compra implementos de voleibol por WhatsApp y recibe tu pedido en Medellín y Área Metropolitana en 3 pasos.
       </p>
 

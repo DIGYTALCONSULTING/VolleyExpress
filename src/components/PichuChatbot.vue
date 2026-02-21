@@ -411,7 +411,7 @@ function filterCatalog(intent) {
 function renderItemCard(it) {
   const name = it.referencia || it.nombre || 'Producto'
   const price = it.precioTexto || ''
-  const desc = it.descripcion ? `<div class="mt-1">${it.descripcion}</div>` : ''
+  const desc = it.descripcion ? `<div class="mt-1 text-justify leading-relaxed">${it.descripcion}</div>` : ''
   const attrs = []
 
   if (it.color) attrs.push(`<span><strong>Color:</strong> ${it.color}</span>`)

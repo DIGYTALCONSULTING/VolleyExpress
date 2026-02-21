@@ -11,7 +11,7 @@
       </h2>
 
       <!-- Copy visible corto (mejora SEO + conversión sin cambiar layout) -->
-      <p class="mt-2 text-gray-700 max-w-3xl">
+      <p class="mt-2 text-gray-700 max-w-3xl text-justify">
         Balones, rodilleras, mangas y accesorios para entrenamiento y competencia. Atención rápida por WhatsApp y entrega en Medellín y Área Metropolitana.
       </p>
 
@@ -68,10 +68,10 @@
               </h3>
 
               <div
-                class="text-gray-900 mb-4 text-sm sm:text-base text-justify"
+                class="text-gray-900 mb-4 text-sm sm:text-base text-left sm:text-justify leading-6"
                 itemprop="description"
               >
-                <p :class="expanded[index] ? '' : 'max-h-[4.5rem] overflow-hidden'">
+                <p :id="`desc-${index}`" :class="expanded[index] ? '' : 'line-clamp-3'">
                   {{ producto.descripcion }}
                 </p>
 
