@@ -56,8 +56,8 @@
     "material": "PVC"
   },
   {
-    "referencia": "LLAVERO MIKASA V200W",
-    "descripcion": "Llavero mikasa v200w",
+    "referencia": "LLAVERO MIKASA V330W",
+    "descripcion": "Llavero mikasa v330w",
     "precio": "$20.000",
     "imagen": "/img/variedades/accesorios/llavero_mikasa_v200w.webp",
     "material": "PVC"
@@ -70,8 +70,8 @@
     "material": "PVC"
   },
   {
-    "referencia": "LLAVERO MIKASA",
-    "descripcion": "Llavero mikasa",
+    "referencia": "LLAVERO MIKASA V200W",
+    "descripcion": "Llavero mikasa v200w",
     "precio": "$20.000",
     "imagen": "/img/variedades/accesorios/llavero_mikasa.webp",
     "material": "PVC"
@@ -361,36 +361,36 @@
     "material": "ACERO Y CUERO"
   },
   {
-    "referencia": "MANILLA BALON ROJA",
-    "descripcion": "Manilla Balón roja",
+    "referencia": "MANILLA BALON PLATEADA",
+    "descripcion": "Manilla Balón plateada",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/manilla_balon_2.webp",
     "material": "ACERO Y NYLON"
   },
   {
-    "referencia": "MANILLA BALON ROSADA",
-    "descripcion": "Manilla Balón rosada",
+    "referencia": "MANILLA BALON BLANCA",
+    "descripcion": "Manilla Balón blanca",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/manilla_balon_3.webp",
     "material": "ACERO Y NYLON"
   },
   {
-    "referencia": "MANILLA BALON AZUL",
-    "descripcion": "Manilla Balón azul",
+    "referencia": "MANILLA BALON MULTICOLOR",
+    "descripcion": "Manilla Balón multicolor",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/manilla_balon_4.webp",
     "material": "ACERO Y NYLON"
   },
   {
-    "referencia": "MANILLA BALON MORADA",
-    "descripcion": "Manilla Balón morada",
+    "referencia": "MANILLA BALON DORADA",
+    "descripcion": "Manilla Balón dorada",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/manilla_balon_5.webp",
     "material": "ACERO Y NYLON"
   },
    {
-    "referencia": "MANILLA PULSO LILA",
-    "descripcion": "Manilla pulso lila",
+    "referencia": "MANILLA PULSO",
+    "descripcion": "Manilla pulso",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/manilla_pulso.webp",
     "material": "ACERO Y NYLON"

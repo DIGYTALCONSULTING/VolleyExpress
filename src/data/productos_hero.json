@@ -1,8 +1,8 @@
 [
   {
-    "id": "hero-molten-v5m5000",
-    "nombre": "Molten balon v5m5000",
-    "imagen": "/img/implementos/balones/balon_molten_v5m5000.webp",
+    "id": "Balon Mikasa V200W",
+    "nombre": "Balon Mikasa V200W",
+    "imagen": "/img/implementos/balones/balon_mikasa_v200w.webp",
     "cta": {
       "label": "Comprar por WhatsApp",
       "url": "https://wa.me/573004311280"
@@ -20,8 +20,8 @@
     "categoria": "rodilleras"
   },
   {
-    "id": "mangas-mizuno-sl2-elite",
-    "nombre": "Mangas Mizuno SL2 Elite negras",
+    "id": "mangas-medium",
+    "nombre": "Mangas medium negras",
     "imagen": "/img/implementos/otros/mangas_cortas.webp",
     "cta": {
       "label": "Comprar por WhatsApp",
