@@ -92,21 +92,12 @@
             </a>
 
             <!-- ✅ mismo id correcto -->
-            <a class="cursor-pointer text-base font-sans" href="#proceso_pedido" @click="closeMobile">
+            <a class="cursor-pointer text-base font-sans" href="#Proceso_pedido" @click="closeMobile">
               Proceso de Pedido
             </a>
 
             <!-- ✅ PDF correcto -->
-            <a
-              class="cursor-pointer text-base font-sans"
-              href="/catalogo_voleyexpress.pdf"
-              download="VoleyExpressShop-Catalogo.pdf"
-              @click="closeMobile"
-              rel="noopener"
-            >
-              Catálogo completo
-            </a>
-
+            
             <a class="cursor-pointer text-base font-sans" href="#Conocenos" @click="closeMobile">
               Contáctanos
             </a>
