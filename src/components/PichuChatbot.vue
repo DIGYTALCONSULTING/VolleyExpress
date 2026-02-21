@@ -96,7 +96,7 @@
             <div v-if="m.suggest?.length" class="mt-3 flex flex-wrap gap-2">
               <button
                 v-for="(s,idx) in m.suggest"
-                :key="idx"
+                :key="`${i}-${idx}-${s}`"
                 @click="quickAsk(s)"
                 class="text-[11px] bg-zinc-100 px-3 py-1 rounded-full"
                 type="button"
@@ -239,10 +239,16 @@ function parseTalla(textNorm) {
   const t = textNorm
 
   const compact = t.replace(/\s/g, '')
-  const sizePairs = ['xs/s', 's/m', 'm/l', 'jr/adulto', 'jr', 'adulto', 'universal', 'u']
+  const sizePairs = ['xs/s', 's/m', 'm/l', 'jr/adulto']
   for (const sp of sizePairs) {
     if (compact.includes(sp)) return sp
   }
+
+  // Tallas por palabra completa, evitando falsos positivos como "peluches" -> "u".
+  if (/\bjr\b/.test(t)) return 'jr'
+  if (/\badulto\b/.test(t)) return 'adulto'
+  if (/\buniversal\b/.test(t)) return 'universal'
+  if (/\bu\b/.test(t)) return 'u'
 
   // También aceptar "talla s/m" o "talla m/l"
   const m = t.match(/\btalla\s*([a-z0-9\/\-]+)\b/i)
@@ -272,6 +278,47 @@ function detectCategoria(textNorm, sub) {
   if (textNorm.includes('peluche')) return 'peluches'
   if (textNorm.includes('implement') || textNorm.includes('balon') || textNorm.includes('balón')) return 'productos'
   return null
+}
+
+function subcategoryMatch(item, intentSub) {
+  if (!intentSub) return true
+
+  const wanted = normalizeText(intentSub)
+  const itemCategory = normalizeText(item.categoria || '')
+
+  // Si la intención es directamente una categoría, no fuerces submatch textual.
+  if (wanted === 'peluches' && itemCategory === 'peluches') return true
+
+  if (item.subcategoria) {
+    const itemSub = normalizeText(item.subcategoria)
+    if (itemSub === wanted || itemSub.includes(wanted) || wanted.includes(itemSub)) {
+      return true
+    }
+  }
+
+  const st = normalizeText(item.searchText || '')
+  if (includesNorm(st, wanted)) return true
+
+  const rule = SUBCAT_RULES.find(r => normalizeText(r.sub) === wanted)
+  if (rule) {
+    return rule.words.some(w => includesNorm(st, normalizeText(w)))
+  }
+
+  return false
+}
+
+function isBroadCategoryQuery(intent) {
+  const q = intent.qNorm
+  return (
+    q === 'peluche' ||
+    q === 'peluches' ||
+    q === 'accesorio' ||
+    q === 'accesorios' ||
+    q === 'balon' ||
+    q === 'balones' ||
+    q === 'rodillera' ||
+    q === 'rodilleras'
+  )
 }
 
 function buildIntent(query) {
@@ -307,14 +354,7 @@ function filterCatalog(intent) {
     if (intent.categoria && it.categoria !== intent.categoria) return false
 
     // 2) subcategoria: si tu normalizador no crea subcategoria, igual funciona por searchText
-    if (intent.subcategoria) {
-      // si viene campo it.subcategoria úsalo; si no, usa searchText
-      if (it.subcategoria) {
-        if (normalizeText(it.subcategoria) !== normalizeText(intent.subcategoria)) return false
-      } else {
-        if (!includesNorm(it.searchText, normalizeText(intent.subcategoria))) return false
-      }
-    }
+    if (!subcategoryMatch(it, intent.subcategoria)) return false
 
     // 3) filtros
     if (intent.color) {
@@ -342,8 +382,8 @@ function filterCatalog(intent) {
     // Si solo escribió "rodilleras negras talla s/m", ya filtra por sub+color+talla.
     // Pero si escribió "asics low profile", esto ayuda.
     const tokens = q.split(' ').filter(w => w.length >= 3)
-    // exigir que al menos 1 token relevante aparezca (cuando hay tokens)
-    if (tokens.length) {
+    // En consultas de categoría general, no exijas token textual.
+    if (tokens.length && !isBroadCategoryQuery(intent)) {
       const hit = tokens.some(tok => includesNorm(it.searchText, tok))
       if (!hit) return false
     }
@@ -512,10 +552,9 @@ function showNextFromMemory() {
 }
 
 // ---------- Handler principal ----------
-async function handleSend() {
-  if (!input.value) return
-
-  const text = input.value
+async function handleSend(prefilledText = '') {
+  const text = String(prefilledText || input.value || '').trim()
+  if (!text) return
   input.value = ''
 
   messages.value.push({ from: 'user', text })
@@ -568,8 +607,7 @@ async function handleSend() {
 }
 
 function quickAsk(t) {
-  input.value = t
-  handleSend()
+  handleSend(t)
 }
 
 function toggle() {
