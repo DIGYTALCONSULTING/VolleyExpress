@@ -1,45 +1,77 @@
 [
   {
     "title": "POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES – VOLLEY EXPRESS",
-    "version": "4.0",
-    "updated_at": "2026-02-10",
-    "consent_text": "Autorizo de manera previa, expresa e informada a Volley Express para el tratamiento de mis datos personales, incluyendo mi número celular, con la finalidad de contacto, atención comercial, envío de información, ofertas y promociones a través de WhatsApp y otros canales autorizados.",
+    "version": "4.1",
+    "updated_at": "2026-02-22",
+    "consent_text": "Autorizo de manera previa, expresa e informada a Volley Express Shop, NIT: 700228308-2, DOMICILIO: Medellín, DIRECCIÓN:CL 49 DD # 81 C - 37 AP 104, para el tratamiento de mis datos personales conforme a las finalidades descritas en su Política de Tratamiento. Entiendo que puedo revocar esta autorización y/o solicitar la supresión de mis datos cuando sea procedente, mediante los canales indicados. Si además marco la casilla opcional de marketing, autorizo recibir información comercial y promocional por los canales seleccionados (incl. WhatsApp), y podré cancelar esos envíos en cualquier momento.",
     "full_text": [
-      "En cumplimiento de la Ley 1581 de 2012, el Decreto 1377 de 2013, la Ley 1266 de 2008 y demás normas aplicables en Colombia, Volley Express establece la siguiente política de tratamiento de datos personales.",
-      "Volley Express recolecta y trata datos personales bajo los principios de legalidad, finalidad, libertad, veracidad, transparencia, acceso y circulación restringida, seguridad y confidencialidad.",
-      "El titular de los datos podrá ejercer sus derechos de conocer, actualizar, rectificar y suprimir información personal, así como revocar la autorización otorgada, en cualquier momento, mediante los canales indicados en esta política.",
-      "La información será conservada únicamente por el tiempo necesario para cumplir las finalidades aquí descritas y en cumplimiento de las obligaciones legales aplicables.",
-      "Volley Express implementa medidas técnicas, administrativas y organizacionales razonables para proteger la información contra accesos no autorizados, pérdida, alteración o divulgación.",
-      "Al aceptar esta política, el titular autoriza expresamente que Volley Express utilice el número celular brindado para establecer contacto directo mediante llamadas, mensajes de texto y aplicaciones de mensajería instantánea como WhatsApp, incluyendo el envío de información promocional y publicitaria."
+      "Volley Express adopta la presente Política de Tratamiento de Datos Personales en cumplimiento de la Ley 1581 de 2012 y sus decretos reglamentarios (incluido el Decreto 1377 de 2013, compilado en el Decreto 1074 de 2015), así como las demás disposiciones aplicables en Colombia.",
+      "Esta Política aplica al tratamiento de datos personales de clientes, prospectos, usuarios del sitio web, proveedores y cualquier titular cuyos datos sean tratados por Volley Express en el marco de sus actividades comerciales.",
+      "Volley Express tratará los datos personales bajo los principios de legalidad, finalidad, libertad, veracidad/calidad, transparencia, acceso y circulación restringida, seguridad y confidencialidad.",
+      "La autorización para el tratamiento debe ser previa, expresa e informada. Volley Express conservará prueba de las autorizaciones otorgadas por los titulares.",
+      "Los titulares podrán ejercer sus derechos a conocer, actualizar, rectificar y suprimir sus datos personales, así como solicitar prueba de la autorización y revocar la autorización cuando sea procedente, mediante el procedimiento y canales descritos en esta Política. WhatsApp es un canal autorizado para comunicaciones comerciales/promocionales, pero no es el único ni el exclusivo, y se respetarán las preferencias del titular. WhatsApp +57 300 4311280 o correo electrónico volleyexpres@gmail.com",
+      "Volley Express solo conservará los datos por el tiempo razonable y necesario para cumplir las finalidades informadas y las obligaciones legales o contractuales aplicables, y posteriormente procederá a su supresión cuando corresponda."
     ],
     "sections": [
       {
-        "heading": "1. Finalidades",
-        "text": "Gestionar solicitudes, consultas y quejas; contactar al titular por los canales autorizados incluyendo WhatsApp; enviar comunicaciones comerciales, promocionales o publicitarias sobre productos, servicios y eventos; realizar análisis internos de mercado y mejorar la experiencia de los usuarios."
+        "heading": "Responsable del tratamiento",
+        "text": "Volley Express. Razón social: [●]. NIT: [●]. Domicilio: [Ciudad], Colombia. Dirección: [●]. Correo: volleyexpress@gmail.com. Teléfono/WhatsApp: +57 3004311280."
       },
       {
-        "heading": "2. Derechos del Titular",
-        "text": "Conocer, actualizar, rectificar, suprimir información personal y revocar la autorización en cualquier momento, salvo que exista un deber legal o contractual de mantener los datos. Estos derechos podrán ser ejercidos por el titular o su representante debidamente acreditado."
+        "heading": "Datos personales objeto de tratamiento",
+        "text": "Volley Express podrá tratar, según el canal de recolección, las siguientes categorías: (i) datos de identificación (nombre, documento si aplica), (ii) datos de contacto (celular, WhatsApp, correo electrónico, dirección), (iii) datos de transacciones/servicio (solicitudes, compras, histórico de atención), (iv) datos de navegación del sitio web (p. ej., dirección IP, identificadores en línea y cookies, cuando aplique). Volley Express no solicita datos sensibles; si excepcionalmente llegaran a recolectarse, se informará su carácter facultativo y se solicitará autorización explícita cuando corresponda."
       },
       {
-        "heading": "3. Principios de Tratamiento",
-        "text": "Los datos personales se tratan bajo los principios de legalidad, finalidad, libertad, veracidad, transparencia, acceso y circulación restringida, seguridad y confidencialidad."
+        "heading": "Finalidades del tratamiento",
+        "text": "Tratar los datos para: (a) gestionar solicitudes, consultas, PQRS y atención al cliente; (b) gestionar la relación comercial (cotizaciones, ventas, facturación, entregas/servicios, soporte); (c) confirmar operaciones e informar estados estrictamente relacionados con el servicio; (d) enviar comunicaciones comerciales, promocionales o publicitarias únicamente cuando exista autorización (opt-in) y respetando los canales autorizados por el titular; (e) mejorar la experiencia en el sitio web y medir audiencias (analítica) cuando aplique; (f) cumplir obligaciones legales, contables, fiscales y requerimientos de autoridades."
       },
       {
-        "heading": "4. Medidas de Seguridad",
-        "text": "Se adoptan controles administrativos, técnicos y físicos que buscan garantizar la confidencialidad, integridad y disponibilidad de los datos personales, reduciendo el riesgo de accesos no autorizados o tratamientos indebidos."
+        "heading": "Autorización y prueba de la autorización",
+        "text": "La autorización se obtendrá por medios que permitan consulta posterior (p. ej., casillas de verificación en formularios, registros electrónicos, grabaciones o documentos). El silencio no constituye autorización. Volley Express conservará prueba de la autorización y, si el titular lo solicita, entregará evidencia disponible de la misma."
       },
       {
-        "heading": "5. Transferencias y Transmisiones",
-        "text": "Los datos podrán ser transmitidos o transferidos a terceros encargados o aliados estratégicos, nacionales o extranjeros, únicamente para el cumplimiento de las finalidades aquí informadas y bajo estándares de seguridad y confidencialidad."
+        "heading": "Derechos del titular",
+        "text": "El titular podrá: (i) conocer, actualizar y rectificar sus datos; (ii) solicitar prueba de la autorización; (iii) ser informado sobre el uso dado a sus datos; (iv) presentar reclamos para corrección/actualización/supresión o por incumplimiento; (v) revocar la autorización y/o solicitar supresión cuando sea procedente; (vi) acceder en forma gratuita a sus datos. El ejercicio podrá hacerlo el titular o su representante acreditado."
       },
       {
-        "heading": "6. Canales de Atención",
-        "text": "Para ejercer tus derechos sobre el tratamiento de datos, puedes escribirnos al correo 'volleyexpress@gmail.com' con el asunto 'Datos Personales' o comunicarte al teléfono +57 3004311280 en horario hábil."
+        "heading": "Procedimiento para consultas y reclamos",
+        "text": "Consultas: se atenderán en máximo diez (10) días hábiles desde su recepción; si no es posible, se informará la razón y la nueva fecha, que no superará cinco (5) días hábiles adicionales. Reclamos: deberán incluir identificación del titular, descripción de hechos, dirección y soportes; si está incompleto se requerirá subsanar; el término para resolver es máximo quince (15) días hábiles desde el día siguiente a su recepción completa; si no es posible, se informará y podrá ampliarse hasta ocho (8) días hábiles adicionales. La queja ante la autoridad procede una vez agotado el trámite ante Volley Express."
       },
       {
-        "heading": "7. Vigencia de la Autorización",
-        "text": "La autorización otorgada por el titular permanecerá vigente mientras sea necesario para las finalidades descritas en esta política, y hasta tanto el titular no solicite la supresión de sus datos o la revocatoria de la autorización."
+        "heading": "Revocatoria y supresión",
+        "text": "El titular podrá solicitar en cualquier momento la supresión de sus datos y/o revocar la autorización mediante reclamo. La supresión/revocatoria no procederán cuando exista un deber legal o contractual de conservar la información. Volley Express dispondrá mecanismos gratuitos y de fácil acceso para estas solicitudes."
+      },
+      {
+        "heading": "Comunicaciones comerciales y WhatsApp",
+        "text": "Las comunicaciones comerciales/promocionales solo se enviarán con autorización previa del titular y por los canales expresamente autorizados por este (p. ej., WhatsApp, SMS, correo electrónico o llamadas). En cada comunicación se habilitará un mecanismo ágil para cancelar la recepción (p. ej., indicación de palabra clave o canal de baja). Volley Express respetará los horarios y reglas aplicables para mensajes comerciales y publicitarios, y consultará los registros de exclusión de números cuando sea exigible."
+      },
+      {
+        "heading": "Transferencias, transmisiones y encargados",
+        "text": "Volley Express podrá compartir datos con terceros en dos escenarios: (i) transmisión: terceros que actúan como encargados tratando datos por cuenta de Volley Express (p. ej., hosting, mensajería, analítica), bajo contrato y obligaciones de seguridad y confidencialidad; (ii) transferencia: entrega a terceros responsables para finalidades compatibles e informadas. En todos los casos se aplicarán medidas de seguridad y el acceso se limitará a lo necesario."
+      },
+      {
+        "heading": "Transferencias internacionales",
+        "text": "Cuando, por la naturaleza de los servicios utilizados (p. ej., proveedores tecnológicos o mensajería), exista tratamiento fuera de Colombia, Volley Express implementará salvaguardas contractuales y de seguridad. Si se configura una transferencia internacional a un país que no ofrezca niveles adecuados, se aplicarán las reglas y excepciones legales (incluida la autorización expresa e inequívoca del titular cuando sea aplicable) o las gestiones requeridas ante la autoridad."
+      },
+      {
+        "heading": "Cookies y tecnologías similares",
+        "text": "El sitio web puede usar cookies y tecnologías similares, incluyendo cookies esenciales (necesarias para operar el sitio), funcionales, de rendimiento/analítica y de marketing. El usuario podrá gestionar sus preferencias mediante el banner o configuración disponible (cuando aplique) y también desde su navegador. El detalle de cookies, finalidades y tiempos se informará en la Política de Cookies o en la sección correspondiente del sitio."
+      },
+      {
+        "heading": "Seguridad de la información",
+        "text": "Volley Express adoptará medidas administrativas, técnicas y organizacionales razonables para proteger la confidencialidad, integridad y disponibilidad de los datos, y para reducir riesgos de acceso no autorizado, pérdida, alteración o divulgación. En caso de incidentes relevantes, se evaluará la necesidad de reportar a la autoridad competente según corresponda."
+      },
+      {
+        "heading": "Retención y vigencia",
+        "text": "Fecha de entrada en vigencia: 2026-02-22. Las bases de datos tendrán vigencia indefinida mientras sean necesarias para las finalidades descritas y para el cumplimiento de obligaciones legales o contractuales. Cumplida la finalidad y cuando sea procedente, los datos serán suprimidos."
+      },
+      {
+        "heading": "Canales de atención",
+        "text": "Para ejercer derechos o presentar consultas/reclamos, el titular puede escribir a volleyexpress@gmail.com con el asunto “Datos Personales” o comunicarse al +57 3004311280. Horario de atención: [Lunes a viernes, 8:00 a.m. a 5:00 p.m. hora Colombia] (ajustar según operación)."
+      },
+      {
+        "heading": "Cambios a esta política",
+        "text": "Cualquier cambio sustancial que afecte la finalidad o la identificación del responsable será comunicado de manera eficiente antes de implementar la nueva versión. Si el cambio afecta la finalidad del tratamiento, se solicitará nueva autorización cuando corresponda."
       }
     ]
   }
