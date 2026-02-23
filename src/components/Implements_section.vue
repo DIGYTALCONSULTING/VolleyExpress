@@ -45,11 +45,19 @@
           <div
             class="bg-white rounded-4xl shadow-2xl overflow-hidden p-2 drop-shadow-[10px_10px_25px_rgba(80,150,55,0.6)] h-full min-h-[480px] lg:min-h-[440px] flex flex-col"
           >
-            <figure class="w-full h-44 lg:h-36 flex items-center justify-center">
+            <figure
+              :class="[
+                'w-full h-44 lg:h-36 flex items-center justify-center rounded-xl',
+                isMediasSemiProfesionales(producto) ? 'bg-zinc-200' : ''
+              ]"
+            >
               <img
                 :src="producto.imagen"
                 :alt="altText(producto)"
-                class="w-full h-full object-contain rounded-xl drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-125"
+                :class="[
+                  'w-full h-full object-contain rounded-xl drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-125',
+                  implementImageScaleClass(producto)
+                ]"
                 loading="lazy"
                 decoding="async"
                 itemprop="image"
@@ -204,6 +212,23 @@ function waLink(nombre) {
 function altText(p) {
   const base = (p?.referencia || 'Implemento de voleibol').trim()
   return `${base} - implementos de voleibol en Medellín`
+}
+
+/** Compensa productos cuyas fotos vienen con mucho espacio en blanco */
+function implementImageScaleClass(p) {
+  const ref = (p?.referencia || '').trim().toUpperCase()
+  if (
+    ref === 'AEROSOL NABICO' ||
+    ref === 'AEROSOL NABICO HERBAL' ||
+    ref === 'MEDIAS SEMI PROFESIONALES'
+  ) {
+    return 'scale-150'
+  }
+  return ''
+}
+
+function isMediasSemiProfesionales(p) {
+  return (p?.referencia || '').trim().toUpperCase() === 'MEDIAS SEMI PROFESIONALES'
 }
 
 /**

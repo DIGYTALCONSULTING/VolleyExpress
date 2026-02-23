@@ -1,5 +1,19 @@
 [
   {
+    "referencia": "PELUCHE VOLEY ROSA, BLANCO Y NEGRO",
+    "descripcion": "Peluche temático de voleibol en tela de felpa, ideal como regalo para jugadoras y fans. Perfecto para detalle deportivo en Medellín.",
+    "precio": "$50.000",
+    "imagen": "/img/variedades/peluches/peluche_voley_11.webp",
+    "material": "TELA DE FELPA"
+  },
+  {
+    "referencia": "PELUCHE VOLEY AZUL CIELO, AMARILLOY NEGRO",
+    "descripcion": "Peluche temático de voleibol en tela de felpa, ideal como regalo para jugadoras y fans. Perfecto para detalle deportivo en Medellín.",
+    "precio": "$50.000",
+    "imagen": "/img/variedades/peluches/peluche_voley_10.webp",
+    "material": "TELA DE FELPA"
+  },
+  {
     "referencia": "PELUCHE VOLEY AZUL, AMARILLO",
     "descripcion": "Peluche temático de voleibol en tela de felpa, ideal como regalo para jugadoras y fans. Perfecto para detalle deportivo en Medellín.",
     "precio": "$50.000",
@@ -14,49 +28,49 @@
     "material": "TELA DE FELPA"
   },
   {
-    "referencia": "PELUCHE VOLEY TIPO LLAVERO ROJO, AZUL, BLANCO",
+    "referencia": "LLAVELUCHE ROJO, AZUL, BLANCO",
     "descripcion": "Peluche tipo llavero con temática de voleibol en tela de felpa. Detalle compacto para maleta o llaves, ideal para fans en Medellín.",
     "precio": "$30.000",
     "imagen": "/img/variedades/peluches/peluche_voley_3.webp",
     "material": "TELA DE FELPA"
   },
   {
-    "referencia": "PELUCHE VOLEY TIPO LLAVERO AZUL CLARO, BLANCO",
+    "referencia": "LLAVELUCHE AZUL CLARO, BLANCO",
     "descripcion": "Peluche tipo llavero de voleibol en felpa, práctico y liviano. Excelente como recordatorio de equipo o regalo para jugadoras en Medellín.",
     "precio": "$30.000",
     "imagen": "/img/variedades/peluches/peluche_voley_4.webp",
     "material": "TELA DE FELPA"
   },
   {
-    "referencia": "PELUCHE VOLEY TIPO LLAVERO MULTICOLOR",
+    "referencia": "LLAVELUCHE VOLEY TIPO LLAVERO MULTICOLOR",
     "descripcion": "Peluche tipo llavero multicolor con temática voleibol en tela de felpa. Regalo llamativo para fans, ideal para uniformes y bolsos.",
     "precio": "$30.000",
     "imagen": "/img/variedades/peluches/peluche_voley_5.webp",
     "material": "TELA DE FELPA"
   },
   {
-    "referencia": "PELUCHE VOLEY TIPO LLAVERO VERDE, ROJO, BLANCO",
+    "referencia": "LLAVELUCHE VERDE, ROJO, BLANCO",
     "descripcion": "Peluche tipo llavero con estilo deportivo y colores verde/rojo/blanco. Detalle de voleibol en felpa para regalar en Medellín.",
     "precio": "$30.000",
     "imagen": "/img/variedades/peluches/peluche_voley_6.webp",
     "material": "TELA DE FELPA"
   },
   {
-    "referencia": "PELUCHE VOLEY TIPO BALÓN AMARILLO Y AZUL",
+    "referencia": "BALÓN PELUCHE VOLEY AMARILLO Y AZUL",
     "descripcion": "Peluche tipo balón de voleibol en tela de felpa, ideal para decoración o regalo deportivo. Perfecto para fans y equipos en Medellín.",
     "precio": "$60.000",
     "imagen": "/img/variedades/peluches/peluche_voley_7.webp",
     "material": "TELA DE FELPA"
   },
   {
-    "referencia": "PELUCHE VOLEY TIPO BALÓN AZUL Y AMARILLO",
+    "referencia": "BALÓN PELUCHE VOLEY AZUL Y AMARILLO",
     "descripcion": "Peluche tipo balón de voleibol en felpa, suave y decorativo. Regalo para jugadoras, entrenadores o amigos voleibolistas en Medellín.",
     "precio": "$60.000",
     "imagen": "/img/variedades/peluches/peluche_voley_8.webp",
     "material": "TELA DE FELPA"
   },
   {
-    "referencia": "PELUCHE VOLEY TIPO BALÓN NEGRO, BLANCO Y GRIS",
+    "referencia": "BALÓN PELUCHE VOLEY NEGRO, BLANCO Y GRIS",
     "descripcion": "Peluche tipo balón con diseño sobrio (negro/blanco/gris) en tela de felpa. Regalo deportivo elegante para fans en Medellín.",
     "precio": "$60.000",
     "imagen": "/img/variedades/peluches/peluche_voley_9.webp",

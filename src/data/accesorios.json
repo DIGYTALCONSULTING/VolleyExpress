@@ -1,7 +1,7 @@
 [
   {
-    "referencia": "LLAVERO BALON 1",
-    "descripcion": "Llavero balon",
+    "referencia": "LLAVERO BALON GOMA",
+    "descripcion": "Llavero balon goma",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/llavero_balon_1.webp",
     "material": "GOMA"
@@ -14,8 +14,8 @@
     "material": "GOMA"
   },
   {
-    "referencia": "LLAVERO BALON 2",
-    "descripcion": "Llavero balon",
+    "referencia": "LLAVERO BALON ACERO",
+    "descripcion": "Llavero balon acero",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/llavero_balon_2.webp",
     "material": "ACERO"
@@ -58,7 +58,7 @@
   {
     "referencia": "LLAVERO MIKASA V330W",
     "descripcion": "Llavero mikasa v330w",
-    "precio": "$20.000",
+    "precio": "$25.000",
     "imagen": "/img/variedades/accesorios/llavero_mikasa_v200w.webp",
     "material": "PVC"
   },
@@ -146,17 +146,17 @@
   {
     "referencia": "TOPOS DORADOS BLANCO",
     "descripcion": "Topos dorados blanco",
-    "precio": "$12.000",
+    "precio": "$15.000",
     "imagen": "/img/variedades/accesorios/topos_dorado__blanco.webp",
     "material": "ACERO"
   },
   {
     "referencia": "TOPOS BLANCO",
     "descripcion": "Topos blancos",
-    "precio": "$12.000",
+    "precio": "$15.000",
     "imagen": "/img/variedades/accesorios/topos_blancos.webp",
     "material": "ACERO"
-  },
+  },  
   {
     "referencia": "TOPOS NEGROS",
     "descripcion": "Topos negros",
@@ -207,9 +207,9 @@
     "material": "ACERO"
   },
   {
-    "referencia": "COLLAR DORADO",
-    "descripcion": "Collar dorado",
-    "precio": "$20.000",
+    "referencia": "COLLAR CORAZÓN DORADO",
+    "descripcion": "Collar corazón dorado",
+    "precio": "$25.000",
     "imagen": "/img/variedades/accesorios/collar_corazon_balon_dorado.webp",
     "material": "ACERO"
   },
@@ -235,37 +235,30 @@
     "material": "ACERO"
   },
   {
-    "referencia": "COLLAR PLACA",
-    "descripcion": "Collar placa",
+    "referencia": "COLLAR PLACA DORADO",
+    "descripcion": "Collar placa dorado",
     "precio": "$20.000",
     "imagen": "/img/variedades/accesorios/collar_placa_1.webp",
     "material": "ACERO"
   },
   {
-    "referencia": "COLLAR PLACA 2",
-    "descripcion": "Collar placa 2",
+    "referencia": "COLLAR PLACA PLATEADO",
+    "descripcion": "Collar placa plateado",
     "precio": "$20.000",
     "imagen": "/img/variedades/accesorios/collar_placa_2.webp",
     "material": "ACERO"
   },
   {
-    "referencia": "COLLAR BALON MULTICOLOR",
-    "descripcion": "Collar balon multicolor",
+    "referencia": "COLLAR BALON MULTICOLOR PLATEADO",
+    "descripcion": "Collar balon multicolor plateado",
     "precio": "$20.000",
     "imagen": "/img/variedades/accesorios/collar_balon_multicolor_1.webp",
     "material": "ACERO"
   },
   {
-    "referencia": "COLLAR BALON MULTICOLOR 2",
-    "descripcion": "Collar balon multicolor",
-    "precio": "$20.000",
-    "imagen": "/img/variedades/accesorios/collar_balon_multicolor_2.webp",
-    "material": "ACERO"
-  },
-  {
-    "referencia": "COLLAR BALON MULTICOLOR 3",
-    "descripcion": "Collar balon multicolor 3",
-    "precio": "$20.000",
+    "referencia": "COLLAR BALON MULTICOLOR DORADO",
+    "descripcion": "Collar balon multicolor dorado",
+    "precio": "$25.000",
     "imagen": "/img/variedades/accesorios/collar_balon_multicolor_3.webp",
     "material": "ACERO"
   },
@@ -277,23 +270,23 @@
     "material": "ACERO"
   },
     {
-    "referencia": "COLLAR SILUETA BALÓN",
-    "descripcion": "Collar silueta balón",
-    "precio": "$20.000",
+    "referencia": "COLLAR SILUETA BALÓN DORADO",
+    "descripcion": "Collar silueta balón dorado",
+    "precio": "$25.000",
     "imagen": "/img/variedades/accesorios/collar_silueta_balon_1.webp",
     "material": "ACERO"
   },
     {
-    "referencia": "COLLAR SILUETA BALÓN 2",
-    "descripcion": "Collar silueta balón 2",
-    "precio": "$20.000",
+    "referencia": "COLLAR SILUETA BALÓN PLATEADO",
+    "descripcion": "Collar silueta balón plateado",
+    "precio": "$25.000",
     "imagen": "/img/variedades/accesorios/collar_silueta_balon_2.webp",
     "material": "ACERO"
   },
   {
-    "referencia": "COLLAR SILUETA BALÓN 3",
-    "descripcion": "Collar silueta balón 3",
-    "precio": "$15.000",
+    "referencia": "COLLAR SILUETA BALÓN PLATEADO PEQUEÑO",
+    "descripcion": "Collar silueta balón plateado pequeño",
+    "precio": "$20.000",
     "imagen": "/img/variedades/accesorios/collar_silueta_balon_3.webp",
     "material": "ACERO"
   },
@@ -436,6 +429,55 @@
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/manilla_beisbol.webp",
     "material": "ACERO Y NYLON"
+  },
+  {
+    "referencia": "MANILLAS SILICONA",
+    "descripcion": "Manillas silicona",
+    "precio": "$10.000",
+    "imagen": "/img/variedades/accesorios/manilla_silicona_1.webp",
+    "material": "SILICONA"
+  },
+  {
+    "referencia": "MANILLA SILICONA NEGRA GREATNESS",
+    "descripcion": "Manillas silicona",
+    "precio": "$10.000",
+    "imagen": "/img/variedades/accesorios/manilla_silicona_2.webp",
+    "material": "SILICONA"
+  },
+  {
+    "referencia": "MANILLA SILICONA NEGRA QUITTERS",
+    "descripcion": "Manillas silicona",
+    "precio": "$10.000",
+    "imagen": "/img/variedades/accesorios/manilla_silicona_3.webp",
+    "material": "SILICONA"
+  },
+  {
+    "referencia": "MANILLA SILICONA NEGRA VOLLEYBALL AZUL",
+    "descripcion": "Manillas silicona",
+    "precio": "$10.000",
+    "imagen": "/img/variedades/accesorios/manilla_silicona_4.webp",
+    "material": "SILICONA"
+  },
+  {
+    "referencia": "MANILLA SILICONA AZUL VOLLEYBALL",
+    "descripcion": "Manillas silicona",
+    "precio": "$10.000",
+    "imagen": "/img/variedades/accesorios/manilla_silicona_5.webp",
+    "material": "SILICONA"
+  },
+  {
+    "referencia": "LAPICERO VOLEY AZUL",
+    "descripcion": "Lapicero volly azul",
+    "precio": "$5.000",
+    "imagen": "/img/variedades/accesorios/lapicero_voley_azul.webp",
+    "material": "PVC Y NYLON"
+  },
+  {
+    "referencia": "LAPICERO VOLEY NEGRO",
+    "descripcion": "Lapicero volly negro",
+    "precio": "$5.000",
+    "imagen": "/img/variedades/accesorios/lapicero_voley_negro.webp",
+    "material": "PVC Y NYLON"
   }
 ]
  

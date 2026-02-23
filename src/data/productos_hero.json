@@ -10,9 +10,9 @@
     "categoria": "balones"
   },
   {
-    "id": "hero-mizuno-sl2-elite",
-    "nombre": "Rodilleras Mizuno SL2 Elite negras",
-    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_sl2_elite_negras.webp",
+    "id": "herorodilleras-nike-streak-blancas",
+    "nombre": "Rodilleras Nike Streak blancas",
+    "imagen": "/img/implementos/rodilleras/rodilleras_nike_streak_blancas.webp",
     "cta": {
       "label": "Comprar por WhatsApp",
       "url": "https://wa.me/573004311280"
@@ -20,8 +20,8 @@
     "categoria": "rodilleras"
   },
   {
-    "id": "mangas-medium",
-    "nombre": "Mangas medium negras",
+    "id": "mangas-cortas",
+    "nombre": "Mangas cortas",
     "imagen": "/img/implementos/otros/mangas_cortas.webp",
     "cta": {
       "label": "Comprar por WhatsApp",

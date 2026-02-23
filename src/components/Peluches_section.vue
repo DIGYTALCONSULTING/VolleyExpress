@@ -54,7 +54,10 @@
               <img
                 :src="peluche.imagen"
                 :alt="altText(peluche)"
-                class="w-full h-full object-contain transition-transform duration-300 hover:scale-150"
+                :class="[
+                  'w-full h-full object-contain transition-transform duration-300 hover:scale-150',
+                  pelucheImageScaleClass(peluche)
+                ]"
                 loading="lazy"
                 decoding="async"
                 itemprop="image"
@@ -73,7 +76,7 @@
               </h3>
 
               <p
-                class="text-gray-900 mb-4 min-h-[64px] text-justify"
+                class="text-gray-900 mb-4 text-justify leading-relaxed break-words min-h-[7.5rem] sm:min-h-[8.5rem]"
                 itemprop="description"
               >
                 {{ peluche.descripcion }}
@@ -187,6 +190,18 @@ function waLink(nombre) {
 function altText(p) {
   const n = (p?.nombre || 'Peluche de voleibol').trim()
   return `${n} - peluche y regalo de voleibol en Medellín`
+}
+
+/** Ajusta visualmente los "PELUCHE VOLEY ..." para que se vean del tamaño del modelo de referencia */
+function pelucheImageScaleClass(p) {
+  const n = (p?.nombre || '').trim().toUpperCase()
+  if (!n.startsWith('PELUCHE VOLEY')) return ''
+
+  // Referencia visual correcta (no tocar)
+  if (n === 'PELUCHE VOLEY VERDE, BLANCO, ROJO') return ''
+
+  // Compensa fotos con más espacio en blanco alrededor del peluche
+  return 'scale-135'
 }
 
 /** URL para itemprop=url en SPA */

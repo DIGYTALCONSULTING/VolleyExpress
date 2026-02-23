@@ -46,13 +46,16 @@
           <meta itemprop="url" :content="pageUrlWithAnchor" />
 
           <div
-            class="bg-white rounded-4xl shadow-2xl overflow-hidden p-2 h-full drop-shadow-[10px_10px_25px_rgba(80,150,55,0.6)] flex flex-col"
+            class="bg-white rounded-4xl shadow-2xl overflow-hidden p-2 h-full min-h-[640px] drop-shadow-[10px_10px_25px_rgba(80,150,55,0.6)] flex flex-col"
           >
             <figure class="w-full h-48 flex items-center justify-center">
               <img
                 :src="item.imagen"
                 :alt="altText(item)"
-                class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
+                :class="[
+                  'w-full h-full object-contain transition-transform duration-300 hover:scale-105',
+                  accesorioImageScaleClass(item)
+                ]"
                 loading="lazy"
                 decoding="async"
                 itemprop="image"
@@ -64,14 +67,14 @@
 
             <div class="p-4 flex flex-col flex-1">
               <h3
-                class="text-xl sm:text-2xl text-center font-bold mb-2 min-h-[56px] flex items-center justify-center text-balance"
+                class="text-xl sm:text-2xl text-center font-bold leading-tight mb-2 min-h-[56px] flex items-center justify-center text-balance"
                 itemprop="name"
               >
                 {{ item.referencia }}
               </h3>
 
               <p
-                class="text-gray-900 mb-4 text-sm sm:text-base text-justify line-clamp-3"
+                class="text-gray-900 mb-4 text-sm sm:text-base text-justify leading-relaxed break-words min-h-[7.5rem] sm:min-h-[8.5rem]"
                 itemprop="description"
               >
                 {{ item.descripcion }}
@@ -203,6 +206,14 @@ function altText({ referencia, material }) {
   const mat = (material || '').trim()
   const m = mat ? ` (${mat})` : ''
   return `${ref}${m} - regalo de voleibol en Medellín`
+}
+
+/** Compensa imágenes con mucho espacio en blanco en accesorios puntuales */
+function accesorioImageScaleClass(item) {
+  const ref = (item?.referencia || '').trim().toUpperCase()
+  if (ref === 'MANILLAS SILICONA') return 'scale-150'
+  if (ref.startsWith('MANILLA SILICONA ')) return 'scale-175'
+  return ''
 }
 
 /** WhatsApp con intención local + regalo */
