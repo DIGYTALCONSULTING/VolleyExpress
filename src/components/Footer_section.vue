@@ -6,8 +6,8 @@
     itemtype="https://schema.org/LocalBusiness"
   >
     <!-- SEO estructurado (no afecta UI) -->
-    <meta itemprop="name" content="Volley Express Shop" />
-    <meta itemprop="url" content="https://www.volleyexpressshop.com/" />
+    <meta itemprop="name" content="Volley Expres Shop" />
+    <meta itemprop="url" content="https://www.volleyexpresshop.com/" />
     <meta itemprop="areaServed" content="Medellín" />
     <meta itemprop="address" content="Medellín, Antioquia, Colombia" />
     <meta
@@ -27,7 +27,7 @@
         class="rounded-3xl bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/75 shadow-xl ring-1 ring-zinc-200/60 p-5 md:p-8"
       >
         <!-- Heading accesible (no altera UI) -->
-        <h2 id="footer-title" class="sr-only">Footer Volley Express Shop Medellín</h2>
+        <h2 id="footer-title" class="sr-only">Footer Volley Expres Shop Medellín</h2>
 
         <!-- Grid responsiva -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
@@ -46,7 +46,7 @@
 
             <!-- Copy SEO local (invisible) -->
             <p class="sr-only">
-              Volley Express Shop en Medellín. Implementos, balones, accesorios y regalos deportivos de
+              Volley Expres Shop en Medellín. Implementos, balones, accesorios y regalos deportivos de
               voleibol. Compra y atención por WhatsApp.
             </p>
           </div>
@@ -61,7 +61,7 @@
                 :href="links.instagram"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Visitar Instagram de Volley Express Shop"
+                aria-label="Visitar Instagram de Volley Expres Shop"
                 class="group"
               >
                 <svg
@@ -103,7 +103,7 @@
                 :href="links.whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Chatear por WhatsApp con Volley Express Shop"
+                aria-label="Chatear por WhatsApp con Volley Expres Shop"
                 class="group"
               >
                 <svg
@@ -141,7 +141,7 @@
           class="mt-6 border-t border-zinc-200/70 pt-4 flex flex-col md:flex-row items-center justify-center gap-3"
         >
           <p class="text-xs text-zinc-500 text-center md:text-left">
-            © {{ year }} VolleyExpressShop. Todos los derechos reservados.
+            © {{ year }} VolleyExpreShop. Todos los derechos reservados.
           </p>
 
           <!-- SEO: ubicación + contacto (visible discreto) -->
@@ -156,7 +156,7 @@
 import { computed } from 'vue'
 
 const links = {
-  instagram: 'https://www.instagram.com/volleyexpresshop/',
+  instagram: 'https://www.instagram.com/volleyexpreshop/',
   whatsapp: 'https://wa.me/573004311280'
 }
 

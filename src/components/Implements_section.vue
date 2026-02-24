@@ -17,7 +17,7 @@
 
       <!-- Copy SEO adicional -->
       <p class="sr-only">
-        Compra implementos de voleibol en Medellín: balones, rodilleras, mangas, infladores y accesorios. Volley Express Shop con atención por WhatsApp.
+        Compra implementos de voleibol en Medellín: balones, rodilleras, mangas, infladores y accesorios. Volley Expres Shop con atención por WhatsApp.
       </p>
     </header>
 

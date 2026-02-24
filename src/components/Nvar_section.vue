@@ -9,7 +9,7 @@
           <a href="#top" class="inline-flex items-center" aria-label="Ir al inicio">
             <img
               :src="logo"
-              alt="Volley Express Shop Medellín - tienda de implementos de voleibol"
+              alt="Volley Expres Shop Medellín - tienda de implementos de voleibol"
               class="w-20 h-20 object-contain flex-shrink-0"
               width="80"
               height="80"

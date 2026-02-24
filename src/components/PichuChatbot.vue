@@ -41,7 +41,7 @@
         <img :src="pichuImg" class="w-9 h-9 rounded-full bg-white/90 p-1" alt="Pichu avatar" />
         <div>
           <p class="font-semibold">Pichu</p>
-          <p class="text-[11px]">Asesor de ventas · VolleyExpress</p>
+          <p class="text-[11px]">Asesor de ventas · VolleyExpres</p>
         </div>
 
         <button

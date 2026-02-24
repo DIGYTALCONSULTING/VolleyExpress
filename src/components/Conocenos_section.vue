@@ -7,8 +7,8 @@
     itemtype="https://schema.org/LocalBusiness"
   >
     <!-- SEO estructurado (no afecta UI) -->
-    <meta itemprop="name" content="Volley Express Shop" />
-    <meta itemprop="url" content="https://www.volleyexpressshop.com/" />
+    <meta itemprop="name" content="Volley Expres Shop" />
+    <meta itemprop="url" content="https://www.volleyexpresshop.com/" />
     <meta itemprop="areaServed" content="Medellín" />
     <meta itemprop="address" content="Medellín, Antioquia, Colombia" />
     <meta
@@ -26,7 +26,7 @@
 
     <!-- Copy SEO invisible adicional (no rompe UI) -->
     <p class="sr-only">
-      Volley Express Shop es una tienda especializada en voleibol en Medellín.
+      Volley Expres Shop es una tienda especializada en voleibol en Medellín.
       Compra implementos, balones, accesorios y regalos deportivos. Atención por WhatsApp.
     </p>
 
@@ -50,7 +50,7 @@
           <div class="flex-1 py-8 px-8 space-y-2 text-justify">
             <header>
               <h3 class="text-center font-bold" itemprop="legalName">
-                VOLLEY EXPRESS
+                VOLLEY EXPRES
               </h3>
               <p class="text-center font-semibold">
                 Tu pasión por el voleibol, a un clic de distancia
@@ -59,7 +59,7 @@
 
             <div class="border-t border-white/10 pt-6 space-y-2">
               <p class="text-sm leading-snug text-zinc-100">
-                En Volley Express vivimos el voleibol como una pasión que se comparte dentro y fuera de la cancha.
+                En Volley Expres vivimos el voleibol como una pasión que se comparte dentro y fuera de la cancha.
                 Nacimos en <strong>Medellín</strong> hace más de 4 años con un propósito claro:
                 acercar a jugadores, clubes y aficionados a productos de voleibol de alta calidad.
               </p>

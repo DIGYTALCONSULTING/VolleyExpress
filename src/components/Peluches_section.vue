@@ -22,7 +22,7 @@
       <!-- Copy SEO invisible -->
       <p class="sr-only">
         Peluches de voleibol en Medellín ideales como regalos deportivos y detalles para fanáticos.
-        Compra en Volley Express Shop con atención por WhatsApp y entrega local.
+        Compra en Volley Expres Shop con atención por WhatsApp y entrega local.
       </p>
     </header>
 

@@ -7,7 +7,7 @@
       <div class="flex flex-col items-center md:items-start gap-8 md:ml-32 max-w-lg">
         <!-- H1 SEO (local Medellín) -->
         <h1 id="hero-title" class="sr-only">
-          Implementos de voleibol en Medellín: balones, accesorios y equipamiento profesional | Volley Express Shop
+          Implementos de voleibol en Medellín: balones, accesorios y equipamiento profesional | Volley Expres Shop
         </h1>
 
         <!-- Copy visible -->

@@ -8,8 +8,8 @@
     itemtype="https://schema.org/HowTo"
   >
     <!-- SEO/Schema HowTo (no altera UI) -->
-    <meta itemprop="name" content="Proceso de compra y envío de implementos de voleibol en Medellín | Volley Express Shop" />
-    <meta itemprop="description" content="Cómo comprar implementos, accesorios, variedades y regalos de voleibol por WhatsApp en Volley Express Shop, con entrega en Medellín y Área Metropolitana." />
+    <meta itemprop="name" content="Proceso de compra y envío de implementos de voleibol en Medellín | Volley Expres Shop" />
+    <meta itemprop="description" content="Cómo comprar implementos, accesorios, variedades y regalos de voleibol por WhatsApp en Volley Expres Shop, con entrega en Medellín y Área Metropolitana." />
     <meta itemprop="totalTime" content="PT5M" />
     <meta itemprop="supply" content="WhatsApp" />
     <meta itemprop="tool" content="Teléfono móvil" />
@@ -23,7 +23,7 @@
         id="titulo-proceso-pedido"
         class="text-center text-2xl font-bold mt-10"
       >
-        Proceso de compra y envío en Medellín | Volley Express Shop
+        Proceso de compra y envío en Medellín | Volley Expres Shop
       </h2>
 
       <!-- Copy visible corto (SEO + conversión sin romper UI) -->
@@ -33,7 +33,7 @@
 
       <!-- Copy SEO invisible -->
       <p class="sr-only">
-        Cómo comprar implementos, accesorios, variedades y regalos de voleibol en Medellín con Volley Express Shop:
+        Cómo comprar implementos, accesorios, variedades y regalos de voleibol en Medellín con Volley Expres Shop:
         contacto por WhatsApp, selección de productos y coordinación de envío.
       </p>
     </div>
@@ -110,7 +110,7 @@
         class="flex items-center justify-center p-4"
         :class="visible ? 'opacity-100 scale-100 transition-transform duration-700 delay-300 ease-out' : 'opacity-0 scale-75'"
       >
-        <img src="../assets/proceso_pedido.webp" alt="Selección de productos de voleibol en Volley Express Shop" class="icon-img" />
+        <img src="../assets/proceso_pedido.webp" alt="Selección de productos de voleibol en Volley Expres Shop" class="icon-img" />
       </div>
       <div></div>
       <div
@@ -217,7 +217,7 @@
           </summary>
           <div class="mt-2 text-gray-700" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
             <p itemprop="text">
-              Escríbenos por WhatsApp, indícanos el producto (o referencia) que te interesa y te confirmamos precio, disponibilidad y opciones de entrega en Medellín y Área Metropolitana.
+              Escríbenos por WhatsApp, indícanos el producto (o referencia) que te interesa y te confirmamos precio, disponibilidad y opciones de entrega en todo el territorio nacional.
             </p>
           </div>
         </details>
