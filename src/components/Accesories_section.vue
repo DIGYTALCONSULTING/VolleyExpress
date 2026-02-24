@@ -211,7 +211,10 @@ function altText({ referencia, material }) {
 /** Compensa imágenes con mucho espacio en blanco en accesorios puntuales */
 function accesorioImageScaleClass(item) {
   const ref = (item?.referencia || '').trim().toUpperCase()
+  const img = (item?.imagen || '').toLowerCase()
+  if (img.includes('/manilla_siliona.webp')) return 'scale-110'
   if (ref === 'MANILLAS SILICONA') return 'scale-150'
+  if (ref === 'MANILLAS SILICONA GREATNESS') return 'scale-175'
   if (ref.startsWith('MANILLA SILICONA ')) return 'scale-175'
   return ''
 }

@@ -265,7 +265,7 @@
     {
     "referencia": "COLLAR MUÑECA",
     "descripcion": "Collar muñeca",
-    "precio": "$15.000",
+    "precio": "$20.000",
     "imagen": "/img/variedades/accesorios/collar_muneca.webp",
     "material": "ACERO"
   },
@@ -431,41 +431,14 @@
     "material": "ACERO Y NYLON"
   },
   {
-    "referencia": "MANILLAS SILICONA",
-    "descripcion": "Manillas silicona",
+    "referencia": "MANILLA SILICONA GREATNESS",
+    "descripcion": "Consulte variedad de colores para confirmar existencias.",
     "precio": "$10.000",
-    "imagen": "/img/variedades/accesorios/manilla_silicona_1.webp",
+    "imagen": "/img/variedades/accesorios/manilla_siliona.webp",
     "material": "SILICONA"
   },
-  {
-    "referencia": "MANILLA SILICONA NEGRA GREATNESS",
-    "descripcion": "Manillas silicona",
-    "precio": "$10.000",
-    "imagen": "/img/variedades/accesorios/manilla_silicona_2.webp",
-    "material": "SILICONA"
-  },
-  {
-    "referencia": "MANILLA SILICONA NEGRA QUITTERS",
-    "descripcion": "Manillas silicona",
-    "precio": "$10.000",
-    "imagen": "/img/variedades/accesorios/manilla_silicona_3.webp",
-    "material": "SILICONA"
-  },
-  {
-    "referencia": "MANILLA SILICONA NEGRA VOLLEYBALL AZUL",
-    "descripcion": "Manillas silicona",
-    "precio": "$10.000",
-    "imagen": "/img/variedades/accesorios/manilla_silicona_4.webp",
-    "material": "SILICONA"
-  },
-  {
-    "referencia": "MANILLA SILICONA AZUL VOLLEYBALL",
-    "descripcion": "Manillas silicona",
-    "precio": "$10.000",
-    "imagen": "/img/variedades/accesorios/manilla_silicona_5.webp",
-    "material": "SILICONA"
-  },
-  {
+
+ {
     "referencia": "LAPICERO VOLEY AZUL",
     "descripcion": "Lapicero volly azul",
     "precio": "$5.000",
