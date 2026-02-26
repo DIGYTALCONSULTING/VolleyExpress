@@ -12,7 +12,7 @@
 
       <!-- Copy visible corto (mejora SEO + conversión sin cambiar layout) -->
       <p class="mt-2 text-gray-700 max-w-3xl text-justify">
-        Balones, rodilleras, mangas y accesorios para entrenamiento y competencia. Atención rápida por WhatsApp y entrega en Medellín y Área Metropolitana.
+        Balones, rodilleras, mangas y accesorios para entrenamiento y competencia. Atención rápida por WhatsApp y entrega en todo el país.
       </p>
 
       <!-- Copy SEO adicional -->

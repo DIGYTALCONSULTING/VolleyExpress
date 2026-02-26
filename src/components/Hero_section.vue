@@ -16,7 +16,7 @@
             Implementos de voleibol en Medellín
           </h2>
           <p class="mt-2 text-gray-700 text-justify">
-            Balones, accesorios y equipamiento para entrenamiento y competencia. Atención rápida por WhatsApp y envío en Medellín y Área Metropolitana.
+            Balones, accesorios y equipamiento para entrenamiento y competencia. Atención rápida por WhatsApp y envío a todo el país.
           </p>
         </div>
 

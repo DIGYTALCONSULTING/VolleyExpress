@@ -15,7 +15,7 @@
 
       <!-- Copy visible corto (mejora SEO + conversión sin cambiar UI) -->
       <p class="mt-2 text-gray-700 max-w-3xl text-justify">
-        Llaveros, collares, aretes, pines, stickers y detalles temáticos de voleibol. Ideal para regalar a jugadoras, entrenadores y fans. Entrega en Medellín y Área Metropolitana.
+        Llaveros, collares, aretes, pines, stickers y detalles temáticos de voleibol. Ideal para regalar a jugadoras, entrenadores y fans. Entrega a todo el país.
       </p>
 
       <!-- Copy SEO adicional -->

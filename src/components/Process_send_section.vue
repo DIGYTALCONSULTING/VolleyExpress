@@ -217,7 +217,7 @@
           </summary>
           <div class="mt-2 text-gray-700" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
             <p itemprop="text">
-              Escríbenos por WhatsApp, indícanos el producto (o referencia) que te interesa y te confirmamos precio, disponibilidad y opciones de entrega en todo el territorio nacional.
+              Escríbenos por WhatsApp, indícanos el producto (o referencia) que te interesa y te confirmamos precio, disponibilidad y opciones de entrega en todo el país.
             </p>
           </div>
         </details>
