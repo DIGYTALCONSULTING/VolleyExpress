@@ -141,7 +141,7 @@
           class="mt-6 border-t border-zinc-200/70 pt-4 flex flex-col md:flex-row items-center justify-center gap-3"
         >
           <p class="text-xs text-zinc-500 text-center md:text-left">
-            © {{ year }} VolleyExpreShop. Todos los derechos reservados.
+            © {{ year }} VolleyExpresShop. Todos los derechos reservados.
           </p>
 
           <!-- SEO: ubicación + contacto (visible discreto) -->
