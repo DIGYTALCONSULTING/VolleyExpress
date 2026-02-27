@@ -45,7 +45,7 @@
           itemtype="https://schema.org/Product"
         >
           <!-- URL del “producto” (SPA + ancla) -->
-          <meta itemprop="url" :content="pageUrlWithAnchor" />
+          <meta itemprop="url" :content="pageUrl" />
 
           <div
             class="rounded-4xl shadow-2xl overflow-hidden p-2 h-full drop-shadow-[10px_10px_25px_rgba(80,150,55,0.6)] flex flex-col bg-white"
@@ -205,11 +205,9 @@ function pelucheImageScaleClass(p) {
 }
 
 /** URL para itemprop=url en SPA */
-const pageUrlWithAnchor = computed(() => {
+const pageUrl = computed(() => {
   if (typeof window === 'undefined') return ''
-  const u = new URL(window.location.href)
-  u.hash = '#Peluches'
-  return u.toString()
+  return window.location.href
 })
 
 /** Deduplicación simple (si te repiten items iguales en JSON) */

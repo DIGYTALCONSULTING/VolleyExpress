@@ -43,7 +43,7 @@
           itemtype="https://schema.org/Product"
         >
           <!-- URL del producto (SPA) -->
-          <meta itemprop="url" :content="pageUrlWithAnchor" />
+          <meta itemprop="url" :content="pageUrl" />
 
           <div
             class="bg-white rounded-4xl shadow-2xl overflow-hidden p-2 h-full min-h-[640px] drop-shadow-[10px_10px_25px_rgba(80,150,55,0.6)] flex flex-col"
@@ -239,11 +239,9 @@ function dedupe(list) {
 }
 
 /** URL para itemprop=url en SPA */
-const pageUrlWithAnchor = computed(() => {
+const pageUrl = computed(() => {
   if (typeof window === 'undefined') return ''
-  const u = new URL(window.location.href)
-  u.hash = '#Accesorios'
-  return u.toString()
+  return window.location.href
 })
 
 const items = computed(() => {

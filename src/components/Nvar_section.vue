@@ -6,7 +6,7 @@
         <div
           class="flex items-center justify-end lg:justify-start gap-6 md:gap-8 min-w-0 flex-1 pr-2 md:pr-0 order-2 lg:order-1"
         >
-          <a href="#top" class="inline-flex items-center" aria-label="Ir al inicio">
+          <RouterLink to="/" class="inline-flex items-center" aria-label="Ir al inicio">
             <img
               :src="logo"
               alt="Volley Expres Shop Medellín - tienda de implementos de voleibol"
@@ -16,31 +16,28 @@
               loading="eager"
               decoding="async"
             />
-          </a>
+          </RouterLink>
         </div>
 
         <!-- Links / Hamburguesa -->
         <div class="flex items-center order-1 lg:order-2">
           <!-- Links desktop -->
           <div class="hidden lg:flex lg:items-center lg:gap-x-4 lg:gap-y-2">
-            <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Implementos_Deportivos">
+            <RouterLink class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" :to="{ path: '/', hash: '#Implementos_Deportivos' }">
               Implementos
-            </a>
-            <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Accesorios">
+            </RouterLink>
+            <RouterLink class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" :to="{ path: '/', hash: '#Accesorios' }">
               Accesorios
-            </a>
-            <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Peluches">
+            </RouterLink>
+            <RouterLink class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" :to="{ path: '/', hash: '#Peluches' }">
               Peluches
-            </a>
-
-            <!-- PDF desde /public -> ruta raíz -->
-
-            <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Proceso_pedido">
+            </RouterLink>
+            <RouterLink class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" :to="{ path: '/', hash: '#Proceso_pedido' }">
               Proceso de Pedido
-            </a>
-            <a class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" href="#Conocenos">
+            </RouterLink>
+            <RouterLink class="cursor-pointer font-sans whitespace-nowrap lg:text-lg" :to="{ path: '/', hash: '#Conocenos' }">
               Conócenos
-            </a>
+            </RouterLink>
           </div>
 
           <!-- Botón móvil -->
@@ -81,26 +78,21 @@
       >
         <div v-if="mobileOpen" id="mobile-menu" class="lg:hidden border-t">
           <div class="flex flex-col px-4 py-3 space-y-3">
-            <a class="cursor-pointer text-base font-sans" href="#Implementos_Deportivos" @click="closeMobile">
-              Implementos Deportivos
-            </a>
-            <a class="cursor-pointer text-base font-sans" href="#Accesorios" @click="closeMobile">
+            <RouterLink class="cursor-pointer text-base font-sans" :to="{ path: '/', hash: '#Implementos_Deportivos' }" @click="closeMobile">
+              Implementos
+            </RouterLink>
+            <RouterLink class="cursor-pointer text-base font-sans" :to="{ path: '/', hash: '#Accesorios' }" @click="closeMobile">
               Accesorios
-            </a>
-            <a class="cursor-pointer text-base font-sans" href="#Peluches" @click="closeMobile">
+            </RouterLink>
+            <RouterLink class="cursor-pointer text-base font-sans" :to="{ path: '/', hash: '#Peluches' }" @click="closeMobile">
               Peluches
-            </a>
-
-            <!-- ✅ mismo id correcto -->
-            <a class="cursor-pointer text-base font-sans" href="#Proceso_pedido" @click="closeMobile">
+            </RouterLink>
+            <RouterLink class="cursor-pointer text-base font-sans" :to="{ path: '/', hash: '#Proceso_pedido' }" @click="closeMobile">
               Proceso de Pedido
-            </a>
-
-            <!-- ✅ PDF correcto -->
-            
-            <a class="cursor-pointer text-base font-sans" href="#Conocenos" @click="closeMobile">
-              Contáctanos
-            </a>
+            </RouterLink>
+            <RouterLink class="cursor-pointer text-base font-sans" :to="{ path: '/', hash: '#Conocenos' }" @click="closeMobile">
+              Conócenos
+            </RouterLink>
           </div>
         </div>
       </transition>

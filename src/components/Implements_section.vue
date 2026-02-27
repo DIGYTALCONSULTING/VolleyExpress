@@ -1,23 +1,20 @@
 <template>
   <section
-    id="Implementos_Deportivos"
+    :id="sectionId"
     class="w-full scroll-mt-24"
     aria-labelledby="implementos-title"
   >
     <header class="w-full text-left py-4 px-4">
-      <!-- H2 SEO optimizado (local) -->
       <h2 id="implementos-title" class="text-2xl font-bold">
-        Implementos de Voleibol Profesionales en Medellín
+        {{ headerTitle }}
       </h2>
 
-      <!-- Copy visible corto (mejora SEO + conversión sin cambiar layout) -->
       <p class="mt-2 text-gray-700 max-w-3xl text-justify">
-        Balones, rodilleras, mangas y accesorios para entrenamiento y competencia. Atención rápida por WhatsApp y entrega en todo el país.
+        {{ headerDescription }}
       </p>
 
-      <!-- Copy SEO adicional -->
       <p class="sr-only">
-        Compra implementos de voleibol en Medellín: balones, rodilleras, mangas, infladores y accesorios. Volley Expres Shop con atención por WhatsApp.
+        {{ hiddenDescription }}
       </p>
     </header>
 
@@ -29,7 +26,7 @@
       @touchstart.passive="pause"
       @touchend.passive="play"
       role="region"
-      aria-label="Carrusel de implementos de voleibol en Medellín"
+      :aria-label="carouselAriaLabel"
     >
       <div ref="trackRef" class="flex gap-6 items-stretch pl-6 sm:pl-8 lg:pl-12">
         <article
@@ -40,7 +37,7 @@
           itemtype="https://schema.org/Product"
         >
           <!-- URL del producto (en SPA será la misma página con ancla; ayuda al Offer) -->
-          <meta itemprop="url" :content="pageUrlWithAnchor" />
+          <meta itemprop="url" :content="pageUrl" />
 
           <div
             class="bg-white rounded-4xl shadow-2xl overflow-hidden p-2 drop-shadow-[10px_10px_25px_rgba(80,150,55,0.6)] h-full min-h-[480px] lg:min-h-[440px] flex flex-col"
@@ -158,6 +155,14 @@
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import productosData from '../data/productos.json'
 
+const props = defineProps({
+  productType: {
+    type: String,
+    default: 'all',
+    validator: value => ['all', 'balones', 'rodilleras'].includes(value)
+  }
+})
+
 const WA_NUMBER = '573004311280'
 
 /**
@@ -234,14 +239,12 @@ function isMediasSemiProfesionales(p) {
 /**
  * Para itemprop=url en SPA
  */
-const pageUrlWithAnchor = computed(() => {
+const pageUrl = computed(() => {
   if (typeof window === 'undefined') return ''
-  const u = new URL(window.location.href)
-  u.hash = '#Implementos_Deportivos'
-  return u.toString()
+  return window.location.href
 })
 
-const items = computed(() =>
+const rawItems = computed(() =>
   (productosData ?? []).map(p => {
     const precioNumero = toPriceNumber(p.precio)
     return {
@@ -258,6 +261,55 @@ const items = computed(() =>
     }
   })
 )
+
+const items = computed(() => {
+  if (props.productType === 'all') return rawItems.value
+  if (props.productType === 'balones') {
+    return rawItems.value.filter(item => item.imagen.includes('/balones/'))
+  }
+  if (props.productType === 'rodilleras') {
+    return rawItems.value.filter(item => item.imagen.includes('/rodilleras/'))
+  }
+  return rawItems.value
+})
+
+const sectionId = computed(() => {
+  if (props.productType === 'balones') return 'Balones_Voleibol'
+  if (props.productType === 'rodilleras') return 'Rodilleras_Voleibol'
+  return 'Implementos_Deportivos'
+})
+
+const headerTitle = computed(() => {
+  if (props.productType === 'balones') return 'Balones de Voleibol en Medellín'
+  if (props.productType === 'rodilleras') return 'Rodilleras de Voleibol en Medellín'
+  return 'Implementos de Voleibol Profesionales en Medellín'
+})
+
+const headerDescription = computed(() => {
+  if (props.productType === 'balones') {
+    return 'Balones Mikasa y Molten para entrenamiento y competencia. Atención rápida por WhatsApp y envío a todo el país.'
+  }
+  if (props.productType === 'rodilleras') {
+    return 'Rodilleras de alta protección para entrenamiento y competencia. Modelos en diferentes tallas con atención por WhatsApp.'
+  }
+  return 'Balones, rodilleras, mangas y accesorios para entrenamiento y competencia. Atención rápida por WhatsApp y entrega en todo el país.'
+})
+
+const hiddenDescription = computed(() => {
+  if (props.productType === 'balones') {
+    return 'Compra balones de voleibol en Medellín: Mikasa y Molten para cancha y playa. Volley Expres Shop con envío nacional.'
+  }
+  if (props.productType === 'rodilleras') {
+    return 'Compra rodilleras de voleibol en Medellín para jugadoras de entrenamiento y competencia. Atención rápida por WhatsApp.'
+  }
+  return 'Compra implementos de voleibol en Medellín: balones, rodilleras, mangas, infladores y accesorios. Volley Expres Shop con atención por WhatsApp.'
+})
+
+const carouselAriaLabel = computed(() => {
+  if (props.productType === 'balones') return 'Carrusel de balones de voleibol en Medellín'
+  if (props.productType === 'rodilleras') return 'Carrusel de rodilleras de voleibol en Medellín'
+  return 'Carrusel de implementos de voleibol en Medellín'
+})
 
 const productosDuplicados = computed(() => [...items.value, ...items.value])
 
