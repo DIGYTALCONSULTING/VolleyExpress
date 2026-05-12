@@ -1,7 +1,7 @@
 [
   {
     "referencia": "LLAVERO BALON GOMA",
-    "descripcion": "Llavero balon goma",
+    "descripcion": "Llavero balón goma",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/llavero_balon_1.webp",
     "material": "GOMA"
@@ -15,7 +15,7 @@
   },
   {
     "referencia": "LLAVERO BALON ACERO",
-    "descripcion": "Llavero balon acero",
+    "descripcion": "Llavero balón acero",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/llavero_balon_2.webp",
     "material": "ACERO"
@@ -24,7 +24,7 @@
     "referencia": "LLAVERO MUÑECA",
     "descripcion": "Llavero muñeca",
     "precio": "$10.000",
-    "imagen": "/img/variedades/accesorios/llavero_muneca.webp",
+    "imagen": "/img/variedades/accesorios/llavero_muneca_2.webp",
     "material": "ACERO"
   },
   {
@@ -51,7 +51,7 @@
   {
     "referencia": "LLAVERO MOLTEN",
     "descripcion": "Llavero molten",
-    "precio": "$20.000",
+    "precio": "$25.000",
     "imagen": "/img/variedades/accesorios/llavero_molten.webp",
     "material": "PVC"
   },
@@ -109,7 +109,7 @@
     "descripcion": "Anillo",
     "precio": "$15.000",
     "imagen": "/img/variedades/accesorios/anillo.webp",
-    "size": " 5 A 7",
+    "size": "5 A 7",
     "material": "ACERO"
   },
   {
@@ -117,7 +117,6 @@
     "descripcion": "Aretes I LOVE 💗🏐",
     "precio": "$15.000",
     "imagen": "/img/variedades/accesorios/aretes_i_love.webp",
-    
     "material": "ACERO"
   },
   {
@@ -125,7 +124,6 @@
     "descripcion": "Aretes plateados",
     "precio": "$15.000",
     "imagen": "/img/variedades/accesorios/aretes_plateados.webp",
-    
     "material": "ACERO"
   },
   {
@@ -133,11 +131,10 @@
     "descripcion": "Aretes dorados",
     "precio": "$15.000",
     "imagen": "/img/variedades/accesorios/aretes_dorados.webp",
-    
     "material": "ACERO"
   },
   {
-    "referencia": "ARETES MUŃECA",
+    "referencia": "ARETES MUÑECA",
     "descripcion": "Aretes muñeca",
     "precio": "$15.000",
     "imagen": "/img/variedades/accesorios/aretes_muneca.webp",
@@ -156,7 +153,7 @@
     "precio": "$15.000",
     "imagen": "/img/variedades/accesorios/topos_blancos.webp",
     "material": "ACERO"
-  },  
+  },
   {
     "referencia": "TOPOS NEGROS",
     "descripcion": "Topos negros",
@@ -187,7 +184,7 @@
   },
   {
     "referencia": "COLLAR BALON CORAZON DOBLE",
-    "descripcion": "Collar balon corazon doble",
+    "descripcion": "Collar balón corazon doble",
     "precio": "$15.000",
     "imagen": "/img/variedades/accesorios/collar_balon_corazon_doble.webp",
     "material": "ACERO"
@@ -215,7 +212,7 @@
   },
   {
     "referencia": "COLLAR CORAZON BALON MULTICOLOR",
-    "descripcion": "Collar corazon balon multicolor",
+    "descripcion": "Collar corazon balón multicolor",
     "precio": "$20.000",
     "imagen": "/img/variedades/accesorios/collar_corazon_balon_multicolor.webp",
     "material": "ACERO"
@@ -250,33 +247,33 @@
   },
   {
     "referencia": "COLLAR BALON MULTICOLOR PLATEADO",
-    "descripcion": "Collar balon multicolor plateado",
+    "descripcion": "Collar balón multicolor plateado",
     "precio": "$20.000",
     "imagen": "/img/variedades/accesorios/collar_balon_multicolor_1.webp",
     "material": "ACERO"
   },
   {
     "referencia": "COLLAR BALON MULTICOLOR DORADO",
-    "descripcion": "Collar balon multicolor dorado",
+    "descripcion": "Collar balón multicolor dorado",
     "precio": "$25.000",
     "imagen": "/img/variedades/accesorios/collar_balon_multicolor_3.webp",
     "material": "ACERO"
   },
-    {
+  {
     "referencia": "COLLAR MUÑECA",
     "descripcion": "Collar muñeca",
     "precio": "$20.000",
     "imagen": "/img/variedades/accesorios/collar_muneca.webp",
     "material": "ACERO"
   },
-    {
+  {
     "referencia": "COLLAR SILUETA BALÓN DORADO",
     "descripcion": "Collar silueta balón dorado",
     "precio": "$25.000",
     "imagen": "/img/variedades/accesorios/collar_silueta_balon_1.webp",
     "material": "ACERO"
   },
-    {
+  {
     "referencia": "COLLAR SILUETA BALÓN PLATEADO",
     "descripcion": "Collar silueta balón plateado",
     "precio": "$25.000",
@@ -296,55 +293,6 @@
     "precio": "$15.000",
     "imagen": "/img/variedades/accesorios/collar_volleyball_mom.webp",
     "material": "ACERO"
-  },
-   {
-    "referencia": "CURITAS VOLLEY",
-    "descripcion": "Curitas voley",
-    "precio": "$2.000",
-    "imagen": "/img/variedades/accesorios/curitas_voley.webp",
-    "material": "HIPOALERGENICO"
-  },
-  {
-    "referencia": "STICKERS VOLEY",
-    "descripcion": "Stickers volLey",
-    "precio": "$1.000",
-    "imagen": "/img/variedades/accesorios/stickers_voley.webp",
-    "material": "VINIL"
-  },
-  {
-    "referencia": "TATUAJE VOLLEY",
-    "descripcion": "Tatuaje volLey",
-    "precio": "$1.000",
-    "imagen": "/img/variedades/accesorios/tatuaje_voley.webp",
-    "material": "HIPOALERGENICO"
-  },
-  {
-    "referencia": "PIN VOLEY",
-    "descripcion": "Pin voley",
-    "precio": "$12.000",
-    "imagen": "/img/variedades/accesorios/pin_voley.webp",
-    "material": "ACERO"
-  },
-  {
-    "referencia": "PIN COLOMBIA",
-    "descripcion": "Pin colombia",
-    "precio": "$10.000",
-    "imagen": "/img/variedades/accesorios/pin_colombia.webp",
-    "material": "ACERO"
-  },
-  {
-    "referencia": "MOŃO SATINADO",
-    "descripcion": "Moño satinado",
-    "precio": "$5.000",
-    "imagen": "/img/variedades/accesorios/mono_satinado.webp",
-    "material": "SATIN"
-  },
-  {
-    "referencia": "HUMECTANTE LABIAL",
-    "descripcion": "Humectante labial",
-    "precio": "$7.000",
-    "imagen": "/img/variedades/accesorios/humectante_labial.webp",
-    "material": "ACEITE NATURAL"
   },
   {
     "referencia": "MANILLA BALON",
@@ -381,42 +329,35 @@
     "imagen": "/img/variedades/accesorios/manilla_balon_5.webp",
     "material": "ACERO Y NYLON"
   },
-   {
+  {
     "referencia": "MANILLA PULSO",
     "descripcion": "Manilla pulso",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/manilla_pulso.webp",
     "material": "ACERO Y NYLON"
   },
-   {
+  {
     "referencia": "MANILLA BASKET",
     "descripcion": "Manilla basket",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/manilla_basket.webp",
     "material": "PVC Y NYLON"
   },
-   {
+  {
     "referencia": "MANILLA TENIS",
     "descripcion": "Manilla tenis",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/manilla_tenis.webp",
     "material": "PVC Y NYLON"
   },
-   {
-    "referencia": "MANILLA TENIS",
-    "descripcion": "Manilla tenis",
-    "precio": "$10.000",
-    "imagen": "/img/variedades/accesorios/manilla_tenis.webp",
-    "material": "PVC Y NYLON"
-  },
-   {
+  {
     "referencia": "MANILLA FUTBOL",
     "descripcion": "Manilla futbol",
     "precio": "$10.000",
     "imagen": "/img/variedades/accesorios/manilla_futbol_1.webp",
     "material": "PVC Y NYLON"
   },
-   {
+  {
     "referencia": "MANILLA FUTBOL BALÓN",
     "descripcion": "Manilla futbol balón",
     "precio": "$10.000",
@@ -437,8 +378,49 @@
     "imagen": "/img/variedades/accesorios/manilla_siliona.webp",
     "material": "SILICONA"
   },
-
- {
+  {
+    "referencia": "PIN VOLEY",
+    "descripcion": "Pin voley",
+    "precio": "$12.000",
+    "imagen": "/img/variedades/accesorios/pin_voley.webp",
+    "material": "ACERO"
+  },
+  {
+    "referencia": "PIN COLOMBIA",
+    "descripcion": "Pin colombia",
+    "precio": "$10.000",
+    "imagen": "/img/variedades/accesorios/pin_colombia.webp",
+    "material": "ACERO"
+  },
+  {
+    "referencia": "STICKERS VOLEY",
+    "descripcion": "Stickers volLey",
+    "precio": "$1.000",
+    "imagen": "/img/variedades/accesorios/stickers_voley.webp",
+    "material": "VINIL"
+  },
+  {
+    "referencia": "TATUAJE VOLLEY",
+    "descripcion": "Tatuaje volLey",
+    "precio": "$1.000",
+    "imagen": "/img/variedades/accesorios/tatuaje_voley.webp",
+    "material": "HIPOALERGENICO"
+  },
+  {
+    "referencia": "MOŃO SATINADO",
+    "descripcion": "Moño satinado",
+    "precio": "$5.000",
+    "imagen": "/img/variedades/accesorios/mono_satinado.webp",
+    "material": "SATIN"
+  },
+  {
+    "referencia": "HUMECTANTE LABIAL",
+    "descripcion": "Humectante labial",
+    "precio": "$7.000",
+    "imagen": "/img/variedades/accesorios/humectante_labial.webp",
+    "material": "ACEITE NATURAL"
+  },
+  {
     "referencia": "LAPICERO VOLEY AZUL",
     "descripcion": "Lapicero volly azul",
     "precio": "$5.000",
@@ -451,6 +433,12 @@
     "precio": "$5.000",
     "imagen": "/img/variedades/accesorios/lapicero_voley_negro.webp",
     "material": "PVC Y NYLON"
+  },
+  {
+    "referencia": "CURITAS VOLLEY",
+    "descripcion": "Curitas voley",
+    "precio": "$2.000",
+    "imagen": "/img/variedades/accesorios/curitas_voley.webp",
+    "material": "HIPOALERGENICO"
   }
 ]
- 

@@ -1,7 +1,8 @@
 [
   {
-    "id": "productos:rodilleras-asic-low-profile:img-implementos-rodilleras-rodilleras-asic-low",
+    "id": "productos:rodilleras:rodilleras-asic-low-profile:img-implementos-rodilleras-rodilleras-asic-low",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras ASIC LOW PROFILE",
     "nombre": null,
     "descripcion": "Las rodilleras ASICS Gel Low Profile eliminan el volumen excesivo sin comprometer la amortiguación. Su diseño de perfil bajo es perfecto para jugadoras que buscan una estética limpia y una movilidad total. Diseño Low Profile: Altura reducida para evitar restricciones. Corte Ergonómico y contorneado al frente de la rodilla. Gestión de Humedad: Tejido transpirable de secado rápido.",
@@ -10,14 +11,25 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_asic_low_profile_negra.webp",
     "color": "NEGRO",
     "size": "JR / ADULTO",
+    "sizeList": [
+      "JR",
+      "ADULTO"
+    ],
     "material": "Mezcla de Nylon, Goma y Spandex de alta durabilidad.",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-asic-low-profile",
-    "searchText": "rodilleras asic low profile las rodilleras asics gel low profile eliminan el volumen excesivo sin comprometer la amortiguacion. su diseno de perfil bajo es perfecto para jugadoras que buscan una estetica limpia y una movilidad total. diseno low profile: altura reducida para evitar restricciones. corte ergonomico y contorneado al frente de la rodilla. gestion de humedad: tejido transpirable de secado rapido. negro jr / adulto mezcla de nylon, goma y spandex de alta durabilidad. competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "mezcla de nylon, goma y spandex de alta durabilidad.",
+    "sizeNorm": [
+      "jr",
+      "adulto"
+    ],
+    "searchText": "rodilleras asic low profile las rodilleras asics gel low profile eliminan el volumen excesivo sin comprometer la amortiguacion. su diseno de perfil bajo es perfecto para jugadoras que buscan una estetica limpia y una movilidad total. diseno low profile altura reducida para evitar restricciones. corte ergonomico y contorneado al frente de la rodilla. gestion de humedad tejido transpirable de secado rapido. negro jr, adulto mezcla de nylon, goma y spandex de alta durabilidad. competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-asic-low-profile:img-implementos-rodilleras-rodilleras-asic-low",
+    "id": "productos:rodilleras:rodilleras-asic-low-profile:img-implementos-rodilleras-rodilleras-asic-low",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras ASIC LOW PROFILE",
     "nombre": null,
     "descripcion": "Las rodilleras ASICS Gel Low Profile eliminan el volumen excesivo sin comprometer la amortiguación. Su diseño de perfil bajo es perfecto para jugadoras que buscan una estética limpia y una movilidad total. Diseño Low Profile: Altura reducida para evitar restricciones. Corte Ergonómico y contorneado al frente de la rodilla. Gestión de Humedad: Tejido transpirable de secado rápido.",
@@ -26,14 +38,25 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_asic_low_profile.webp",
     "color": "BLANCO",
     "size": "JR / ADULTO",
+    "sizeList": [
+      "JR",
+      "ADULTO"
+    ],
     "material": "Mezcla de Nylon, Goma y Spandex de alta durabilidad.",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-asic-low-profile",
-    "searchText": "rodilleras asic low profile las rodilleras asics gel low profile eliminan el volumen excesivo sin comprometer la amortiguacion. su diseno de perfil bajo es perfecto para jugadoras que buscan una estetica limpia y una movilidad total. diseno low profile: altura reducida para evitar restricciones. corte ergonomico y contorneado al frente de la rodilla. gestion de humedad: tejido transpirable de secado rapido. blanco jr / adulto mezcla de nylon, goma y spandex de alta durabilidad. competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "mezcla de nylon, goma y spandex de alta durabilidad.",
+    "sizeNorm": [
+      "jr",
+      "adulto"
+    ],
+    "searchText": "rodilleras asic low profile las rodilleras asics gel low profile eliminan el volumen excesivo sin comprometer la amortiguacion. su diseno de perfil bajo es perfecto para jugadoras que buscan una estetica limpia y una movilidad total. diseno low profile altura reducida para evitar restricciones. corte ergonomico y contorneado al frente de la rodilla. gestion de humedad tejido transpirable de secado rapido. blanco jr, adulto mezcla de nylon, goma y spandex de alta durabilidad. competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-errea-tokyo:img-implementos-rodilleras-rodilleras-errea-tokyo",
+    "id": "productos:rodilleras:rodilleras-errea-tokyo:img-implementos-rodilleras-rodilleras-errea-tokyo",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras ERREA TOKYO",
     "nombre": null,
     "descripcion": "Con un diseño ligeramente más compacto que la versión Evolution, la Tokyo clásica ofrece una movilidad superior manteniendo un grosor de acolchado profesional. Su tejido elástico transpirable garantiza confort térmico incluso en los momentos más intensos del set. Calidad italiana para jugadoras exigentes. Tipo de Acolchado: Espuma de Poliuretano Expandido de alta densidad. Construcción Anatómica: Moldeada para seguir la curvatura natural de la rótula.",
@@ -42,14 +65,25 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_errea_tokyo_negras.webp",
     "color": "NEGRO",
     "size": "S/M",
+    "sizeList": [
+      "S",
+      "M"
+    ],
     "material": "Tejido técnico de alta resistencia (mezcla de poliéster y algodón).",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-errea-tokyo",
-    "searchText": "rodilleras errea tokyo con un diseno ligeramente mas compacto que la version evolution, la tokyo clasica ofrece una movilidad superior manteniendo un grosor de acolchado profesional. su tejido elastico transpirable garantiza confort termico incluso en los momentos mas intensos del set. calidad italiana para jugadoras exigentes. tipo de acolchado: espuma de poliuretano expandido de alta densidad. construccion anatomica: moldeada para seguir la curvatura natural de la rotula. negro s/m tejido tecnico de alta resistencia (mezcla de poliester y algodon). competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "tejido tecnico de alta resistencia mezcla de poliester y algodon .",
+    "sizeNorm": [
+      "s",
+      "m"
+    ],
+    "searchText": "rodilleras errea tokyo con un diseno ligeramente mas compacto que la version evolution, la tokyo clasica ofrece una movilidad superior manteniendo un grosor de acolchado profesional. su tejido elastico transpirable garantiza confort termico incluso en los momentos mas intensos del set. calidad italiana para jugadoras exigentes. tipo de acolchado espuma de poliuretano expandido de alta densidad. construccion anatomica moldeada para seguir la curvatura natural de la rotula. negro s, m tejido tecnico de alta resistencia mezcla de poliester y algodon . competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-errea-tokyo:img-implementos-rodilleras-rodilleras-errea-tokyo",
+    "id": "productos:rodilleras:rodilleras-errea-tokyo:img-implementos-rodilleras-rodilleras-errea-tokyo",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras ERREA TOKYO",
     "nombre": null,
     "descripcion": "Con un diseño ligeramente más compacto que la versión Evolution, la Tokyo clásica ofrece una movilidad superior manteniendo un grosor de acolchado profesional. Calidad italiana para jugadoras exigentes. Protección Lateral: Cobertura frontal completa con refuerzo en los bordes. Tecnología de Tejido: Circular sin costuras para evitar rozaduras.",
@@ -58,14 +92,27 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_errea_tokyo.webp",
     "color": "BLANCO",
     "size": "S/M, M/L",
+    "sizeList": [
+      "S",
+      "M",
+      "L"
+    ],
     "material": "Tejido técnico de alta resistencia (mezcla de poliéster y algodón).",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-errea-tokyo",
-    "searchText": "rodilleras errea tokyo con un diseno ligeramente mas compacto que la version evolution, la tokyo clasica ofrece una movilidad superior manteniendo un grosor de acolchado profesional. calidad italiana para jugadoras exigentes. proteccion lateral: cobertura frontal completa con refuerzo en los bordes. tecnologia de tejido: circular sin costuras para evitar rozaduras. blanco s/m, m/l tejido tecnico de alta resistencia (mezcla de poliester y algodon). competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "tejido tecnico de alta resistencia mezcla de poliester y algodon .",
+    "sizeNorm": [
+      "s",
+      "m",
+      "l"
+    ],
+    "searchText": "rodilleras errea tokyo con un diseno ligeramente mas compacto que la version evolution, la tokyo clasica ofrece una movilidad superior manteniendo un grosor de acolchado profesional. calidad italiana para jugadoras exigentes. proteccion lateral cobertura frontal completa con refuerzo en los bordes. tecnologia de tejido circular sin costuras para evitar rozaduras. blanco s, m, l tejido tecnico de alta resistencia mezcla de poliester y algodon . competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-errea-tokyo-evolution:img-implementos-rodilleras-rodilleras-errea-tokyo",
+    "id": "productos:rodilleras:rodilleras-errea-tokyo-evolution:img-implementos-rodilleras-rodilleras-errea-tokyo",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras ERREA TOKYO EVOLUTION",
     "nombre": null,
     "descripcion": "Destacadas por su acolchado anatómico de gran grosor, estas rodilleras son ideales para jugadoras que sufren impactos constantes o buscan una protección extra. Su ajuste elástico asegura que la rodillera permanezca en su sitio sin apretar en exceso. Ergonomía: Corte envolvente. Ventilación: Tejido microperforado.",
@@ -74,14 +121,27 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_errea_tokyo_evolution_negras.webp",
     "color": "NEGRO",
     "size": "S/M, M/L",
+    "sizeList": [
+      "S",
+      "M",
+      "L"
+    ],
     "material": "Composición de Poliéster, Algodón y Elástico de alta densidad",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-errea-tokyo-evolution",
-    "searchText": "rodilleras errea tokyo evolution destacadas por su acolchado anatomico de gran grosor, estas rodilleras son ideales para jugadoras que sufren impactos constantes o buscan una proteccion extra. su ajuste elastico asegura que la rodillera permanezca en su sitio sin apretar en exceso. ergonomia: corte envolvente. ventilacion: tejido microperforado. negro s/m, m/l composicion de poliester, algodon y elastico de alta densidad competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "composicion de poliester, algodon y elastico de alta densidad",
+    "sizeNorm": [
+      "s",
+      "m",
+      "l"
+    ],
+    "searchText": "rodilleras errea tokyo evolution destacadas por su acolchado anatomico de gran grosor, estas rodilleras son ideales para jugadoras que sufren impactos constantes o buscan una proteccion extra. su ajuste elastico asegura que la rodillera permanezca en su sitio sin apretar en exceso. ergonomia corte envolvente. ventilacion tejido microperforado. negro s, m, l composicion de poliester, algodon y elastico de alta densidad competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-errea-tokyo-evolution:img-implementos-rodilleras-rodilleras-errea-tokyo",
+    "id": "productos:rodilleras:rodilleras-errea-tokyo-evolution:img-implementos-rodilleras-rodilleras-errea-tokyo",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras ERREA TOKYO EVOLUTION",
     "nombre": null,
     "descripcion": "Destacadas por su acolchado anatómico de gran grosor, estas rodilleras son ideales para jugadoras que sufren impactos constantes o buscan una protección extra. Su ajuste elástico asegura que la rodillera permanezca en su sitio sin apretar en exceso. Ergonomía: Corte envolvente.",
@@ -90,46 +150,83 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_errea_tokyo_evolution.webp",
     "color": "AZUL MARINO",
     "size": "S/M",
+    "sizeList": [
+      "S",
+      "M"
+    ],
     "material": "Composición de Poliéster, Algodón y Elástico de alta densidad",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-errea-tokyo-evolution",
-    "searchText": "rodilleras errea tokyo evolution destacadas por su acolchado anatomico de gran grosor, estas rodilleras son ideales para jugadoras que sufren impactos constantes o buscan una proteccion extra. su ajuste elastico asegura que la rodillera permanezca en su sitio sin apretar en exceso. ergonomia: corte envolvente. azul marino s/m composicion de poliester, algodon y elastico de alta densidad competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "azul marino",
+    "materialNorm": "composicion de poliester, algodon y elastico de alta densidad",
+    "sizeNorm": [
+      "s",
+      "m"
+    ],
+    "searchText": "rodilleras errea tokyo evolution destacadas por su acolchado anatomico de gran grosor, estas rodilleras son ideales para jugadoras que sufren impactos constantes o buscan una proteccion extra. su ajuste elastico asegura que la rodillera permanezca en su sitio sin apretar en exceso. ergonomia corte envolvente. azul marino s, m composicion de poliester, algodon y elastico de alta densidad competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-mizuno-sl2-elite:img-implementos-rodilleras-rodilleras-mizuno-sl2",
+    "id": "productos:rodilleras:rodilleras-mizuno-sl2-elite:img-implementos-rodilleras-rodilleras-mizuno-sl2",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras Mizuno SL2 Elite",
     "nombre": null,
     "descripcion": "Diseñadas específicamente para atletas que buscan la mezcla perfecta entre protección de alto impacto y movilidad sin restricciones. Gracias a su diseño de perfil bajo, ofrecen seguridad sin volumen excesivo. Construidas con espuma de EVA de alta densidad.",
     "precioTexto": "$180.000",
     "precioCOP": 180000,
-    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_sl2_elite_negras.webp",
+    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_SL2_elite_negras.webp",
     "color": "NEGRO",
     "size": "S/M, M/L",
+    "sizeList": [
+      "S",
+      "M",
+      "L"
+    ],
     "material": "92% Poliéster, 13% Rayón, 7% Elástico",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-mizuno-sl2-elite",
-    "searchText": "rodilleras mizuno sl2 elite disenadas especificamente para atletas que buscan la mezcla perfecta entre proteccion de alto impacto y movilidad sin restricciones. gracias a su diseno de perfil bajo, ofrecen seguridad sin volumen excesivo. construidas con espuma de eva de alta densidad. negro s/m, m/l 92% poliester, 13% rayon, 7% elastico competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "92 poliester, 13 rayon, 7 elastico",
+    "sizeNorm": [
+      "s",
+      "m",
+      "l"
+    ],
+    "searchText": "rodilleras mizuno sl2 elite disenadas especificamente para atletas que buscan la mezcla perfecta entre proteccion de alto impacto y movilidad sin restricciones. gracias a su diseno de perfil bajo, ofrecen seguridad sin volumen excesivo. construidas con espuma de eva de alta densidad. negro s, m, l 92 poliester, 13 rayon, 7 elastico competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-mizuno-sl2-elite:img-implementos-rodilleras-rodilleras-mizuno-sl2",
+    "id": "productos:rodilleras:rodilleras-mizuno-sl2-elite:img-implementos-rodilleras-rodilleras-mizuno-sl2",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras Mizuno SL2 Elite",
     "nombre": null,
     "descripcion": "Diseñadas específicamente para atletas que buscan la mezcla perfecta entre protección de alto impacto y movilidad sin restricciones. Diseño anatómico que se ajusta a tus movimientos. Espuma de EVA de alta densidad.",
     "precioTexto": "$180.000",
     "precioCOP": 180000,
-    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_sl2_elite.webp",
+    "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_SL2_elite_blancas.webp",
     "color": "BLANCO",
     "size": "S/M, M/L",
+    "sizeList": [
+      "S",
+      "M",
+      "L"
+    ],
     "material": "92% Poliéster, 13% Rayón, 7% Elástico",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-mizuno-sl2-elite",
-    "searchText": "rodilleras mizuno sl2 elite disenadas especificamente para atletas que buscan la mezcla perfecta entre proteccion de alto impacto y movilidad sin restricciones. diseno anatomico que se ajusta a tus movimientos. espuma de eva de alta densidad. blanco s/m, m/l 92% poliester, 13% rayon, 7% elastico competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "92 poliester, 13 rayon, 7 elastico",
+    "sizeNorm": [
+      "s",
+      "m",
+      "l"
+    ],
+    "searchText": "rodilleras mizuno sl2 elite disenadas especificamente para atletas que buscan la mezcla perfecta entre proteccion de alto impacto y movilidad sin restricciones. diseno anatomico que se ajusta a tus movimientos. espuma de eva de alta densidad. blanco s, m, l 92 poliester, 13 rayon, 7 elastico competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-mizuno-t10-plus:img-implementos-rodilleras-rodilleras-mizuno-t10",
+    "id": "productos:rodilleras:rodilleras-mizuno-t10-plus:img-implementos-rodilleras-rodilleras-mizuno-t10",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras Mizuno T10 Plus",
     "nombre": null,
     "descripcion": "Diseñadas para ofrecer una cobertura total y una absorción de impactos superior sin sacrificar la movilidad. Diseño articulado y tejido transpirable con tecnología de gestión de humedad.",
@@ -138,14 +235,25 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_t10_plus.webp",
     "color": "NEGRO",
     "size": "JR / ADULTO",
+    "sizeList": [
+      "JR",
+      "ADULTO"
+    ],
     "material": "68% Poliéster, 20% Rayón, 12% Elástico",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-mizuno-t10-plus",
-    "searchText": "rodilleras mizuno t10 plus disenadas para ofrecer una cobertura total y una absorcion de impactos superior sin sacrificar la movilidad. diseno articulado y tejido transpirable con tecnologia de gestion de humedad. negro jr / adulto 68% poliester, 20% rayon, 12% elastico competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "68 poliester, 20 rayon, 12 elastico",
+    "sizeNorm": [
+      "jr",
+      "adulto"
+    ],
+    "searchText": "rodilleras mizuno t10 plus disenadas para ofrecer una cobertura total y una absorcion de impactos superior sin sacrificar la movilidad. diseno articulado y tejido transpirable con tecnologia de gestion de humedad. negro jr, adulto 68 poliester, 20 rayon, 12 elastico competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-mizuno-t10-plus:img-implementos-rodilleras-rodilleras-mizuno-t10",
+    "id": "productos:rodilleras:rodilleras-mizuno-t10-plus:img-implementos-rodilleras-rodilleras-mizuno-t10",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras Mizuno T10 Plus",
     "nombre": null,
     "descripcion": "Diseñadas para ofrecer una cobertura total y una absorción de impactos superior sin sacrificar la movilidad. Resistencia, confort y estilo en una sola pieza.",
@@ -154,14 +262,25 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_t10_plus_b.webp",
     "color": "BLANCO",
     "size": "JR / ADULTO",
+    "sizeList": [
+      "JR",
+      "ADULTO"
+    ],
     "material": "68% Poliéster, 20% Rayón, 12% Elástico",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-mizuno-t10-plus",
-    "searchText": "rodilleras mizuno t10 plus disenadas para ofrecer una cobertura total y una absorcion de impactos superior sin sacrificar la movilidad. resistencia, confort y estilo en una sola pieza. blanco jr / adulto 68% poliester, 20% rayon, 12% elastico competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "68 poliester, 20 rayon, 12 elastico",
+    "sizeNorm": [
+      "jr",
+      "adulto"
+    ],
+    "searchText": "rodilleras mizuno t10 plus disenadas para ofrecer una cobertura total y una absorcion de impactos superior sin sacrificar la movilidad. resistencia, confort y estilo en una sola pieza. blanco jr, adulto 68 poliester, 20 rayon, 12 elastico competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-mizuno-lr6:img-implementos-rodilleras-rodilleras-mizuno-lr6",
+    "id": "productos:rodilleras:rodilleras-mizuno-lr6:img-implementos-rodilleras-rodilleras-mizuno-lr6",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras Mizuno LR6",
     "nombre": null,
     "descripcion": "Rodillera de perfil bajo para el juego moderno. Ajuste aerodinámico de 6 pulgadas, ofrece protección precisa en los puntos de contacto clave. Ligereza extrema, rendimiento profesional.",
@@ -170,14 +289,27 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_lr6.webp",
     "color": "NEGRO",
     "size": "S/M, M/L",
+    "sizeList": [
+      "S",
+      "M",
+      "L"
+    ],
     "material": "50% Poliéster, 22% Rayón, 28% Elástico",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-mizuno-lr6",
-    "searchText": "rodilleras mizuno lr6 rodillera de perfil bajo para el juego moderno. ajuste aerodinamico de 6 pulgadas, ofrece proteccion precisa en los puntos de contacto clave. ligereza extrema, rendimiento profesional. negro s/m, m/l 50% poliester, 22% rayon, 28% elastico competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "50 poliester, 22 rayon, 28 elastico",
+    "sizeNorm": [
+      "s",
+      "m",
+      "l"
+    ],
+    "searchText": "rodilleras mizuno lr6 rodillera de perfil bajo para el juego moderno. ajuste aerodinamico de 6 pulgadas, ofrece proteccion precisa en los puntos de contacto clave. ligereza extrema, rendimiento profesional. negro s, m, l 50 poliester, 22 rayon, 28 elastico competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-mizuno-lr6:img-implementos-rodilleras-rodilleras-mizuno-lr6",
+    "id": "productos:rodilleras:rodilleras-mizuno-lr6:img-implementos-rodilleras-rodilleras-mizuno-lr6",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras Mizuno LR6",
     "nombre": null,
     "descripcion": "Rodillera de perfil bajo para el juego moderno. Con un ajuste aerodinámico de 6 pulgadas. Ideal para jugadoras que priorizan la velocidad y una estética limpia.",
@@ -186,14 +318,27 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_mizuno_lr6_blancas.webp",
     "color": "BLANCO",
     "size": "S/M, M/L",
+    "sizeList": [
+      "S",
+      "M",
+      "L"
+    ],
     "material": "50% Poliéster, 22% Rayón, 28% Elástico",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-mizuno-lr6",
-    "searchText": "rodilleras mizuno lr6 rodillera de perfil bajo para el juego moderno. con un ajuste aerodinamico de 6 pulgadas. ideal para jugadoras que priorizan la velocidad y una estetica limpia. blanco s/m, m/l 50% poliester, 22% rayon, 28% elastico competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "50 poliester, 22 rayon, 28 elastico",
+    "sizeNorm": [
+      "s",
+      "m",
+      "l"
+    ],
+    "searchText": "rodilleras mizuno lr6 rodillera de perfil bajo para el juego moderno. con un ajuste aerodinamico de 6 pulgadas. ideal para jugadoras que priorizan la velocidad y una estetica limpia. blanco s, m, l 50 poliester, 22 rayon, 28 elastico competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-nike-streak:img-implementos-rodilleras-rodilleras-nike-streak",
+    "id": "productos:rodilleras:rodilleras-nike-streak:img-implementos-rodilleras-rodilleras-nike-streak",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras Nike Streak",
     "nombre": null,
     "descripcion": "Diseñadas con espuma de alta densidad que amortigua cada caída. Su tejido con tecnología Dri-FIT capilariza el sudor. Diseño ergonómico para minimizar el roce.",
@@ -202,14 +347,27 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_nike_streak_negras.webp",
     "color": "NEGRO",
     "size": "S/M, M/L",
-    "material": "46% Poliéster, 25% Nylon, 17% EVA, 12% Elastico",
+    "sizeList": [
+      "S",
+      "M",
+      "L"
+    ],
+    "material": "46% Poliéster, 25% Nylon, 17% EVA, 12% Elástico",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-nike-streak",
-    "searchText": "rodilleras nike streak disenadas con espuma de alta densidad que amortigua cada caida. su tejido con tecnologia dri-fit capilariza el sudor. diseno ergonomico para minimizar el roce. negro s/m, m/l 46% poliester, 25% nylon, 17% eva, 12% elastico competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "46 poliester, 25 nylon, 17 eva, 12 elastico",
+    "sizeNorm": [
+      "s",
+      "m",
+      "l"
+    ],
+    "searchText": "rodilleras nike streak disenadas con espuma de alta densidad que amortigua cada caida. su tejido con tecnologia dri-fit capilariza el sudor. diseno ergonomico para minimizar el roce. negro s, m, l 46 poliester, 25 nylon, 17 eva, 12 elastico competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-nike-streak:img-implementos-rodilleras-rodilleras-nike-streak",
+    "id": "productos:rodilleras:rodilleras-nike-streak:img-implementos-rodilleras-rodilleras-nike-streak",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras Nike Streak",
     "nombre": null,
     "descripcion": "Diseñadas con espuma de alta densidad que amortigua cada caída. Tejido Dri-FIT para mantenerte seca y ligera. Protección suave, rendimiento duro.",
@@ -218,14 +376,27 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_nike_streak_blancas.webp",
     "color": "BLANCO",
     "size": "S/M, M/L",
-    "material": "46% Poliéster, 25% Nylon, 17% EVA, 12% Elastico",
+    "sizeList": [
+      "S",
+      "M",
+      "L"
+    ],
+    "material": "46% Poliéster, 25% Nylon, 17% EVA, 12% Elástico",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodilleras-nike-streak",
-    "searchText": "rodilleras nike streak disenadas con espuma de alta densidad que amortigua cada caida. tejido dri-fit para mantenerte seca y ligera. proteccion suave, rendimiento duro. blanco s/m, m/l 46% poliester, 25% nylon, 17% eva, 12% elastico competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "46 poliester, 25 nylon, 17 eva, 12 elastico",
+    "sizeNorm": [
+      "s",
+      "m",
+      "l"
+    ],
+    "searchText": "rodilleras nike streak disenadas con espuma de alta densidad que amortigua cada caida. tejido dri-fit para mantenerte seca y ligera. proteccion suave, rendimiento duro. blanco s, m, l 46 poliester, 25 nylon, 17 eva, 12 elastico competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodilleras-wonder-tipo-slider:img-implementos-rodilleras-rodilleras-wonder-tipo",
+    "id": "productos:rodilleras:rodilleras-wonder-tipo-slider:img-implementos-rodilleras-rodilleras-wonder-tipo",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodilleras Wonder Tipo Slider",
     "nombre": null,
     "descripcion": "Seguridad y resistencia para el día a día. Una rodillera robusta con un diseño clásico de cobertura total. Acolchado de Espuma de EVA de alta densidad.",
@@ -234,47 +405,80 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_wonder_tipo_slider.webp",
     "color": "NEGRO",
     "size": "XS/S, S/M, M/L",
+    "sizeList": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
     "material": "Mezcla de Algodón, Poliéster y Elástico de alta tensión.",
     "uso": "Entrenamientos intensivos y jugadoras en etapa de formación.",
     "slug": "rodilleras-wonder-tipo-slider",
-    "searchText": "rodilleras wonder tipo slider seguridad y resistencia para el dia a dia. una rodillera robusta con un diseno clasico de cobertura total. acolchado de espuma de eva de alta densidad. negro xs/s, s/m, m/l mezcla de algodon, poliester y elastico de alta tension. entrenamientos intensivos y jugadoras en etapa de formacion. productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "mezcla de algodon, poliester y elastico de alta tension.",
+    "sizeNorm": [
+      "xs",
+      "s",
+      "m",
+      "l"
+    ],
+    "searchText": "rodilleras wonder tipo slider seguridad y resistencia para el dia a dia. una rodillera robusta con un diseno clasico de cobertura total. acolchado de espuma de eva de alta densidad. negro xs, s, m, l mezcla de algodon, poliester y elastico de alta tension. entrenamientos intensivos y jugadoras en etapa de formacion. productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:balon-mikasa-bv354tv-good-vibes:img-implementos-balones-balon-mikasa-bv354tv",
+    "id": "productos:balones:balon-mikasa-bv354tv-good-vibes:img-implementos-balones-balon-mikasa-bv354tv",
     "categoria": "productos",
+    "subcategoria": "balones",
     "referencia": "Balón Mikasa BV354TV Good Vibes",
     "nombre": null,
     "descripcion": "Diseñado pensando en la comodidad del jugador. Ofrece una suavidad excepcional. Tamaño N° 5 (Medida Oficial). Peso 260 - 280 g.",
     "precioTexto": "$150.000",
     "precioCOP": 150000,
-    "imagen": "/img/implementos//balones/balon_mikasa_bv354tv_good_vibes.webp",
+    "imagen": "/img/implementos/balones/balon_mikasa_bv354tv_good_vibes.webp",
     "color": "AZUL / FUCSIA",
-    "size": "4",
+    "size": "5",
+    "sizeList": [
+      "5"
+    ],
     "material": "Construcción cosido a máquina de alta precisión",
     "uso": "Entrenamiento, Iniciación y Recreación / Indoor - Outdoor",
     "slug": "balon-mikasa-bv354tv-good-vibes",
-    "searchText": "balon mikasa bv354tv good vibes disenado pensando en la comodidad del jugador. ofrece una suavidad excepcional. tamano n° 5 (medida oficial). peso 260 - 280 g. azul / fucsia 4 construccion cosido a maquina de alta precision entrenamiento, iniciacion y recreacion / indoor - outdoor productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "azul / fucsia",
+    "materialNorm": "construccion cosido a maquina de alta precision",
+    "sizeNorm": [
+      "5"
+    ],
+    "searchText": "balon mikasa bv354tv good vibes disenado pensando en la comodidad del jugador. ofrece una suavidad excepcional. tamano n 5 medida oficial . peso 260 - 280 g. azul / fucsia 5 construccion cosido a maquina de alta precision entrenamiento, iniciacion y recreacion / indoor - outdoor productos balones medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:balon-mikasa-beach-pro-bv550c:img-implementos-balones-balon-mikasa-beach",
+    "id": "productos:balones:balon-mikasa-beach-pro-bv550c:img-implementos-balones-balon-mikasa-beach",
     "categoria": "productos",
-    "referencia": "Balon Mikasa Beach Pro BV550C",
+    "subcategoria": "balones",
+    "referencia": "Balón Mikasa Beach Pro BV550C",
     "nombre": null,
     "descripcion": "Calidad premium, tecnología japonesa y el sello de aprobación de la élite mundial. Más agarre, menos absorción de agua. Certificación FIVB.",
     "precioTexto": "$420.000",
     "precioCOP": 420000,
-    "imagen": "/img/implementos//balones/balon_mikasa_beach_pro_bv550c.webp",
+    "imagen": "/img/implementos/balones/balon_mikasa_beach_pro_bv550c.webp",
     "color": "AZUL / NARANJA / BLANCO",
     "size": "5",
+    "sizeList": [
+      "5"
+    ],
     "material": "Cuero sintético de alta gama con tecnología Dimple",
     "uso": "Competencia / Entrenamiento",
     "slug": "balon-mikasa-beach-pro-bv550c",
-    "searchText": "balon mikasa beach pro bv550c calidad premium, tecnologia japonesa y el sello de aprobacion de la elite mundial. mas agarre, menos absorcion de agua. certificacion fivb. azul / naranja / blanco 5 cuero sintetico de alta gama con tecnologia dimple competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "azul / naranja / blanco",
+    "materialNorm": "cuero sintetico de alta gama con tecnologia dimple",
+    "sizeNorm": [
+      "5"
+    ],
+    "searchText": "balon mikasa beach pro bv550c calidad premium, tecnologia japonesa y el sello de aprobacion de la elite mundial. mas agarre, menos absorcion de agua. certificacion fivb. azul / naranja / blanco 5 cuero sintetico de alta gama con tecnologia dimple competencia / entrenamiento productos balones medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:balon-molten-v58slc-retro:img-implementos-balones-balon-molten-v58slc",
+    "id": "productos:balones:balon-molten-v58slc-retro:img-implementos-balones-balon-molten-v58slc",
     "categoria": "productos",
-    "referencia": "Balon Molten V58SLC RETRO",
+    "subcategoria": "balones",
+    "referencia": "Balón Molten V58SLC RETRO",
     "nombre": null,
     "descripcion": "Súper suave al contacto. Ideal para perfeccionar tu técnica. Cosido a máquina de alta precisión. Tamaño N° 5 (Medida Oficial).",
     "precioTexto": "$155.000",
@@ -282,63 +486,99 @@
     "imagen": "/img/implementos/balones/balon_molten_v58slc_retro.webp",
     "color": "VERDE / ROJO / BLANCO",
     "size": "5",
+    "sizeList": [
+      "5"
+    ],
     "material": "Cuero Sintético Soft Touch",
     "uso": "Entrenamiento y Recreación Indoor (Sala)",
     "slug": "balon-molten-v58slc-retro",
-    "searchText": "balon molten v58slc retro super suave al contacto. ideal para perfeccionar tu tecnica. cosido a maquina de alta precision. tamano n° 5 (medida oficial). verde / rojo / blanco 5 cuero sintetico soft touch entrenamiento y recreacion indoor (sala) productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "verde / rojo / blanco",
+    "materialNorm": "cuero sintetico soft touch",
+    "sizeNorm": [
+      "5"
+    ],
+    "searchText": "balon molten v58slc retro super suave al contacto. ideal para perfeccionar tu tecnica. cosido a maquina de alta precision. tamano n 5 medida oficial . verde / rojo / blanco 5 cuero sintetico soft touch entrenamiento y recreacion indoor sala productos balones medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:balon-molten-v4m4000:img-implementos-balones-balon-molten-v4m4000",
+    "id": "productos:balones:balon-molten-v4m4000:img-implementos-balones-balon-molten-v4m4000",
     "categoria": "productos",
-    "referencia": "Balon Molten V4M4000",
+    "subcategoria": "balones",
+    "referencia": "Balón Molten V4M4000",
     "nombre": null,
     "descripcion": "Ideal para equipos que buscan un balón de larga vida útil sin sacrificar la sensación profesional. Construcción laminada (18 paneles). Tamaño N° 4.",
-    "precioTexto": "$210.000",
-    "precioCOP": 210000,
+    "precioTexto": "$225.000",
+    "precioCOP": 225000,
     "imagen": "/img/implementos/balones/balon_molten_v4m4000.webp",
     "color": "VERDE / ROJO / BLANCO",
     "size": "4",
+    "sizeList": [
+      "4"
+    ],
     "material": "Cuero Sintético (PU) de alta calidad",
-    "uso": "Entrenamiento y Competición Indoor (Sala)",
+    "uso": "Entrenamiento y Competencia Indoor (Sala)",
     "slug": "balon-molten-v4m4000",
-    "searchText": "balon molten v4m4000 ideal para equipos que buscan un balon de larga vida util sin sacrificar la sensacion profesional. construccion laminada (18 paneles). tamano n° 4. verde / rojo / blanco 4 cuero sintetico (pu) de alta calidad entrenamiento y competicion indoor (sala) productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "verde / rojo / blanco",
+    "materialNorm": "cuero sintetico pu de alta calidad",
+    "sizeNorm": [
+      "4"
+    ],
+    "searchText": "balon molten v4m4000 ideal para equipos que buscan un balon de larga vida util sin sacrificar la sensacion profesional. construccion laminada 18 paneles . tamano n 4. verde / rojo / blanco 4 cuero sintetico pu de alta calidad entrenamiento y competencia indoor sala productos balones medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:balon-molten-v5m4000:img-implementos-balones-balon-molten-v5m4000",
+    "id": "productos:balones:balon-molten-v5m4000:img-implementos-balones-balon-molten-v5m4000",
     "categoria": "productos",
-    "referencia": "Balon Molten V5M4000",
+    "subcategoria": "balones",
+    "referencia": "Balón Molten V5M4000",
     "nombre": null,
     "descripcion": "El balón equilibrado por excelencia: tacto suave de cuero sintético y durabilidad para entrenamientos intensos. Tamaño N° 5. Laminado de alta precisión.",
-    "precioTexto": "$220.000",
-    "precioCOP": 220000,
+    "precioTexto": "$225.000",
+    "precioCOP": 225000,
     "imagen": "/img/implementos/balones/balon_molten_v5m4000.webp",
     "color": "VERDE / ROJO / BLANCO",
     "size": "5",
+    "sizeList": [
+      "5"
+    ],
     "material": "Cuero Sintético (PU) Soft Touch",
-    "uso": "Competición Indoor / Entrenamiento de Club",
+    "uso": "Competencia Indoor / Entrenamiento de Club",
     "slug": "balon-molten-v5m4000",
-    "searchText": "balon molten v5m4000 el balon equilibrado por excelencia: tacto suave de cuero sintetico y durabilidad para entrenamientos intensos. tamano n° 5. laminado de alta precision. verde / rojo / blanco 5 cuero sintetico (pu) soft touch competicion indoor / entrenamiento de club productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "verde / rojo / blanco",
+    "materialNorm": "cuero sintetico pu soft touch",
+    "sizeNorm": [
+      "5"
+    ],
+    "searchText": "balon molten v5m4000 el balon equilibrado por excelencia tacto suave de cuero sintetico y durabilidad para entrenamientos intensos. tamano n 5. laminado de alta precision. verde / rojo / blanco 5 cuero sintetico pu soft touch competencia indoor / entrenamiento de club productos balones medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:balon-molten-v5m5000:img-implementos-balones-balon-molten-v5m5000",
+    "id": "productos:balones:balon-molten-v5m5000:img-implementos-balones-balon-molten-v5m5000",
     "categoria": "productos",
-    "referencia": "Balon Molten V5M5000",
+    "subcategoria": "balones",
+    "referencia": "Balón Molten V5M5000",
     "nombre": null,
     "descripcion": "Pieza de ingeniería deportiva aprobada por la FIVB. Tecnología FLISTATEC para trayectoria de vuelo predecible y control sin igual. Tamaño N° 5.",
-    "precioTexto": "$360.000",
-    "precioCOP": 360000,
+    "precioTexto": "$395.000",
+    "precioCOP": 395000,
     "imagen": "/img/implementos/balones/balon_molten_v5m5000.webp",
     "color": "VERDE / ROJO / BLANCO",
     "size": "5",
+    "sizeList": [
+      "5"
+    ],
     "material": "Cuero Sintético Premium de Microfibra",
-    "uso": "Competición Profesional y Élite Indoor",
+    "uso": "Competencia Profesional y Élite Indoor",
     "slug": "balon-molten-v5m5000",
-    "searchText": "balon molten v5m5000 pieza de ingenieria deportiva aprobada por la fivb. tecnologia flistatec para trayectoria de vuelo predecible y control sin igual. tamano n° 5. verde / rojo / blanco 5 cuero sintetico premium de microfibra competicion profesional y elite indoor productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "verde / rojo / blanco",
+    "materialNorm": "cuero sintetico premium de microfibra",
+    "sizeNorm": [
+      "5"
+    ],
+    "searchText": "balon molten v5m5000 pieza de ingenieria deportiva aprobada por la fivb. tecnologia flistatec para trayectoria de vuelo predecible y control sin igual. tamano n 5. verde / rojo / blanco 5 cuero sintetico premium de microfibra competencia profesional y elite indoor productos balones medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:balon-mikasa-v430w:img-implementos-balones-balon-mikasa-v430w",
+    "id": "productos:balones:balon-mikasa-v430w:img-implementos-balones-balon-mikasa-v430w",
     "categoria": "productos",
-    "referencia": "Balon Mikasa V430W",
+    "subcategoria": "balones",
+    "referencia": "Balón Mikasa V430W",
     "nombre": null,
     "descripcion": "Diseñado para clubes y escuelas. Estética de alta competición y durabilidad superior. Diseño de 18 paneles. Tamaño N° 4.",
     "precioTexto": "$190.000",
@@ -346,15 +586,24 @@
     "imagen": "/img/implementos/balones/balon_mikasa_v430w.webp",
     "color": "AZUL / AMARILLO",
     "size": "4",
+    "sizeList": [
+      "4"
+    ],
     "material": "Cuero Sintético Premium",
     "uso": "Competencia / Entrenamiento",
     "slug": "balon-mikasa-v430w",
-    "searchText": "balon mikasa v430w disenado para clubes y escuelas. estetica de alta competicion y durabilidad superior. diseno de 18 paneles. tamano n° 4. azul / amarillo 4 cuero sintetico premium competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "azul / amarillo",
+    "materialNorm": "cuero sintetico premium",
+    "sizeNorm": [
+      "4"
+    ],
+    "searchText": "balon mikasa v430w disenado para clubes y escuelas. estetica de alta competicion y durabilidad superior. diseno de 18 paneles. tamano n 4. azul / amarillo 4 cuero sintetico premium competencia / entrenamiento productos balones medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:balon-mikasa-v330w-l:img-implementos-balones-balon-mikasa-v330w",
+    "id": "productos:balones:balon-mikasa-v330w-l:img-implementos-balones-balon-mikasa-v330w",
     "categoria": "productos",
-    "referencia": "Balon Mikasa V330W-L",
+    "subcategoria": "balones",
+    "referencia": "Balón Mikasa V330W-L",
     "nombre": null,
     "descripcion": "Elección predilecta para categorías juveniles y escolares que prefieren un tacto más suave. Edición ligera perfecta para desarrollo inicial.",
     "precioTexto": "$200.000",
@@ -362,15 +611,24 @@
     "imagen": "/img/implementos/balones/balon_mikasa_v330w-l.webp",
     "color": "AZUL / AMARILLO",
     "size": "5",
+    "sizeList": [
+      "5"
+    ],
     "material": "Cuero sintético muy suave al tacto.",
     "uso": "Competencia / Entrenamiento",
     "slug": "balon-mikasa-v330w-l",
-    "searchText": "balon mikasa v330w-l eleccion predilecta para categorias juveniles y escolares que prefieren un tacto mas suave. edicion ligera perfecta para desarrollo inicial. azul / amarillo 5 cuero sintetico muy suave al tacto. competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "azul / amarillo",
+    "materialNorm": "cuero sintetico muy suave al tacto.",
+    "sizeNorm": [
+      "5"
+    ],
+    "searchText": "balon mikasa v330w-l eleccion predilecta para categorias juveniles y escolares que prefieren un tacto mas suave. edicion ligera perfecta para desarrollo inicial. azul / amarillo 5 cuero sintetico muy suave al tacto. competencia / entrenamiento productos balones medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:balon-mikasa-v330w:img-implementos-balones-balon-mikasa-v330w",
+    "id": "productos:balones:balon-mikasa-v330w:img-implementos-balones-balon-mikasa-v330w",
     "categoria": "productos",
-    "referencia": "Balon Mikasa V330W",
+    "subcategoria": "balones",
+    "referencia": "Balón Mikasa V330W",
     "nombre": null,
     "descripcion": "Perfecto para clubes y academias. Cuero sintético de alto grado (PU liso). Talla N°5, circunferencia 65-67 cm, peso 260-280 gramos.",
     "precioTexto": "$200.000",
@@ -378,15 +636,24 @@
     "imagen": "/img/implementos/balones/balon_mikasa_v330w.webp",
     "color": "AZUL / AMARILLO",
     "size": "5",
+    "sizeList": [
+      "5"
+    ],
     "material": "Cuero Sintético Premium",
     "uso": "Competencia / Entrenamiento",
     "slug": "balon-mikasa-v330w",
-    "searchText": "balon mikasa v330w perfecto para clubes y academias. cuero sintetico de alto grado (pu liso). talla n°5, circunferencia 65-67 cm, peso 260-280 gramos. azul / amarillo 5 cuero sintetico premium competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "azul / amarillo",
+    "materialNorm": "cuero sintetico premium",
+    "sizeNorm": [
+      "5"
+    ],
+    "searchText": "balon mikasa v330w perfecto para clubes y academias. cuero sintetico de alto grado pu liso . talla n 5, circunferencia 65-67 cm, peso 260-280 gramos. azul / amarillo 5 cuero sintetico premium competencia / entrenamiento productos balones medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:balon-mikasa-v200w:img-implementos-balones-balon-mikasa-v200w",
+    "id": "productos:balones:balon-mikasa-v200w:img-implementos-balones-balon-mikasa-v200w",
     "categoria": "productos",
-    "referencia": "Balon Mikasa V200W",
+    "subcategoria": "balones",
+    "referencia": "Balón Mikasa V200W",
     "nombre": null,
     "descripcion": "Balón Oficial FIVB exclusivo de juego. Función Anti-Sudor Nano Balloon Silica. Visibilidad Maximizada.",
     "precioTexto": "$430.000",
@@ -394,78 +661,123 @@
     "imagen": "/img/implementos/balones/balon_mikasa_v200w.webp",
     "color": "AZUL / AMARILLO",
     "size": "5",
+    "sizeList": [
+      "5"
+    ],
     "material": "Cuero Sintético Premium",
     "uso": "Competencia",
     "slug": "balon-mikasa-v200w",
-    "searchText": "balon mikasa v200w balon oficial fivb exclusivo de juego. funcion anti-sudor nano balloon silica. visibilidad maximizada. azul / amarillo 5 cuero sintetico premium competencia productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "azul / amarillo",
+    "materialNorm": "cuero sintetico premium",
+    "sizeNorm": [
+      "5"
+    ],
+    "searchText": "balon mikasa v200w balon oficial fivb exclusivo de juego. funcion anti-sudor nano balloon silica. visibilidad maximizada. azul / amarillo 5 cuero sintetico premium competencia productos balones medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:aguja:img-implementos-otros-aguja-webp",
+    "id": "productos:otros:aguja:img-implementos-otros-aguja-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Aguja",
     "nombre": null,
     "descripcion": "Fabricadas en metal ultra resistente con entrada universal de rosca. Punta redondeada para proteger la válvula. Perfecta para fútbol, básquet y voleibol.",
     "precioTexto": "$1.000",
     "precioCOP": 1000,
     "imagen": "/img/implementos/otros/aguja.webp",
-    "color": "Metalico",
+    "color": "METÁLICO",
     "size": "5 CM",
+    "sizeList": [
+      "5 CM"
+    ],
     "material": "Acero inoxidable",
     "uso": "Estandar",
     "slug": "aguja",
-    "searchText": "aguja fabricadas en metal ultra resistente con entrada universal de rosca. punta redondeada para proteger la valvula. perfecta para futbol, basquet y voleibol. metalico 5 cm acero inoxidable estandar productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "metalico",
+    "materialNorm": "acero inoxidable",
+    "sizeNorm": [
+      "5 cm"
+    ],
+    "searchText": "aguja fabricadas en metal ultra resistente con entrada universal de rosca. punta redondeada para proteger la valvula. perfecta para futbol, basquet y voleibol. metalico 5 cm acero inoxidable estandar productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:cinta-kinesiologica:img-implementos-otros-cinta-kinesiologica-webp",
+    "id": "productos:otros:cinta-kinesiologica:img-implementos-otros-cinta-kinesiologica-webp",
     "categoria": "productos",
-    "referencia": "Cinta Kinesiologica",
+    "subcategoria": "otros",
+    "referencia": "Cinta Kinesiológica",
     "nombre": null,
     "descripcion": "Diseñada para imitar la elasticidad de la piel. Proporciona soporte muscular sin restringir movimiento. Adhesivo hipoalergénico. Resistente al agua.",
     "precioTexto": "$35.000",
     "precioCOP": 35000,
     "imagen": "/img/implementos/otros/cinta_kinesiologica.webp",
-    "color": "Consultar Disponibilidad",
+    "color": "CONSULTAR DISPONIBILIDAD",
     "size": "5 CM x 5 M",
+    "sizeList": [
+      "5 CM X 5 M"
+    ],
     "material": "95% Algodón, 5% Spandex (Libre de látex).",
     "uso": "Soporte muscular y articular (3 a 5 días de uso).",
     "slug": "cinta-kinesiologica",
-    "searchText": "cinta kinesiologica disenada para imitar la elasticidad de la piel. proporciona soporte muscular sin restringir movimiento. adhesivo hipoalergenico. resistente al agua. consultar disponibilidad 5 cm x 5 m 95% algodon, 5% spandex (libre de latex). soporte muscular y articular (3 a 5 dias de uso). productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "consultar disponibilidad",
+    "materialNorm": "95 algodon, 5 spandex libre de latex .",
+    "sizeNorm": [
+      "5 cm x 5 m"
+    ],
+    "searchText": "cinta kinesiologica disenada para imitar la elasticidad de la piel. proporciona soporte muscular sin restringir movimiento. adhesivo hipoalergenico. resistente al agua. consultar disponibilidad 5 cm x 5 m 95 algodon, 5 spandex libre de latex . soporte muscular y articular 3 a 5 dias de uso . productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:esparadrapo-cinta-deportiva:img-implementos-otros-espaladrapo-cinta-deportiva",
+    "id": "productos:otros:esparadrapo-cinta-deportiva:img-implementos-otros-espaladrapo-cinta-deportiva",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Esparadrapo Cinta Deportiva",
     "nombre": null,
     "descripcion": "Cinta de algodón no elástico con adhesivo de Óxido de Zinc. Proporciona soporte rígido e inmovilización máxima.",
     "precioTexto": "$15.000",
     "precioCOP": 15000,
     "imagen": "/img/implementos/otros/espaladrapo_cinta_deportiva_1pulgada.webp",
-    "color": "Blanco",
+    "color": "BLANCO",
     "size": "1 pulgada",
+    "sizeList": [
+      "1 PULGADA"
+    ],
     "material": "100% Algodón (no elástico).",
     "uso": "Inmovilización, prevención de esguinces, protección de ampollas.",
     "slug": "esparadrapo-cinta-deportiva",
-    "searchText": "esparadrapo cinta deportiva cinta de algodon no elastico con adhesivo de oxido de zinc. proporciona soporte rigido e inmovilizacion maxima. blanco 1 pulgada 100% algodon (no elastico). inmovilizacion, prevencion de esguinces, proteccion de ampollas. productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "100 algodon no elastico .",
+    "sizeNorm": [
+      "1 pulgada"
+    ],
+    "searchText": "esparadrapo cinta deportiva cinta de algodon no elastico con adhesivo de oxido de zinc. proporciona soporte rigido e inmovilizacion maxima. blanco 1 pulgada 100 algodon no elastico . inmovilizacion, prevencion de esguinces, proteccion de ampollas. productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:esparadrapo-cinta-deportiva:img-implementos-otros-espaladrapo-cinta-deportiva",
+    "id": "productos:otros:esparadrapo-cinta-deportiva:img-implementos-otros-espaladrapo-cinta-deportiva",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Esparadrapo Cinta Deportiva",
     "nombre": null,
     "descripcion": "Cinta de algodón no elástico con potente adhesivo para una inmovilización y protección máximas. Ideal para articulaciones y dedos.",
     "precioTexto": "$25.000",
     "precioCOP": 25000,
     "imagen": "/img/implementos/otros/espaladrapo_cinta_deportiva_2pulgadas.webp",
-    "color": "Blanco",
+    "color": "BLANCO",
     "size": "2 pulgadas",
+    "sizeList": [
+      "2 PULGADAS"
+    ],
     "material": "100% Algodón (no elástico).",
     "uso": "Inmovilización, prevención de esguinces, protección de ampollas.",
     "slug": "esparadrapo-cinta-deportiva",
-    "searchText": "esparadrapo cinta deportiva cinta de algodon no elastico con potente adhesivo para una inmovilizacion y proteccion maximas. ideal para articulaciones y dedos. blanco 2 pulgadas 100% algodon (no elastico). inmovilizacion, prevencion de esguinces, proteccion de ampollas. productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "100 algodon no elastico .",
+    "sizeNorm": [
+      "2 pulgadas"
+    ],
+    "searchText": "esparadrapo cinta deportiva cinta de algodon no elastico con potente adhesivo para una inmovilizacion y proteccion maximas. ideal para articulaciones y dedos. blanco 2 pulgadas 100 algodon no elastico . inmovilizacion, prevencion de esguinces, proteccion de ampollas. productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:estabilizador-mueller:img-implementos-otros-estabilizador-mueller-webp",
+    "id": "productos:otros:estabilizador-mueller:img-implementos-otros-estabilizador-mueller-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Estabilizador Mueller",
     "nombre": null,
     "descripcion": "Control y soporte anti-torceduras. Estructura reforzada con correas cruzadas. Placas laterales de polímero y velcros de alta adherencia.",
@@ -474,30 +786,50 @@
     "imagen": "/img/implementos/otros/estabilizador_mueller.webp",
     "color": "NEGRO",
     "size": "16 cm Altura",
+    "sizeList": [
+      "16 CM ALTURA"
+    ],
     "material": "Neopreno transpirable y correas de nylon reforzado.",
     "uso": "Prevención de esguinces, post-operatorio o debilidad ligamentosa.",
     "slug": "estabilizador-mueller",
-    "searchText": "estabilizador mueller control y soporte anti-torceduras. estructura reforzada con correas cruzadas. placas laterales de polimero y velcros de alta adherencia. negro 16 cm altura neopreno transpirable y correas de nylon reforzado. prevencion de esguinces, post-operatorio o debilidad ligamentosa. productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "neopreno transpirable y correas de nylon reforzado.",
+    "sizeNorm": [
+      "16 cm altura"
+    ],
+    "searchText": "estabilizador mueller control y soporte anti-torceduras. estructura reforzada con correas cruzadas. placas laterales de polimero y velcros de alta adherencia. negro 16 cm altura neopreno transpirable y correas de nylon reforzado. prevencion de esguinces, post-operatorio o debilidad ligamentosa. productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:headband:img-implementos-otros-headband-webp",
+    "id": "productos:otros:headband:img-implementos-otros-headband-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Headband",
     "nombre": null,
     "descripcion": "Absorbe y evapora el sudor rápidamente. Tejido de rizo elástico que se mantiene en su sitio durante saltos y movimientos bruscos.",
     "precioTexto": "$25.000",
     "precioCOP": 25000,
     "imagen": "/img/implementos/otros/headband.webp",
-    "color": "Consultar Disponibilidad",
+    "color": "CONSULTAR DISPONIBILIDAD",
     "size": "Ajustable / Universal",
+    "sizeList": [
+      "AJUSTABLE",
+      "U"
+    ],
     "material": "Mezcla de Algodón, Nylon y Elastano de alta absorción.",
     "uso": "Tenis, Voleibol, Crossfit, Running y Básquet.",
     "slug": "headband",
-    "searchText": "headband absorbe y evapora el sudor rapidamente. tejido de rizo elastico que se mantiene en su sitio durante saltos y movimientos bruscos. consultar disponibilidad ajustable / universal mezcla de algodon, nylon y elastano de alta absorcion. tenis, voleibol, crossfit, running y basquet. productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "consultar disponibilidad",
+    "materialNorm": "mezcla de algodon, nylon y elastano de alta absorcion.",
+    "sizeNorm": [
+      "ajustable",
+      "u"
+    ],
+    "searchText": "headband absorbe y evapora el sudor rapidamente. tejido de rizo elastico que se mantiene en su sitio durante saltos y movimientos bruscos. consultar disponibilidad ajustable, u mezcla de algodon, nylon y elastano de alta absorcion. tenis, voleibol, crossfit, running y basquet. productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:pantaloneta:img-implementos-otros-pantaloneta-webp",
+    "id": "productos:otros:pantaloneta:img-implementos-otros-pantaloneta-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Pantaloneta",
     "nombre": null,
     "descripcion": "Tejido ultra ligero con tecnología de secado rápido. Corte ergonómico que permite apertura de pierna completa para saltos y sprints.",
@@ -506,14 +838,25 @@
     "imagen": "/img/implementos/otros/pantaloneta.webp",
     "color": "NEGRO",
     "size": "M / L",
+    "sizeList": [
+      "M",
+      "L"
+    ],
     "material": "Algodón",
     "uso": "Estandar / Gimnasio",
     "slug": "pantaloneta",
-    "searchText": "pantaloneta tejido ultra ligero con tecnologia de secado rapido. corte ergonomico que permite apertura de pierna completa para saltos y sprints. negro m / l algodon estandar / gimnasio productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "algodon",
+    "sizeNorm": [
+      "m",
+      "l"
+    ],
+    "searchText": "pantaloneta tejido ultra ligero con tecnologia de secado rapido. corte ergonomico que permite apertura de pierna completa para saltos y sprints. negro m, l algodon estandar / gimnasio productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:aerosol-nabico:img-implementos-otros-aerosolnavico-webp",
+    "id": "productos:otros:aerosol-nabico:img-implementos-otros-aerosolnavico-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Aerosol Nabico",
     "nombre": null,
     "descripcion": "Fórmula mentolada con aceites naturales. Rápida absorción, no mancha la ropa. Proporciona sensación de frescura intensa.",
@@ -522,14 +865,23 @@
     "imagen": "/img/implementos/otros/aerosolnavico.webp",
     "color": "NARANJA",
     "size": "250 mL",
+    "sizeList": [
+      "250 ML"
+    ],
     "material": "Metal o plástico",
     "uso": "Sensación fría al contacto con la piel.",
     "slug": "aerosol-nabico",
-    "searchText": "aerosol nabico formula mentolada con aceites naturales. rapida absorcion, no mancha la ropa. proporciona sensacion de frescura intensa. naranja 250 ml metal o plastico sensacion fria al contacto con la piel. productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "naranja",
+    "materialNorm": "metal o plastico",
+    "sizeNorm": [
+      "250 ml"
+    ],
+    "searchText": "aerosol nabico formula mentolada con aceites naturales. rapida absorcion, no mancha la ropa. proporciona sensacion de frescura intensa. naranja 250 ml metal o plastico sensacion fria al contacto con la piel. productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:aerosol-nabico-herbal:img-implementos-otros-aerosol-navico-herbal",
+    "id": "productos:otros:aerosol-nabico-herbal:img-implementos-otros-aerosol-navico-herbal",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Aerosol Nabico Herbal",
     "nombre": null,
     "descripcion": "Fórmula delicada con menos mentol y aroma herbal. Sensación fría de rápida absorción que perdura.",
@@ -538,62 +890,98 @@
     "imagen": "/img/implementos/otros/aerosol_navico_herbal.webp",
     "color": "VERDE",
     "size": "250 mL",
+    "sizeList": [
+      "250 ML"
+    ],
     "material": "Metal o plástico",
     "uso": "Sensación fría al contacto con la piel.",
     "slug": "aerosol-nabico-herbal",
-    "searchText": "aerosol nabico herbal formula delicada con menos mentol y aroma herbal. sensacion fria de rapida absorcion que perdura. verde 250 ml metal o plastico sensacion fria al contacto con la piel. productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "verde",
+    "materialNorm": "metal o plastico",
+    "sizeNorm": [
+      "250 ml"
+    ],
+    "searchText": "aerosol nabico herbal formula delicada con menos mentol y aroma herbal. sensacion fria de rapida absorcion que perdura. verde 250 ml metal o plastico sensacion fria al contacto con la piel. productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:mangas-cortas:img-implementos-otros-mangas-cortas-webp",
+    "id": "productos:otros:mangas-cortas:img-implementos-otros-mangas-cortas-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Mangas Cortas",
     "nombre": null,
     "descripcion": "Largo de 20 cm, cubren el antebrazo sin restringir movimiento. Mezcla premium suave al tacto y transpirable. Ajuste de segunda piel.",
-    "precioTexto": "$30.000",
-    "precioCOP": 30000,
+    "precioTexto": "$35.000",
+    "precioCOP": 35000,
     "imagen": "/img/implementos/otros/mangas_cortas.webp",
     "color": "NEGRO",
     "size": "20 cm",
+    "sizeList": [
+      "20 CM"
+    ],
     "material": "Mezcla premium de Nylon y Algodón",
     "uso": "Competencia / Entrenamiento",
     "slug": "mangas-cortas",
-    "searchText": "mangas cortas largo de 20 cm, cubren el antebrazo sin restringir movimiento. mezcla premium suave al tacto y transpirable. ajuste de segunda piel. negro 20 cm mezcla premium de nylon y algodon competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "mezcla premium de nylon y algodon",
+    "sizeNorm": [
+      "20 cm"
+    ],
+    "searchText": "mangas cortas largo de 20 cm, cubren el antebrazo sin restringir movimiento. mezcla premium suave al tacto y transpirable. ajuste de segunda piel. negro 20 cm mezcla premium de nylon y algodon competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:mangas-cortas:img-implementos-otros-mangas-cortas-blancas",
+    "id": "productos:otros:mangas-cortas:img-implementos-otros-mangas-cortas-blancas",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Mangas Cortas",
     "nombre": null,
     "descripcion": "Largo de 20 cm. Fabricadas con mezcla premium de Nylon y Algodón. Durabilidad extrema para partidos intensos.",
-    "precioTexto": "$30.000",
-    "precioCOP": 30000,
+    "precioTexto": "$35.000",
+    "precioCOP": 35000,
     "imagen": "/img/implementos/otros/mangas_cortas_blancas.webp",
     "color": "BLANCO",
     "size": "20 cm",
+    "sizeList": [
+      "20 CM"
+    ],
     "material": "Mezcla premium de Nylon y Algodón",
     "uso": "Competencia / Entrenamiento",
     "slug": "mangas-cortas",
-    "searchText": "mangas cortas largo de 20 cm. fabricadas con mezcla premium de nylon y algodon. durabilidad extrema para partidos intensos. blanco 20 cm mezcla premium de nylon y algodon competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "mezcla premium de nylon y algodon",
+    "sizeNorm": [
+      "20 cm"
+    ],
+    "searchText": "mangas cortas largo de 20 cm. fabricadas con mezcla premium de nylon y algodon. durabilidad extrema para partidos intensos. blanco 20 cm mezcla premium de nylon y algodon competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:mangas-medium:img-implementos-otros-mangas-medium-webp",
+    "id": "productos:otros:mangas-medium:img-implementos-otros-mangas-medium-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Mangas Medium",
     "nombre": null,
     "descripcion": "Cobertura de 27 cm que protege desde el antebrazo hasta el codo. Soporte muscular que mejora la circulación y mantiene la temperatura.",
-    "precioTexto": "$35.000",
-    "precioCOP": 35000,
+    "precioTexto": "$40.000",
+    "precioCOP": 40000,
     "imagen": "/img/implementos/otros/mangas_medium.webp",
     "color": "NEGRO",
     "size": "27 cm",
+    "sizeList": [
+      "27 CM"
+    ],
     "material": "Mezcla premium de Nylon y Algodón",
     "uso": "Competencia / Entrenamiento",
     "slug": "mangas-medium",
-    "searchText": "mangas medium cobertura de 27 cm que protege desde el antebrazo hasta el codo. soporte muscular que mejora la circulacion y mantiene la temperatura. negro 27 cm mezcla premium de nylon y algodon competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "mezcla premium de nylon y algodon",
+    "sizeNorm": [
+      "27 cm"
+    ],
+    "searchText": "mangas medium cobertura de 27 cm que protege desde el antebrazo hasta el codo. soporte muscular que mejora la circulacion y mantiene la temperatura. negro 27 cm mezcla premium de nylon y algodon competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:mangas-medium:img-implementos-otros-mangas-medium-blancas",
+    "id": "productos:otros:mangas-medium:img-implementos-otros-mangas-medium-blancas",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Mangas Medium",
     "nombre": null,
     "descripcion": "Cobertura extendida de 27 cm. Material ultra suave que absorbe el sudor y evita irritaciones. Elasticidad duradera.",
@@ -602,14 +990,23 @@
     "imagen": "/img/implementos/otros/mangas_medium_blancas.webp",
     "color": "BLANCO",
     "size": "27 cm",
+    "sizeList": [
+      "27 CM"
+    ],
     "material": "Mezcla premium de Nylon y Algodón",
     "uso": "Competencia / Entrenamiento",
     "slug": "mangas-medium",
-    "searchText": "mangas medium cobertura extendida de 27 cm. material ultra suave que absorbe el sudor y evita irritaciones. elasticidad duradera. blanco 27 cm mezcla premium de nylon y algodon competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "mezcla premium de nylon y algodon",
+    "sizeNorm": [
+      "27 cm"
+    ],
+    "searchText": "mangas medium cobertura extendida de 27 cm. material ultra suave que absorbe el sudor y evita irritaciones. elasticidad duradera. blanco 27 cm mezcla premium de nylon y algodon competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:mangas-medium:img-implementos-otros-mangas-medium-estilo",
+    "id": "productos:otros:mangas-medium:img-implementos-otros-mangas-medium-estilo",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Mangas Medium",
     "nombre": null,
     "descripcion": "Protección frontal y lateral para el codo en caídas y recepciones. Mezcla técnica de Nylon y Algodón.",
@@ -618,14 +1015,23 @@
     "imagen": "/img/implementos/otros/mangas_medium_estilo_negras.webp",
     "color": "BLANCO/NEGRO",
     "size": "27 cm",
+    "sizeList": [
+      "27 CM"
+    ],
     "material": "Mezcla premium de Nylon y Algodón",
     "uso": "Competencia / Entrenamiento",
     "slug": "mangas-medium",
-    "searchText": "mangas medium proteccion frontal y lateral para el codo en caidas y recepciones. mezcla tecnica de nylon y algodon. blanco/negro 27 cm mezcla premium de nylon y algodon competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco/negro",
+    "materialNorm": "mezcla premium de nylon y algodon",
+    "sizeNorm": [
+      "27 cm"
+    ],
+    "searchText": "mangas medium proteccion frontal y lateral para el codo en caidas y recepciones. mezcla tecnica de nylon y algodon. blanco/negro 27 cm mezcla premium de nylon y algodon competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:mangas-medium:img-implementos-otros-mangas-medium-rosadas",
+    "id": "productos:otros:mangas-medium:img-implementos-otros-mangas-medium-rosadas",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Mangas Medium",
     "nombre": null,
     "descripcion": "Equilibrio perfecto entre compresión y confort. Ayuda a mantener la temperatura muscular.",
@@ -634,14 +1040,23 @@
     "imagen": "/img/implementos/otros/mangas_medium_rosadas.webp",
     "color": "BLANCO/FUCSIA",
     "size": "27 cm",
+    "sizeList": [
+      "27 CM"
+    ],
     "material": "Mezcla premium de Nylon y Algodón",
     "uso": "Competencia / Entrenamiento",
     "slug": "mangas-medium",
-    "searchText": "mangas medium equilibrio perfecto entre compresion y confort. ayuda a mantener la temperatura muscular. blanco/fucsia 27 cm mezcla premium de nylon y algodon competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco/fucsia",
+    "materialNorm": "mezcla premium de nylon y algodon",
+    "sizeNorm": [
+      "27 cm"
+    ],
+    "searchText": "mangas medium equilibrio perfecto entre compresion y confort. ayuda a mantener la temperatura muscular. blanco/fucsia 27 cm mezcla premium de nylon y algodon competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:medias-cortas:img-implementos-otros-medias-cortas-webp",
+    "id": "productos:otros:medias-cortas:img-implementos-otros-medias-cortas-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Medias Cortas",
     "nombre": null,
     "descripcion": "Suavidad y frescura con mezcla de Nylon y Algodón. Ajuste ergonómico que evita ampollas. Largo de 20 cm sobre el tobillo.",
@@ -650,14 +1065,23 @@
     "imagen": "/img/implementos/otros/medias_cortas.webp",
     "color": "BLANCO",
     "size": "20 cm",
+    "sizeList": [
+      "20 CM"
+    ],
     "material": "Mezcla de Nylon y Algodón",
     "uso": "Competencia / Entrenamiento",
     "slug": "medias-cortas",
-    "searchText": "medias cortas suavidad y frescura con mezcla de nylon y algodon. ajuste ergonomico que evita ampollas. largo de 20 cm sobre el tobillo. blanco 20 cm mezcla de nylon y algodon competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "mezcla de nylon y algodon",
+    "sizeNorm": [
+      "20 cm"
+    ],
+    "searchText": "medias cortas suavidad y frescura con mezcla de nylon y algodon. ajuste ergonomico que evita ampollas. largo de 20 cm sobre el tobillo. blanco 20 cm mezcla de nylon y algodon competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:medias-semi-profesionales:img-implementos-otros-medias-semiprofesionales-webp",
+    "id": "productos:otros:medias-semi-profesionales:img-implementos-otros-medias-semiprofesionales-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Medias Semi Profesionales",
     "nombre": null,
     "descripcion": "Protección total con refuerzo en talón y Aquiles. Compresión inteligente y suela acolchada para aterrizajes intensos. Diseño anatómico pie derecho/izquierdo.",
@@ -666,14 +1090,25 @@
     "imagen": "/img/implementos/otros/medias_semiprofesionales.webp",
     "color": "BLANCO",
     "size": "9-11 / 10-12",
+    "sizeList": [
+      "9-11",
+      "10-12"
+    ],
     "material": "95% Poliéster, 4% Goma, Elastano y Nailon",
     "uso": "Competencia / Entrenamiento",
     "slug": "medias-semi-profesionales",
-    "searchText": "medias semi profesionales proteccion total con refuerzo en talon y aquiles. compresion inteligente y suela acolchada para aterrizajes intensos. diseno anatomico pie derecho/izquierdo. blanco 9-11 / 10-12 95% poliester, 4% goma, elastano y nailon competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco",
+    "materialNorm": "95 poliester, 4 goma, elastano y nailon",
+    "sizeNorm": [
+      "9-11",
+      "10-12"
+    ],
+    "searchText": "medias semi profesionales proteccion total con refuerzo en talon y aquiles. compresion inteligente y suela acolchada para aterrizajes intensos. diseno anatomico pie derecho/izquierdo. blanco 9-11, 10-12 95 poliester, 4 goma, elastano y nailon competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:medias-taloneras-mizuno:img-implementos-otros-medias-taloneras-mizuno",
+    "id": "productos:otros:medias-taloneras-mizuno:img-implementos-otros-medias-taloneras-mizuno",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Medias Taloneras Mizuno",
     "nombre": null,
     "descripcion": "Tecnología DryLite que expulsa la humedad. Ajuste de segunda piel con mezcla de Poliéster y Elastano. Ligereza extrema sin bultos.",
@@ -682,14 +1117,23 @@
     "imagen": "/img/implementos/otros/medias_taloneras_mizuno.webp",
     "color": "BLANCO / NEGRO",
     "size": "10-12",
+    "sizeList": [
+      "10-12"
+    ],
     "material": "Mezcla de Poliéster (97%) y Elastano (3%)",
     "uso": "Competencia / Entrenamiento",
     "slug": "medias-taloneras-mizuno",
-    "searchText": "medias taloneras mizuno tecnologia drylite que expulsa la humedad. ajuste de segunda piel con mezcla de poliester y elastano. ligereza extrema sin bultos. blanco / negro 10-12 mezcla de poliester (97%) y elastano (3%) competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "blanco / negro",
+    "materialNorm": "mezcla de poliester 97 y elastano 3",
+    "sizeNorm": [
+      "10-12"
+    ],
+    "searchText": "medias taloneras mizuno tecnologia drylite que expulsa la humedad. ajuste de segunda piel con mezcla de poliester y elastano. ligereza extrema sin bultos. blanco / negro 10-12 mezcla de poliester 97 y elastano 3 competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:tobillera-elastica-miyagi-m6908:img-implementos-otros-tobillera-elastica-miyagi",
+    "id": "productos:otros:tobillera-elastica-miyagi-m6908:img-implementos-otros-tobillera-elastica-miyagi",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Tobillera Elástica Miyagi M6908",
     "nombre": null,
     "descripcion": "Soporte dinámico con compresión firme para estabilizar la articulación. Diseño ultra-delgado para usar con calzado deportivo. Confort transpirable.",
@@ -698,30 +1142,52 @@
     "imagen": "/img/implementos/otros/tobillera_elastica_miyagi_m6908.webp",
     "color": "NEGRO",
     "size": "S, M, L",
+    "sizeList": [
+      "S",
+      "M",
+      "L"
+    ],
     "material": "Material elástico de alta calidad transpirable",
     "uso": "Competencia / Entrenamiento",
     "slug": "tobillera-elastica-miyagi-m6908",
-    "searchText": "tobillera elastica miyagi m6908 soporte dinamico con compresion firme para estabilizar la articulacion. diseno ultra-delgado para usar con calzado deportivo. confort transpirable. negro s, m, l material elastico de alta calidad transpirable competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "material elastico de alta calidad transpirable",
+    "sizeNorm": [
+      "s",
+      "m",
+      "l"
+    ],
+    "searchText": "tobillera elastica miyagi m6908 soporte dinamico con compresion firme para estabilizar la articulacion. diseno ultra-delgado para usar con calzado deportivo. confort transpirable. negro s, m, l material elastico de alta calidad transpirable competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:rodillera-tipo-strap-miyagi-m6744:img-implementos-otros-rodillera-tipo-strap",
+    "id": "productos:rodilleras:rodillera-tipo-strap-miyagi-m6744:img-implementos-otros-rodillera-tipo-strap",
     "categoria": "productos",
+    "subcategoria": "rodilleras",
     "referencia": "Rodillera Tipo Strap Miyagi M6744",
     "nombre": null,
     "descripcion": "Soporte focalizado para el tendón rotuliano. Sistema de velcro de alta resistencia para ajuste milimétrico. Máxima movilidad para desplazamientos explosivos.",
-    "precioTexto": "$25.000",
-    "precioCOP": 25000,
+    "precioTexto": "$30.000",
+    "precioCOP": 30000,
     "imagen": "/img/implementos/otros/rodillera_tipo_strap_miyagi_m6744.webp",
     "color": "NEGRO",
     "size": "U (Universal)",
+    "sizeList": [
+      "U"
+    ],
     "material": "Neopreno suave y duradero",
     "uso": "Competencia / Entrenamiento",
     "slug": "rodillera-tipo-strap-miyagi-m6744",
-    "searchText": "rodillera tipo strap miyagi m6744 soporte focalizado para el tendon rotuliano. sistema de velcro de alta resistencia para ajuste milimetrico. maxima movilidad para desplazamientos explosivos. negro u (universal) neopreno suave y duradero competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "neopreno suave y duradero",
+    "sizeNorm": [
+      "u"
+    ],
+    "searchText": "rodillera tipo strap miyagi m6744 soporte focalizado para el tendon rotuliano. sistema de velcro de alta resistencia para ajuste milimetrico. maxima movilidad para desplazamientos explosivos. negro u neopreno suave y duradero competencia / entrenamiento productos rodilleras medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:banda-elastica-wonder:img-implementos-otros-banda-elastica-wonder",
+    "id": "productos:otros:banda-elastica-wonder:img-implementos-otros-banda-elastica-wonder",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Banda Elástica Wonder",
     "nombre": null,
     "descripcion": "28 LBS de tensión para fortalecer y mejorar potencia de salto. Fabricada con látex de alta calidad. Medida de 25 cm para rango controlado.",
@@ -730,14 +1196,25 @@
     "imagen": "/img/implementos/otros/banda_elastica_wonder.webp",
     "color": "AMARILLO",
     "size": "25 CM / 28 LBS",
+    "sizeList": [
+      "25 CM",
+      "28 LBS"
+    ],
     "material": "Látex de alta calidad",
     "uso": "Competencia / Entrenamiento",
     "slug": "banda-elastica-wonder",
-    "searchText": "banda elastica wonder 28 lbs de tension para fortalecer y mejorar potencia de salto. fabricada con latex de alta calidad. medida de 25 cm para rango controlado. amarillo 25 cm / 28 lbs latex de alta calidad competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "amarillo",
+    "materialNorm": "latex de alta calidad",
+    "sizeNorm": [
+      "25 cm",
+      "28 lbs"
+    ],
+    "searchText": "banda elastica wonder 28 lbs de tension para fortalecer y mejorar potencia de salto. fabricada con latex de alta calidad. medida de 25 cm para rango controlado. amarillo 25 cm, 28 lbs latex de alta calidad competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:banda-elastica-wonder:img-implementos-otros-banda-elastica-wonder",
+    "id": "productos:otros:banda-elastica-wonder:img-implementos-otros-banda-elastica-wonder",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Banda Elástica Wonder",
     "nombre": null,
     "descripcion": "22 LBS de resistencia, nivel intermedio-avanzado. Ideal para ganar explosividad y estabilidad defensiva. No se enrolla ni se desliza.",
@@ -746,14 +1223,25 @@
     "imagen": "/img/implementos/otros/banda_elastica_wonder_negra.webp",
     "color": "NEGRO",
     "size": "25 CM / 22 LBS",
+    "sizeList": [
+      "25 CM",
+      "22 LBS"
+    ],
     "material": "Látex altamente resistente",
     "uso": "Competencia / Entrenamiento",
     "slug": "banda-elastica-wonder",
-    "searchText": "banda elastica wonder 22 lbs de resistencia, nivel intermedio-avanzado. ideal para ganar explosividad y estabilidad defensiva. no se enrolla ni se desliza. negro 25 cm / 22 lbs latex altamente resistente competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "negro",
+    "materialNorm": "latex altamente resistente",
+    "sizeNorm": [
+      "25 cm",
+      "22 lbs"
+    ],
+    "searchText": "banda elastica wonder 22 lbs de resistencia, nivel intermedio-avanzado. ideal para ganar explosividad y estabilidad defensiva. no se enrolla ni se desliza. negro 25 cm, 22 lbs latex altamente resistente competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:theraband:img-implementos-otros-theraband-webp",
+    "id": "productos:otros:theraband:img-implementos-otros-theraband-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Theraband",
     "nombre": null,
     "descripcion": "Resistencia Máxima (Dorado). Ideal para deportistas que buscan potencia explosiva. 1.5 metros de longitud para variedad de ejercicios.",
@@ -762,14 +1250,23 @@
     "imagen": "/img/implementos/otros/theraband.webp",
     "color": "DORADO",
     "size": "1.5 M",
+    "sizeList": [
+      "1.5 M"
+    ],
     "material": "Látex de alta densidad",
     "uso": "Competencia / Entrenamiento",
     "slug": "theraband",
-    "searchText": "theraband resistencia maxima (dorado). ideal para deportistas que buscan potencia explosiva. 1.5 metros de longitud para variedad de ejercicios. dorado 1.5 m latex de alta densidad competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "dorado",
+    "materialNorm": "latex de alta densidad",
+    "sizeNorm": [
+      "1.5 m"
+    ],
+    "searchText": "theraband resistencia maxima dorado . ideal para deportistas que buscan potencia explosiva. 1.5 metros de longitud para variedad de ejercicios. dorado 1.5 m latex de alta densidad competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:theraband:img-implementos-otros-theraband-webp",
+    "id": "productos:otros:theraband:img-implementos-otros-theraband-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Theraband",
     "nombre": null,
     "descripcion": "Resistencia Intensa (Gris). Perfecta para ganar potencia en hombros, brazos y piernas. Ligera y ultra resistente.",
@@ -778,14 +1275,23 @@
     "imagen": "/img/implementos/otros/theraband_.webp",
     "color": "GRIS",
     "size": "1.5 M",
+    "sizeList": [
+      "1.5 M"
+    ],
     "material": "Látex de alta densidad",
     "uso": "Competencia / Entrenamiento",
     "slug": "theraband",
-    "searchText": "theraband resistencia intensa (gris). perfecta para ganar potencia en hombros, brazos y piernas. ligera y ultra resistente. gris 1.5 m latex de alta densidad competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "gris",
+    "materialNorm": "latex de alta densidad",
+    "sizeNorm": [
+      "1.5 m"
+    ],
+    "searchText": "theraband resistencia intensa gris . perfecta para ganar potencia en hombros, brazos y piernas. ligera y ultra resistente. gris 1.5 m latex de alta densidad competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   },
   {
-    "id": "productos:inflador-manual:img-implementos-otros-inflador-manual-webp",
+    "id": "productos:otros:inflador-manual:img-implementos-otros-inflador-manual-webp",
     "categoria": "productos",
+    "subcategoria": "otros",
     "referencia": "Inflador Manual",
     "nombre": null,
     "descripcion": "Diseño ultra-ligero y compacto. Mecanismo suave para inflado eficiente. Incluye aguja estándar. Construcción resistente para uso diario.",
@@ -794,9 +1300,42 @@
     "imagen": "/img/implementos/otros/inflador_manual.webp",
     "color": "AZUL MARINO",
     "size": "20 CM",
+    "sizeList": [
+      "20 CM"
+    ],
     "material": "Plástico/Metal reforzado",
     "uso": "Competencia / Entrenamiento",
     "slug": "inflador-manual",
-    "searchText": "inflador manual diseno ultra-ligero y compacto. mecanismo suave para inflado eficiente. incluye aguja estandar. construccion resistente para uso diario. azul marino 20 cm plastico/metal reforzado competencia / entrenamiento productos medellin medellin colombia voleibol volleyball"
+    "colorNorm": "azul marino",
+    "materialNorm": "plastico/metal reforzado",
+    "sizeNorm": [
+      "20 cm"
+    ],
+    "searchText": "inflador manual diseno ultra-ligero y compacto. mecanismo suave para inflado eficiente. incluye aguja estandar. construccion resistente para uso diario. azul marino 20 cm plastico/metal reforzado competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
+  },
+  {
+    "id": "productos:otros:inflador-manual-doble-accion:img-implementos-otros-inflador-manual-doble",
+    "categoria": "productos",
+    "subcategoria": "otros",
+    "referencia": "Inflador Manual Doble Accion",
+    "nombre": null,
+    "descripcion": "Es la solución práctica que todo jugador necesita para mantener sus balones con la presión perfecta en cualquier momento y lugar. Diseño Ultra-Ligero: Compacto y fácil de guardar en cualquier bolsillo de tu maleta deportiva. Bombeo Eficiente: Su mecanismo suave permite inflar tus balones de voleibol, básquet o fútbol sin esfuerzo. Durabilidad Garantizada: Construcción resistente diseñada para el uso rudo y diario en la cancha. Listo para usar: Incluye la aguja estándar para que puedas empezar a inflar desde el primer segundo.",
+    "precioTexto": "$35.000",
+    "precioCOP": 35000,
+    "imagen": "/img/implementos/otros/inflador_manual_doble_accion.webp",
+    "color": "NEGRO",
+    "size": "20 CM",
+    "sizeList": [
+      "20 CM"
+    ],
+    "material": "Plástico/Metal reforzado",
+    "uso": "Competencia / Entrenamiento",
+    "slug": "inflador-manual-doble-accion",
+    "colorNorm": "negro",
+    "materialNorm": "plastico/metal reforzado",
+    "sizeNorm": [
+      "20 cm"
+    ],
+    "searchText": "inflador manual doble accion es la solucion practica que todo jugador necesita para mantener sus balones con la presion perfecta en cualquier momento y lugar. diseno ultra-ligero compacto y facil de guardar en cualquier bolsillo de tu maleta deportiva. bombeo eficiente su mecanismo suave permite inflar tus balones de voleibol, basquet o futbol sin esfuerzo. durabilidad garantizada construccion resistente disenada para el uso rudo y diario en la cancha. listo para usar incluye la aguja estandar para que puedas empezar a inflar desde el primer segundo. negro 20 cm plastico/metal reforzado competencia / entrenamiento productos otros medellin medellin colombia voleibol volleyball comprar precio envio envio whatsapp"
   }
 ]

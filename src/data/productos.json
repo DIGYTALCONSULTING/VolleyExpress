@@ -109,7 +109,7 @@
     "material": "50% Poliéster, 22% Rayón, 28% Elástico",
     "uso": "Competencia / Entrenamiento"
   },
-  {
+{
     "referencia": "Rodilleras Mizuno LR6",
     "descripcion": "Rodillera de perfil bajo para el juego moderno. Con un ajuste aerodinámico de 6 pulgadas. Ideal para jugadoras que priorizan la velocidad y una estética limpia.",
     "precio": "$210.000",
@@ -119,6 +119,28 @@
     "material": "50% Poliéster, 22% Rayón, 28% Elástico",
     "uso": "Competencia / Entrenamiento"
   },
+
+    {
+    "referencia": "Rodilleras MIZUNO LR6 Eco Pro",
+    "descripcion": "Lleva tu defensa al siguiente nivel con las rodilleras más avanzadas y responsables de Mizuno. Diseñadas para jugadores que exigen el máximo rendimiento sin sacrificar la agilidad, las LR6 ECO PRO son la combinación perfecta de cobertura estratégica y diseño minimalista. ♻️ ADN Sustentable: Fabricadas con materiales reciclados de alta calidad, reduciendo el impacto ambiental sin perder durabilidad. 📏 Diseño D.F. Cut: Corte dinámico que ofrece una libertad de movimiento absoluta; se sienten como una segunda piel. 🛡️ Protección Focalizada: Acolchado que protege las zonas críticas de impacto lateral y frontal en cada caída. 🌀 Gestión de Humedad: Tejido transpirable que expulsa el sudor, manteniéndote enfocado en el próximo set, no en el calor.",
+    "precio": "$250.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_MIZUN_LR6_Eco_Pro_blancas.webp",
+    "color": "BLANCO",
+    "size": "S/M, M/L",
+    "material": "50% Poliéster, 22% Rayón, 28% Elástico",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Rodilleras MIZUNO LR6 Eco Pro",
+    "descripcion": "Lleva tu defensa al siguiente nivel con las rodilleras más avanzadas y responsables de Mizuno. Diseñadas para jugadores que exigen el máximo rendimiento sin sacrificar la agilidad, las LR6 ECO PRO son la combinación perfecta de cobertura estratégica y diseño minimalista. ♻️ ADN Sustentable: Fabricadas con materiales reciclados de alta calidad, reduciendo el impacto ambiental sin perder durabilidad. 📏 Diseño D.F. Cut: Corte dinámico que ofrece una libertad de movimiento absoluta; se sienten como una segunda piel. 🛡️ Protección Focalizada: Acolchado que protege las zonas críticas de impacto lateral y frontal en cada caída. 🌀 Gestión de Humedad: Tejido transpirable que expulsa el sudor, manteniéndote enfocado en el próximo set, no en el calor.",
+    "precio": "$250.000",
+    "imagen": "/img/implementos/rodilleras/rodilleras_MIZUN_LR6_Eco_Pro_negras.webp",
+    "color": "NEGRO",
+    "size": "S/M, M/L",
+    "material": "50% Poliéster, 22% Rayón, 28% Elástico",
+    "uso": "Competencia / Entrenamiento"
+  },
+
   {
     "referencia": "Rodilleras Nike Streak",
     "descripcion": "Diseñadas con espuma de alta densidad que amortigua cada caída. Su tejido con tecnología Dri-FIT capilariza el sudor. Diseño ergonómico para minimizar el roce.",
@@ -126,7 +148,7 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_nike_streak_negras.webp",
     "color": "NEGRO",
     "size": "S/M, M/L",
-    "material": "46% Poliéster, 25% Nylon, 17% EVA, 12% Elastico",
+    "material": "46% Poliéster, 25% Nylon, 17% EVA, 12% Elástico",
     "uso": "Competencia / Entrenamiento"
   },
   {
@@ -136,7 +158,7 @@
     "imagen": "/img/implementos/rodilleras/rodilleras_nike_streak_blancas.webp",
     "color": "BLANCO",
     "size": "S/M, M/L",
-    "material": "46% Poliéster, 25% Nylon, 17% EVA, 12% Elastico",
+    "material": "46% Poliéster, 25% Nylon, 17% EVA, 12% Elástico",
     "uso": "Competencia / Entrenamiento"
   },
   {
@@ -153,24 +175,24 @@
     "referencia": "Balón Mikasa BV354TV Good Vibes",
     "descripcion": "Diseñado pensando en la comodidad del jugador. Ofrece una suavidad excepcional. Tamaño N° 5 (Medida Oficial). Peso 260 - 280 g.",
     "precio": "$150.000",
-    "imagen": "/img/implementos//balones/balon_mikasa_bv354tv_good_vibes.webp",
+    "imagen": "/img/implementos/balones/balon_mikasa_bv354tv_good_vibes.webp",
     "color": "AZUL / FUCSIA",
     "size": "5",
     "material": "Construcción cosido a máquina de alta precisión",
     "uso": "Entrenamiento, Iniciación y Recreación / Indoor - Outdoor"
   },
   {
-    "referencia": "Balon Mikasa Beach Pro BV550C",
+    "referencia": "Balón Mikasa Beach Pro BV550C",
     "descripcion": "Calidad premium, tecnología japonesa y el sello de aprobación de la élite mundial. Más agarre, menos absorción de agua. Certificación FIVB.",
     "precio": "$420.000",
-    "imagen": "/img/implementos//balones/balon_mikasa_beach_pro_bv550c.webp",
+    "imagen": "/img/implementos/balones/balon_mikasa_beach_pro_bv550c.webp",
     "color": "AZUL / NARANJA / BLANCO",
     "size": "5",
     "material": "Cuero sintético de alta gama con tecnología Dimple",
     "uso": "Competencia / Entrenamiento"
   },
   {
-    "referencia": "Balon Molten V58SLC RETRO",
+    "referencia": "Balón Molten V58SLC RETRO",
     "descripcion": "Súper suave al contacto. Ideal para perfeccionar tu técnica. Cosido a máquina de alta precisión. Tamaño N° 5 (Medida Oficial).",
     "precio": "$155.000",
     "imagen": "/img/implementos/balones/balon_molten_v58slc_retro.webp",
@@ -180,37 +202,37 @@
     "uso": "Entrenamiento y Recreación Indoor (Sala)"
   },
   {
-    "referencia": "Balon Molten V4M4000",
+    "referencia": "Balón Molten V4M4000",
     "descripcion": "Ideal para equipos que buscan un balón de larga vida útil sin sacrificar la sensación profesional. Construcción laminada (18 paneles). Tamaño N° 4.",
     "precio": "$225.000",
     "imagen": "/img/implementos/balones/balon_molten_v4m4000.webp",
     "color": "VERDE / ROJO / BLANCO",
     "size": "4",
     "material": "Cuero Sintético (PU) de alta calidad",
-    "uso": "Entrenamiento y Competición Indoor (Sala)"
+    "uso": "Entrenamiento y Competencia Indoor (Sala)"
   },
   {
-    "referencia": "Balon Molten V5M4000",
+    "referencia": "Balón Molten V5M4000",
     "descripcion": "El balón equilibrado por excelencia: tacto suave de cuero sintético y durabilidad para entrenamientos intensos. Tamaño N° 5. Laminado de alta precisión.",
     "precio": "$225.000",
     "imagen": "/img/implementos/balones/balon_molten_v5m4000.webp",
     "color": "VERDE / ROJO / BLANCO",
     "size": "5",
     "material": "Cuero Sintético (PU) Soft Touch",
-    "uso": "Competición Indoor / Entrenamiento de Club"
+    "uso": "Competencia Indoor / Entrenamiento de Club"
   },
   {
-    "referencia": "Balon Molten V5M5000",
+    "referencia": "Balón Molten V5M5000",
     "descripcion": "Pieza de ingeniería deportiva aprobada por la FIVB. Tecnología FLISTATEC para trayectoria de vuelo predecible y control sin igual. Tamaño N° 5.",
     "precio": "$395.000",
     "imagen": "/img/implementos/balones/balon_molten_v5m5000.webp",
     "color": "VERDE / ROJO / BLANCO",
     "size": "5",
     "material": "Cuero Sintético Premium de Microfibra",
-    "uso": "Competición Profesional y Élite Indoor"
+    "uso": "Competencia Profesional y Élite Indoor"
   },
   {
-    "referencia": "Balon Mikasa V430W",
+    "referencia": "Balón Mikasa V430W",
     "descripcion": "Diseñado para clubes y escuelas. Estética de alta competición y durabilidad superior. Diseño de 18 paneles. Tamaño N° 4.",
     "precio": "$190.000",
     "imagen": "/img/implementos/balones/balon_mikasa_v430w.webp",
@@ -220,7 +242,7 @@
     "uso": "Competencia / Entrenamiento"
   },
   {
-    "referencia": "Balon Mikasa V330W-L",
+    "referencia": "Balón Mikasa V330W-L",
     "descripcion": "Elección predilecta para categorías juveniles y escolares que prefieren un tacto más suave. Edición ligera perfecta para desarrollo inicial.",
     "precio": "$200.000",
     "imagen": "/img/implementos/balones/balon_mikasa_v330w-l.webp",
@@ -230,7 +252,7 @@
     "uso": "Competencia / Entrenamiento"
   },
   {
-    "referencia": "Balon Mikasa V330W",
+    "referencia": "Balón Mikasa V330W",
     "descripcion": "Perfecto para clubes y academias. Cuero sintético de alto grado (PU liso). Talla N°5, circunferencia 65-67 cm, peso 260-280 gramos.",
     "precio": "$200.000",
     "imagen": "/img/implementos/balones/balon_mikasa_v330w.webp",
@@ -240,7 +262,7 @@
     "uso": "Competencia / Entrenamiento"
   },
   {
-    "referencia": "Balon Mikasa V200W",
+    "referencia": "Balón Mikasa V200W",
     "descripcion": "Balón Oficial FIVB exclusivo de juego. Función Anti-Sudor Nano Balloon Silica. Visibilidad Maximizada.",
     "precio": "$430.000",
     "imagen": "/img/implementos/balones/balon_mikasa_v200w.webp",
@@ -260,7 +282,7 @@
     "uso": "Estandar"
   },
   {
-    "referencia": "Cinta Kinesiologica",
+    "referencia": "Cinta Kinesiológica",
     "descripcion": "Diseñada para imitar la elasticidad de la piel. Proporciona soporte muscular sin restringir movimiento. Adhesivo hipoalergénico. Resistente al agua.",
     "precio": "$35.000",
     "imagen": "/img/implementos/otros/cinta_kinesiologica.webp",
@@ -342,7 +364,7 @@
   {
     "referencia": "Mangas Cortas",
     "descripcion": "Largo de 20 cm, cubren el antebrazo sin restringir movimiento. Mezcla premium suave al tacto y transpirable. Ajuste de segunda piel.",
-    "precio": "$30.000",
+    "precio": "$35.000",
     "imagen": "/img/implementos/otros/mangas_cortas.webp",
     "color": "NEGRO",
     "size": "20 cm",
@@ -350,9 +372,19 @@
     "uso": "Competencia / Entrenamiento"
   },
   {
+    "referencia": "Licra Deportiva",
+    "descripcion": "Perfecto para entrenar o competir con comodidad. Tejido elástico que se adapta a tu cuerpo. Tela super suave: 92% poliéster, 8% elastano No sé transparenta Elástico de cintura ancho.",
+    "precio": "$50.000",
+    "imagen": "/img/implementos/otros/licra_deportiva_negra.webp",
+    "color": "NEGRO",
+    "size": "XS, S, M, L, XL",
+    "material": "92% poliéster, 8% elastano",
+    "uso": "Competencia / Entrenamiento"
+  },
+  {
     "referencia": "Mangas Cortas",
     "descripcion": "Largo de 20 cm. Fabricadas con mezcla premium de Nylon y Algodón. Durabilidad extrema para partidos intensos.",
-    "precio": "$30.000",
+    "precio": "$35.000",
     "imagen": "/img/implementos/otros/mangas_cortas_blancas.webp",
     "color": "BLANCO",
     "size": "20 cm",
@@ -362,7 +394,7 @@
   {
     "referencia": "Mangas Medium",
     "descripcion": "Cobertura de 27 cm que protege desde el antebrazo hasta el codo. Soporte muscular que mejora la circulación y mantiene la temperatura.",
-    "precio": "$35.000",
+    "precio": "$40.000",
     "imagen": "/img/implementos/otros/mangas_medium.webp",
     "color": "NEGRO",
     "size": "27 cm",
@@ -508,5 +540,15 @@
     "size": "20 CM",
     "material": "Plástico/Metal reforzado",
     "uso": "Competencia / Entrenamiento"
+  },
+  {
+    "referencia": "Tabla Táctica MIYAGI M8262",
+    "descripcion": "Domina el juego y comunica tus jugadas con claridad absoluta. El Miyagi M8262 es mucho más que una carpeta; es la herramienta definitiva para entrenadores que buscan precisión táctica y una organización impecable en cada tiempo fuera. 📐 Diseño de Doble Vista: Superficie magnética y de escritura que permite visualizar la rotación completa y las jugadas ensayadas al instante. 📂 Formato Folder Premium: Elegante, compacto y resistente. Ideal para proteger tus notas y llevar tus estrategias de forma profesional. 🖊️ Kit Táctico Completo: Incluye fichas magnéticas de alta visibilidad y marcador de borrado en seco para ajustes rápidos bajo presión. 💪 Durabilidad Miyagi: Construido con materiales de alta calidad para resistir el ritmo intenso de torneos y entrenamientos diarios.",
+    "precio": "$120.000",
+    "imagen": "/img/implementos/otros/tabla_tactica_MIYAGI.webp",
+    "color": "ESTANDAR",
+    "size": "ESTANDAR",
+    "material": "Plástico",
+    "uso": "Táctico"
   }
 ]

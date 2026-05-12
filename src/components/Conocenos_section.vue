@@ -86,7 +86,7 @@
           </h3>
 
           <form
-            @submit.prevent="enviarWhatsapp"
+            @submit.prevent="enviarContacto"
             class="space-y-4"
             aria-labelledby="contacto-title"
           >
@@ -172,12 +172,16 @@
 
             <button
               type="submit"
-              :disabled="!policyAccepted"
+              :disabled="!policyAccepted || isSending"
               class="w-full rounded-full bg-gradient-to-b from-[#509637] to-[#1A3012] text-white font-semibold py-3 disabled:opacity-50"
               aria-label="Enviar datos por WhatsApp"
             >
-              Déjanos tus datos y te contactaremos
+              {{ isSending ? 'Enviando...' : 'Déjanos tus datos y te contactaremos' }}
             </button>
+
+            <p v-if="emailStatus" class="text-xs text-white/90 text-center">
+              {{ emailStatus }}
+            </p>
 
             <!-- Microcopy SEO local (visible, pequeño) -->
             <p class="text-xs text-white/80 text-center pt-1">
@@ -251,6 +255,8 @@ const form = reactive({
 
 const policyAccepted = ref(false)
 const showModal = ref(false)
+const isSending = ref(false)
+const emailStatus = ref('')
 
 function openModal () {
   showModal.value = true
@@ -271,7 +277,30 @@ onBeforeUnmount(() => {
   document.documentElement.classList.remove('overflow-hidden')
 })
 
-function enviarWhatsapp () {
+async function sendLeadToResend (payload) {
+  const endpoint = import.meta.env.VITE_RESEND_ENDPOINT_URL
+  if (!endpoint) {
+    return { ok: false, message: 'Correo no configurado: falta VITE_RESEND_ENDPOINT_URL.' }
+  }
+
+  const res = await fetch(endpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+
+  if (!res.ok) {
+    const txt = await res.text()
+    throw new Error(txt || 'No se pudo enviar el correo.')
+  }
+
+  return { ok: true }
+}
+
+async function enviarContacto () {
+  isSending.value = true
+  emailStatus.value = ''
+
   const phone = '573004311280'
 
   // Limpieza mínima del número para evitar basura (sin bloquear UX)
@@ -285,11 +314,32 @@ function enviarWhatsapp () {
 - Mensaje: ${form.mensaje}
 He leído y acepto la Política de Tratamiento de Datos.`
 
+  try {
+    const emailResult = await sendLeadToResend({
+      nombre: form.nombre,
+      celular: celularClean || form.celular,
+      ciudad: form.ciudad,
+      mensaje: form.mensaje,
+      policyAccepted: policyAccepted.value
+    })
+
+    if (emailResult.ok) {
+      emailStatus.value = 'Correo enviado correctamente.'
+    } else {
+      emailStatus.value = emailResult.message
+    }
+  } catch (err) {
+    emailStatus.value = 'No se pudo enviar el correo. Revisa tu endpoint de Resend.'
+    console.error('Error enviando correo con Resend:', err)
+  }
+
   window.location.href =
     'https://api.whatsapp.com/send?phone=' +
     phone +
     '&text=' +
     encodeURIComponent(texto)
+
+  isSending.value = false
 }
 
 </script>

@@ -75,12 +75,25 @@
                 {{ peluche.nombre }}
               </h3>
 
-              <p
-                class="text-gray-900 mb-4 text-justify leading-relaxed break-words min-h-[7.5rem] sm:min-h-[8.5rem]"
+              <div
+                class="text-gray-900 mb-4 text-sm sm:text-base text-left sm:text-justify leading-6 break-words"
                 itemprop="description"
               >
-                {{ peluche.descripcion }}
-              </p>
+                <p :id="`peluche-desc-${index}`" :class="expanded[index] ? '' : 'line-clamp-3'">
+                  {{ peluche.descripcion }}
+                </p>
+
+                <button
+                  v-if="(peluche.descripcion || '').length > 120"
+                  type="button"
+                  @click="toggle(index)"
+                  class="mt-1 text-sm font-bold underline"
+                  :aria-expanded="expanded[index] ? 'true' : 'false'"
+                  :aria-controls="`peluche-desc-${index}`"
+                >
+                  {{ expanded[index] ? 'Ver menos' : 'Ver más' }}
+                </button>
+              </div>
 
               <!-- Offer schema (price numérico) -->
               <p
@@ -243,6 +256,9 @@ const items = computed(() => {
 })
 
 const peluchesDuplicados = computed(() => [...items.value, ...items.value])
+
+const expanded = ref({})
+const toggle = index => (expanded.value[index] = !expanded.value[index])
 
 const wrapRef = ref(null)
 const trackRef = ref(null)

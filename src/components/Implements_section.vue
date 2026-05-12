@@ -44,7 +44,7 @@
           >
             <figure
               :class="[
-                'w-full h-44 lg:h-36 flex items-center justify-center rounded-xl',
+                'w-full h-44 lg:h-36 flex items-center justify-center rounded-xl overflow-hidden',
                 isMediasSemiProfesionales(producto) ? 'bg-zinc-200' : ''
               ]"
             >
@@ -222,6 +222,10 @@ function altText(p) {
 /** Compensa productos cuyas fotos vienen con mucho espacio en blanco */
 function implementImageScaleClass(p) {
   const ref = (p?.referencia || '').trim().toUpperCase()
+  const img = (p?.imagen || '').trim().toLowerCase()
+  if (img.includes('/licra_deportiva_negra.webp')) {
+    return 'scale-[1.45] hover:scale-[1.55]'
+  }
   if (
     ref === 'AEROSOL NABICO' ||
     ref === 'AEROSOL NABICO HERBAL' ||
