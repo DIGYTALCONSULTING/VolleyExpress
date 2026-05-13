@@ -9,7 +9,9 @@
     "build:prerender": "PRERENDER=true vite build",
     "preview": "vite preview",
     "deploy": "vite build && gh-pages -d dist",
-    "normalize:catalog": "node scripts/normalize-catalog.mjs"
+    "normalize:catalog": "node scripts/normalize-catalog.mjs",
+    "validate:catalog-assets": "node scripts/validate-catalog-assets.mjs",
+    "prebuild": "npm run validate:catalog-assets"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
